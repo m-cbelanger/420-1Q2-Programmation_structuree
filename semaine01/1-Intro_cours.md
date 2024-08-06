@@ -30,6 +30,8 @@ Les instructions sont exécutées systématiquement, exactement comme on écrit 
 - ne prendre aucune déduction pour acquis
 - tenir compte de toutes les étapes 
    - par exemple: pour faire la tâche "mettre de l'essence dans la voiture", il faut penser à enlever le bouchon, prendre le pistolet, peser sur le bouton, mettre le pistolet dans le réservoir, etc. Il ne faut pas oublier de vérifier toutes les étapes, de tout décortiquer et indiquer dans le bon ordre.
+   
+<br>
 
 # Langage de programmation
 
