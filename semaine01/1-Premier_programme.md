@@ -8,7 +8,7 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 
 2. Créer un nouveau projet qu'on appellera Hello_World <br><br>
     - Fichier, nouveau:
-![nouveau projet](img\nouv_projet.png)
+![nouveau projet](img/nouv_projet.png)
 <br><br>
     - Choisir un projet vide:
 ![nouveau projet2](img\nouv_projet2.png)
