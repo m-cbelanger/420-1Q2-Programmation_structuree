@@ -8,20 +8,14 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 
 2. Créer un nouveau projet qu'on appellera Hello_World 
     
-    - Fichier, nouveau:
-
-![nouveau projet](img/nouv_projet.png)
-
-    - Choisir un projet vide:
-
-![nouveau projet2](img/nouv_projet2.png)
-    - Appuyer sur Suivant
-
-    - Nommer le projet:
-    
-![nouveau projet3](img/nouv_projet3.png)
-
-    - Appuyer sur Créer
+    - Fichier, nouveau: <br>
+![nouveau projet](img/nouv_projet.png)<br>
+    - Choisir un projet vide: <br>
+![nouveau projet2](img/nouv_projet2.png)<br>
+    - Appuyer sur Suivant <br>
+    - Nommer le projet: <br>
+![nouveau projet3](img/nouv_projet3.png) <br>
+    - Appuyer sur Créer<br>
 
 
 3. Créer un fichier source dans lequel on va écrire le code
