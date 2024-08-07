@@ -17,15 +17,14 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 ![nouveau projet3](img/nouv_projet3.png) <br>
     - Appuyer sur Créer<br>
 
-
+<br><br>
 3. Créer un fichier source dans lequel on va écrire le code
-<br><br>
-- Nouvel élément en faisant clic droit, Ajouter, Nouvel élément
-![fichier source](img/fichier_source.png)
-- Lui donner un nom. Ici, HelloWorld.cpp
+
+- Nouvel élément en faisant clic droit, Ajouter, Nouvel élément <br>
+![fichier source](img/fichier_source.png)<br>
+- Lui donner un nom. Ici, HelloWorld.cpp <br>
 
 
-<br><br>
 4. Écrire du code
 
 Le code s'écrit dans la fenêtre vide quand on choisit l'onglet de notre fichier source: 
