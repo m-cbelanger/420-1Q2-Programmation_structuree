@@ -37,26 +37,26 @@ int main(){
     cout <<"Salut le monde!";
     return 0;
 }
-```
-    - Portez attention aux symboles utilisés! Un guillemet double n'est pas équivalent à un apostrophe ni à un guillemet 'back-ticks (`)'.
-    - Pour connaître l'emplacement de vos touches de clavier, cherchez "clavier visuel" dans le menu démarrer de Windows.
+``` 
+
+- Portez attention aux symboles utilisés! Un guillemet double n'est pas équivalent à un apostrophe ni à un guillemet 'back-ticks (`)'.
+- Pour connaître l'emplacement de vos touches de clavier, cherchez "clavier visuel" dans le menu démarrer de Windows.
 
 
-![Clavier visuel](img/clavier_visuel1.png)
+![Clavier visuel](img/clavier_visuel1.png) <br>
 
-On peut voir les guillemets double en gris pâle, cela signifie qu'on doit peser sur Maj (shift) pour y accéder. 
-![Clavier visuel2](img/clavier_visuel2.png)
+- On peut voir les guillemets double en gris pâle, cela signifie qu'on doit peser sur Maj (shift) pour y accéder. <br>
+![Clavier visuel2](img/clavier_visuel2.png) <br>
 
 
 5. Vérifier si ça marche!
 
-- Peser sur Débogueur Windows local
-![play](img/play.png)
+    - Peser sur Débogueur Windows local <br>
+![play](img/play.png)<br>
 
-<br><br>
-- Une console devrait apparaître et vous montrer le résultat:
 
-![play2](img/play2.png)
+    - Une console devrait apparaître et vous montrer le résultat: <br>
+![play2](img/play2.png)<br>
 
 
 Voilà! Le programme le plus simple vient d'être créé, compilé et exécuté.
