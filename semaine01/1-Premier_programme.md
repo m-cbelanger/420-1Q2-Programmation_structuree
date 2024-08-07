@@ -4,9 +4,9 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 
 # Étapes à suivre (programme Hello World)
 
-1. Ouvrir Visual Studio.
+1. **Ouvrir Visual Studio.**
 
-2. Créer un nouveau projet qu'on appellera Hello_World 
+2. **Créer un nouveau projet qu'on appellera Hello_World** 
     
     - Fichier, nouveau: <br>
 ![nouveau projet](img/nouv_projet.png)<br>
@@ -17,20 +17,19 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 ![nouveau projet3](img/nouv_projet3.png) <br>
     - Appuyer sur Créer<br>
 
-<br><br>
-3. Créer un fichier source dans lequel on va écrire le code
 
-- Nouvel élément en faisant clic droit, Ajouter, Nouvel élément <br>
+3. **Créer un fichier source dans lequel on va écrire le code**
+
+    - Nouvel élément en faisant clic droit, Ajouter, Nouvel élément <br>
 ![fichier source](img/fichier_source.png)<br>
-- Lui donner un nom. Ici, HelloWorld.cpp <br>
+    - Lui donner un nom. Ici, HelloWorld.cpp <br>
 
 
-4. Écrire du code
+4. **Écrire du code**
 
-Le code s'écrit dans la fenêtre vide quand on choisit l'onglet de notre fichier source: 
-![zone_code](img/ecrire_code.png)
-
-Écrire le code ci-dessous dans la zone d'écriture:
+    - Le code s'écrit dans la fenêtre vide quand on choisit l'onglet de notre fichier source: <br>
+![zone_code](img/ecrire_code.png)<br>
+    - Écrivez le code ci-dessous dans la zone d'écriture: <br>
 ```cpp
 #include <iostream>
 using namespace std;
@@ -39,16 +38,16 @@ int main(){
     return 0;
 }
 ```
-- Portez attention aux symboles utilisés! Un guillemet double n'est pas équivalent à un apostrophe ni à un guillemet 'back-ticks (`)'.
-- Pour connaître l'emplacement de vos touches de clavier, chercher "clavier visuel" dans le menu démarrer de Windows.
+    - Portez attention aux symboles utilisés! Un guillemet double n'est pas équivalent à un apostrophe ni à un guillemet 'back-ticks (`)'.
+    - Pour connaître l'emplacement de vos touches de clavier, cherchez "clavier visuel" dans le menu démarrer de Windows.
 
 
 ![Clavier visuel](img/clavier_visuel1.png)
-<br><br>
+
 On peut voir les guillemets double en gris pâle, cela signifie qu'on doit peser sur Maj (shift) pour y accéder. 
 ![Clavier visuel2](img/clavier_visuel2.png)
 
-<br><br>
+
 5. Vérifier si ça marche!
 
 - Peser sur Débogueur Windows local
