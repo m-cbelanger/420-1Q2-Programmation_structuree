@@ -8,14 +8,14 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 
 2. Créer un nouveau projet qu'on appellera Hello_World <br><br>
     - Fichier, nouveau:
-![nouveau projet](img\nouv_projet.png)
+![nouveau projet](img/nouv_projet.png)
 <br><br>
     - Choisir un projet vide:
-![nouveau projet2](img\nouv_projet2.png)
+![nouveau projet2](img/nouv_projet2.png)
     - Appuyer sur Suivant
 <br><br>
     - Nommer le projet:
-![nouveau projet3](img\nouv_projet3.png)
+![nouveau projet3](img/nouv_projet3.png)
 
     - Appuyer sur Créer
 
@@ -23,7 +23,7 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 3. Créer un fichier source dans lequel on va écrire le code
 <br><br>
 - Nouvel élément en faisant clic droit, Ajouter, Nouvel élément
-![fichier source](img\fichier_source.png)
+![fichier source](img/fichier_source.png)
 - Lui donner un nom. Ici, HelloWorld.cpp
 
 
@@ -31,7 +31,7 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 4. Écrire du code
 
 Le code s'écrit dans la fenêtre vide quand on choisit l'onglet de notre fichier source: 
-![zone_code](img\ecrire_code.png)
+![zone_code](img/ecrire_code.png)
 
 Écrire le code ci-dessous dans la zone d'écriture:
 ```cpp
@@ -46,21 +46,21 @@ int main(){
 - Pour connaître l'emplacement de vos touches de clavier, chercher "clavier visuel" dans le menu démarrer de Windows.
 
 
-![Clavier visuel](img\clavier_visuel1.png)
+![Clavier visuel](img/clavier_visuel1.png)
 <br><br>
 On peut voir les guillemets double en gris pâle, cela signifie qu'on doit peser sur Maj (shift) pour y accéder. 
-![Clavier visuel2](img\clavier_visuel2.png)
+![Clavier visuel2](img/clavier_visuel2.png)
 
 <br><br>
 5. Vérifier si ça marche!
 
 - Peser sur Débogueur Windows local
-![play](img\play.png)
+![play](img/play.png)
 
 <br><br>
 - Une console devrait apparaître et vous montrer le résultat:
 
-![play2](img\play2.png)
+![play2](img/play2.png)
 
 
 Voilà! Le programme le plus simple vient d'être créé, compilé et exécuté.
@@ -139,19 +139,19 @@ int main(){
 }
 ```
 - On a déjà un avertissement qui apparaît avant de faire play: 
-![play](img\erreur1.png)
+![play](img/erreur1.png)
 
 - Le mot return est souligné en rouge. Si on place notre curseur sur le mot en rouge, on a souvent de bons indices:
 
-![play2](img\erreur2.png)
+![play2](img/erreur2.png)
 
 - Si on ignore le souligné et qu'on fait play (Débugueur Windows local), on aura un message tel que celui-ci:
 
-![play3](img\erreur3.png)
+![play3](img/erreur3.png)
 
 - en faisant NON, on aura une liste d'erreurs qui se présentera dans la section en bas:
 
-![play4](img\erreur4.png)
+![play4](img/erreur4.png)
 
 - Il est indiqué qu'il faut un ; avant le return. On apprendra rapidement qu'il faut le mettre à la fin de la ligne précédent, donc à la fin de la ligne 4. 
 - Considérer la console comme un OUTIL d'aide et non comme une vérité absolue.
