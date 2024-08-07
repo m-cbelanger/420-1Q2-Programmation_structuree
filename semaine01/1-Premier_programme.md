@@ -16,9 +16,8 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
     - Appuyer sur Suivant
 <br><br>
     - Nommer le projet:
-    
-![nouveau projet3](img/nouv_projet3.png)
 
+![nouveau projet3](img/nouv_projet3.png)
     - Appuyer sur Créer
 
 <br><br>
