@@ -20,7 +20,6 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 ![nouveau projet3](img/nouv_projet3.png)
     - Appuyer sur Créer
 
-<br><br>
 3. Créer un fichier source dans lequel on va écrire le code
 <br><br>
 - Nouvel élément en faisant clic droit, Ajouter, Nouvel élément
