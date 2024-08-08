@@ -166,7 +166,7 @@ Quand on souhaite qu'une ligne ou des bouts de lignes soient ignorés lors de l'
 // ceci est un commentaire
 /** ce bloc est en commentaire
 *
-* J'ai pensé laissé mon raisonnement ici pour me rappeler de mon raisonnement lors de la création du code.
+* J'ai pensé laissé des notes ici pour me rappeler de mon raisonnement lors de la création du code.
 * C'est une norme demandée très souvent en entreprise, ça facilite le travail d'équipe.
 *
 **/
@@ -228,4 +228,4 @@ int main(){
 ![play4](img/erreur4.png)<br>
 
 - Il est indiqué qu'il faut un ; avant le return. On apprendra rapidement qu'il faut le mettre à la fin de la ligne précédent, donc à la fin de la ligne 4. 
-- Considérer la console comme un OUTIL d'aide et non comme une vérité absolue.
+- Considérer cela comme un OUTIL d'aide et non comme une vérité absolue. Vos yeux et votre expérience vont souvent vous être plus utiles!
