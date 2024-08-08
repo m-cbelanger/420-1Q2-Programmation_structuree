@@ -96,6 +96,7 @@ ou comme ceci:
 
  ```cpp
 #include <iostream>
+using namespace std;
 int main()
 {
    
@@ -192,9 +193,8 @@ cout << pow(8,2);
 ```
 
 
-<div style="border: 2px solid green; padding: 10px;">
-    Exercices section 1
-</div>
+
+
 
 # Erreurs de syntaxe
 
@@ -212,20 +212,20 @@ int main(){
     return 0;
 }
 ```
-- On a déjà un avertissement qui apparaît avant de faire play: 
-![play](img/erreur1.png)
+- On a déjà un avertissement qui apparaît avant de faire play: <br>
+![play](img/erreur1.png)<br>
 
-- Le mot return est souligné en rouge. Si on place notre curseur sur le mot en rouge, on a souvent de bons indices:
+- Le mot return est souligné en rouge. Si on place notre curseur sur le mot en rouge, on a souvent de bons indices:<br>
 
-![play2](img/erreur2.png)
+![play2](img/erreur2.png)<br>
 
-- Si on ignore le souligné et qu'on fait play (Débugueur Windows local), on aura un message tel que celui-ci:
+- Si on ignore le souligné et qu'on fait play (Débugueur Windows local), on aura un message tel que celui-ci:<br>
 
-![play3](img/erreur3.png)
+![play3](img/erreur3.png)<br>
 
-- en faisant NON, on aura une liste d'erreurs qui se présentera dans la section en bas:
+- en faisant NON, on aura une liste d'erreurs qui se présentera dans la section en bas:<br>
 
-![play4](img/erreur4.png)
+![play4](img/erreur4.png)<br>
 
 - Il est indiqué qu'il faut un ; avant le return. On apprendra rapidement qu'il faut le mettre à la fin de la ligne précédent, donc à la fin de la ligne 4. 
 - Considérer la console comme un OUTIL d'aide et non comme une vérité absolue.
