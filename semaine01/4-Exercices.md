@@ -1,4 +1,4 @@
-# Exercices
+# Exercices (intro)
 
 # Préambule
 Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
@@ -17,7 +17,7 @@ Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à cr
 Créer un main() dans ce fichier:
 ```cpp
 int main(){
-
+    setlocale(LC_ALL, "");// pour que les accents soient affichés
 }
 
 ```
@@ -27,19 +27,19 @@ int main(){
 
 ```cpp
 int main(){
-    //section 1 - question 1
+    //question 1
 
-    //section 1 - question 2
+    //question 2
 
-    //section 1 - question 3
+    //question 3
 
     ...
 }
 ```
 
-# Questions
+## Question 1
 
-1. Dans le main de votre programme, faire **afficher** (cout) les éléments suivants un en dessous de l'autre. Rappel: si vous entrez une expression qui contient du texte, il faut mettre l'expression entre doubles guillemets (""). Il faut mettre un retour de ligne entre chaque sortie
+Dans le main de votre programme, faire **afficher** (cout) les éléments suivants un en dessous de l'autre. Rappel: si vous entrez une expression qui contient du texte, il faut mettre l'expression entre doubles guillemets (""). Il faut mettre un retour de ligne entre chaque sortie
     - 34
     - "Je programme!"
     - 34 - 12
@@ -51,7 +51,9 @@ int main(){
     - 4+9*10/2
     - 5 + 3 = 8
 
-2. Est-ce que ce code fonctionne? Pourquoi? 
+## Question 2
+
+Est-ce que ce code fonctionne? Pourquoi? 
 
 ```cpp
 #include <iostream>
@@ -64,7 +66,9 @@ int main() {
 }
 ```
 
-3. Trouver l'erreur! 
+## Question 3 
+
+Trouver l'erreur! 
 
 Dans les codes fournis ci-dessous, trouver l'erreur de syntaxe qui s'est glissée dans le code. Vous aurez souvent besoin d'inspecter à l'oeil, les erreurs ne sont pas toujours clairement indiquées par le compilateur. N'HÉSITEZ PAS à écrire le tout dans Visual studio et à expérimenter!
 
