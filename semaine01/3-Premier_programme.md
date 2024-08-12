@@ -51,7 +51,7 @@ int main(){
 
 5. Vérifier si ça marche!
 
-    - Peser sur Débogueur Windows local <br>
+    - Peser sur Débogueur Windows local OU sur les touches ctrl + F5 <br>
 ![play](img/play.png)<br>
 
 

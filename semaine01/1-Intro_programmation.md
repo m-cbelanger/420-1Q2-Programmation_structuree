@@ -52,5 +52,43 @@ Pour lui donner des instructions, il faudra parler en **langage machine**. Depui
 - Dans le cadre de ce cours, on apprendra les bases de la programmation dont les instructions sont lues de manière séquentielle. 
     - Le programmeur écrit une séquence d'instructions dans un langage de programmation donné. 
     - L'ordinateur exécute les instructions qu'on lui donne en ordre, du haut vers le bas du fichier, sans réfléchir.
-    - Le programmeur s'assure de trouver et corriger les erreurs de syntaxe (l'éditeur de code va beaucoup aider dans ce domaine), mais SURTOUT les erreurs d'exécution (ou de logique).
+    - Le programmeur s'assure de trouver et corriger les erreurs de syntaxe (l'éditeur de code va beaucoup aider dans ce domaine) et les erreur de logique (plus difficiles à détecter parfois).
 
+# Planifier avant d'écrire
+Il est souvent tentant, quand on commence à programmer, de se mettre à écrire du code le plus rapidement possible. Or, il est très payant et facilitant de RÉFLÉCHIR avant d'écrire. Peu importe dans quel domaine on souhaite produire un résultat informatique, on aura grosso modo 6 étapes à respecter:
+
+1. Bien lire est comprendre le problème
+
+    L’énoncé du problème est la première information qui nous est donnée pour établir une solution. C’est notre point de départ. Il est utile ici de réécrire le problème en nos mots ou même de faire un exemple de solution manuelle.
+
+2. Repérer et nommer les informations
+   
+   On cherche soit les informations déjà données, celles qui seront obtenues par lecture (sous-entendues dans l'énoncé) et les informations qu'on obtiendra par traitement (calculs ou autres)
+
+3. Identifier les traitements (ce qu'il faudra faire)
+
+   À cette étape on doit identifier non seulement les traitements mais aussi les données sur lesquelles ces traitements devront s'effectuer. Exemples de traitements: 
+   - obtenir de l'information
+   - afficher de l'information
+   - calculer quelque chose
+   - trier des données
+   - etc.
+
+4. Ordonner les traitements et vérifier les entrées/sorties
+
+   S'assurer de savoir dans quel ordre placer les traitements de l'étape précédente (qu'est-ce qui doit être fait avant quoi?).
+
+5. Décortiquer les traitements en instructions
+
+   Prendre chaque traitement et le décortiquer en instructions. Par exemple, pour additionner 30 à un nombre variable (traitement) et l'afficher, on va:
+   - déclarer une variable pour le nombre;
+   - demander le nombre désiré à l'utilisateur;
+   - déclarer une variable pour le calcul;
+   - faire le calcul;
+   - afficher le calcul; 
+   
+6. La trace et les jeux de test
+
+   Et finalement, afin de s’assurer de l’exactitude et la robustesse de notre algorithme il est nécessaire d’en effectuer la trace. Faire la trace d’un algorithme signifie effectuer toutes les opérations une à la fois en se comparant à des valeurs de test. À chaque exécution d’une instruction, on en note le résultat et on réfléchit pour être sûr que c'est ce qui était attendu.
+
+Dès l'étape 5, on peut commencer à écrire et constater des manques, des ajouts, des modifications aux étapes précédentes. On verra un exemple dans le module sur les variables. Ce processus semble un peut long pour de petits problèmes simples, mais les problèmes ne resterons pas simples! Il faut aussi penser que même si on a un résultat, il est primordial de vérifier que c'est le bon!

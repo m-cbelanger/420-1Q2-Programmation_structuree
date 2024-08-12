@@ -11,6 +11,7 @@ Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à cr
 ```cpp
 #include <iostream>
 #include <locale.h>
+using namespace std;
 
 ```
 
@@ -44,7 +45,7 @@ Dans le main de votre fichier source:
 1. Déclarer une variable nommée heures de type float. Y mettre le nombre d'heure travaillées la semaine passée (inventez-en un si vous ne travaillez pas).
 2. Déclarer une variable de type float nommée tauxHoraire. Placez-y le taux horaire ($/heure) qui vous ferait plaisir.
 3. Déclarer une variable salaire dans lequel on place le nombre d'heures multiplié par le tauxHoraire. De quel type déclarez-vous la variable salaire?
-4. Afficher une phrase complète qui dit quelque chose semblable à ceci: "Si on fait ... heures de travail à un taux de ... $/heure, on fera un salaire de ...
+4. Afficher une phrase complète qui dit quelque chose semblable à ceci: "Si on fait ... heures de travail à un taux de ... $/heure, on fera un salaire brut de ...
 
 ## Question 2
 
@@ -63,16 +64,17 @@ Opération sur les variables avec différents types
 a) observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
 ```cpp
 int b = 5;
-float y = 3.7;
+float k = 3.7;
 char c = 'A';
 
 b = b + 100;      
-y = y * 2;       
+k = k * 2;       
 c = b;           
 
 ```
+
 - Que contient b à la fin?
-- Que contient y à la fin?
+- Que contient k à la fin?
 - Que se passe-t-il quand on affecte b à c?
 
 b) observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
@@ -104,11 +106,11 @@ i = d;
 
 d) Que se passe-t-il ici?
 ```cpp
-int x = 10;
-int y = 0;
+int nb1 = 10;
+int nb2 = 0;
 float resultat;
 
-resultat = x / y;  // Que se passe-t-il ici ?
+resultat = nb1 / nb2;  // Que se passe-t-il ici ?
 ```
 
 ## Question 4
@@ -131,12 +133,19 @@ $$
 volume = \frac{4 * 3.1416 * rayon^3}{3} 
 $$  
 
-Pensez à bien décortiquer les étapes dans votre tête avant d'écrire le code.
+Pensez à bien décortiquer les étapes dans votre tête avant d'écrire le code. Est-ce que certaines valeurs devraient être constantes?
 
 ## Question 6
 
-//Étapes à décortiquer avec variables à récupérer en cin 
-taxes? salaire? impôt? Conversion unités?
+Calculer le montant qu'on doit charger au client lors de l'achat d'un bien quand on rajoute les taxes. Le montant des taxes s'élève à 14,975% du montant qu'on ajoute à ce montant. Vous devez demander le montant à l'utilisateur avant d'utiliser son entrée pour calculer le total et lui afficher le total avec le symbole de $. Par exemple, si l'utilisateur entre 10, on lui affiche 11.5\$.
+
+## Question 7
+
+Faire une petite calculatrice dans laquelle on demande 2 nombres entiers à l'utilisateur (par exemple 26 et 10). Ensuite, afficher les informations suivantes:
+![q7](img/Q7.png);
 
 
+## Question 8
+
+Demander à un utilisateur d'entrer son nom complet, son âge, et sa taille en mètres. Convertir la taille en mètre pour l'afficher en centimètres. Affichez ensuite les 3 informations une en-dessous de l'autre.
 

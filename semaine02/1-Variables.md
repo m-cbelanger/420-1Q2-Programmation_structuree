@@ -153,6 +153,8 @@ Exemples qui causent des erreurs ou des résultats incorrects:
     cout << phrase << endl; // on obtient w ...
 ```
 
+Pour les string et les char, si on fournit un nombre, on affichera un numéro de caractère dans la table [ASCII](https://www.ascii-code.com/fr).
+
 ### Comment bien choisir un type?
 
 Types de base:
@@ -289,11 +291,119 @@ int main() {
 }
 ```
 
+## Constantes
+
+Il est possible de déclarer des valeurs constantes pour les utiliser dans le code avec un nom de variable. Elles sont placées AVANT le main et après les include et using.
+
+```cpp
+#include <iostream>
+#include <locale.h>
+using namespace std;
+
+const int ma_constante = 10;
+ma_constante = 12; //n'est pas permis
+
+int main(){
+    ...
+}
+
+```
+Pourquoi faire une variable non modifiable? 
+
+
 ## Dans quel ordre faire les choses?
 
-Si on souhaite coder un problème, il faut s'assurer que l'ordre dans lequel on fait les choses va fonctionner.
+Si on souhaite coder un problème, il faut s'assurer que l'ordre dans lequel on fait les choses va fonctionner. On peut aussi revoir les 7 étapes du cours d'introduction.
 
-- Il faut s'assurer que les variables qu'on utilise sont déclarées et que leur valeur est la bonne lors de leur utilisation ou affichage.
+Exemple d'énoncé pour lequel on veut écrire le code:
 
-Par exemple:
-//TODO
+        Faire l'algorithme qui permettra de calculer le salaire net (après déductions) d'un employé lorsque les seuls prélèvements à la source (déductions) sont un taux d'imposition de 20 % et un montant de 11.63 pour l'assurance chômage, en sachant que son salaire brut (sans déductions) est calculé en fonction du nombre d’heures travaillées et son salaire horaire.
+
+- Vous ne connaissez rien dans ce domaine? Ce n'est pas grave, en tant qu'informaticien, on doit se plonger dans toute sorte de domaines! On n'a qu'à décortiquer en étapes.
+
+- Étape 1
+    Se faire un exemple pour comprendre. On imagine un employé qui fait 36 heures de travail et qui travaille à 18.75$ de l'heure. Cet employé aura
+    - 36 x 18.75 = 675 dollars de salaire brut
+    - 675 x 0.20 = 135 dollars d'impôts à enlever
+    - 675 - 135 - 11.63 = 528.37 dollars de salaire net
+
+- Étape 2
+    Repérer et nommer les informations.
+    - On a le nombre 20% qui ne change pas (constante tauxImpot)
+    - On a le nombre 11.63 qui ne change pas (constante mntChomage)
+    - On a besoin du nombre d'heures de l'usager (variable nbHeures)
+    - On a besoin du salaire horaire de l'usager (variable tauxHoraire)
+
+- Étape 3
+    Identifier les traitements. Ici, on sait qu'il faut (PAS dans le bon ordre);
+    - demander les informations à l'usager 
+    - calculer le salaire net 
+    - calculer le salaire brut 
+    - calculer les impôts à payer
+    - afficher le résultat
+
+- Étape 4
+    Ordonner si ça n'est pas fait à l'étape précédente. On ne peut pas calculer le salaire brut avant de savoir combien il faut déduire. Il faut donc que le salaire à déduire soit calculer avant.
+    - demander les informations à l'usager 
+    - calculer le salaire brut 
+    - calculer les impôts à payer
+    - calculer le salaire net
+    - afficher le résultat
+
+- Étape 5
+    Préciser les instructions. On décortique chaque traitement
+    - demande les informations à l'usager:
+        - déclaration des variables nbHeures et tauxHoraire avec leur type respectif.
+        - demander l'info avec un cout pour une variable à la fois.
+        - récupérer les réponses pour les mettre dans les variables. Récupérer une réponse avant de poser la 2e question.
+    
+    - calculer le salaire brut
+        - déclaration de la variable salaireBrut du type approprié.
+        - multiplier les 2 variables nbHeures et tauxHoraire pour les affecter à salaireBrut.
+    
+    - calculer impôts à payer
+        - déclaration de la variable impotsAPayer du type approprié.
+        - calcul de 20% du salaireBrut qu'on affecte à impotsAPayer.
+    
+    - calculer le salaire net
+        - déclaration de la variable salaireNet du type approprié
+        - calcul des déductions du salaireBrut - mntChomage - impotsAPayer et affectation à la variable salaireNet.
+    
+    - afficher le résultat
+        - Faire un cout avec une phrase et le contenu de la variable salaireNet.
+
+Le code se lira comme suit:
+```cpp
+#include <iostream>
+#include <locale.h>
+using namespace std;
+
+const float mntChomage = 11.63;
+const float tauxImpot = 0.20;
+
+int main() {
+	setlocale(LC_ALL, "");
+
+	int nbHeures;
+	float tauxHoraire;
+
+	cout << "Combien d'heures avez-vous travaillé cette semaine? " << endl;
+	cin >> nbHeures;
+	cout << "Quel est votre salaire horaire?" << endl;
+	cin >> tauxHoraire;
+
+	float salaireBrut = tauxHoraire * nbHeures;
+	float impotsAPayer = salaireBrut * tauxImpot;
+	float salaireNet = salaireBrut - impotsAPayer - mntChomage;
+
+	cout << "Le salaire net est " << salaireNet << endl;
+
+}
+```
+
+- Étape 6
+    On teste! Pour le moment, on ne testera pas toutes les possibilités, on reste dans la simplicité. On peut, par exemple, essayer notre exemple de départ. <br>
+    ![jeu de test](img/jeuTest.png)
+
+
+
