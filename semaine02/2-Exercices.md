@@ -138,7 +138,7 @@ Pensez à bien décortiquer les étapes avant d'écrire le code. Est-ce que cert
 
 ## Question 6
 
-Calculer le montant qu'on doit charger au client lors de l'achat d'un bien quand on rajoute les taxes. Le montant des taxes s'élève à 14,975% du montant qu'on ajoute à ce montant. Vous devez demander le montant à l'utilisateur avant d'utiliser son entrée pour calculer le total et lui afficher le total avec le symbole de \$. Par exemple, si l'utilisateur entre 10, on lui affiche 11.5\$.
+Calculer le montant qu'on doit charger au client lors de l'achat d'un bien quand on rajoute les taxes. Le montant des taxes s'élève à 14,975% du montant qu'on ajoute à ce montant. Vous devez demander le montant à l'utilisateur avant d'utiliser son entrée pour calculer le total et lui afficher le total.
 
 ## Question 7
 
