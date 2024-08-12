@@ -4,7 +4,6 @@
 
 Si on écrit du code dans un éditeur de texte (éditeur de code), l'exécution se fera ligne par ligne jusqu'à la fin des instructions et puis le programme s'arrêtera... Mais si on a besoin de conserver les données, comment on va faire? 
 
-# Les variables!
 En termes simples, une variable est un espace mémoire qui est nommé et utilisé pour stocker des valeurs. Ces valeurs peuvent être de différents types : nombres, chaînes de caractères, booléens, etc. Les variables permettent aux programmes de gérer les données qui peuvent changer pendant l'exécution du programme.
 
 ### Pourquoi Utiliser des Variables ?
