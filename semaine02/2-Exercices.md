@@ -4,15 +4,14 @@
 Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
 
 
-- Créer un nouveau projet nommé exercices dans Visual Studio
-- Créer un fichier source nommé mes_exercices.cpp
-- En tête de fichier, écrire les 2 includes suivants:
+- Créer un nouveau projet nommé exercices_variables dans Visual Studio
+- Créer un fichier source nommé exercices_variables.cpp
+- En tête de fichier, écrire les 2 includes et le using suivants:
 
 ```cpp
 #include <iostream>
 #include <locale.h>
 using namespace std;
-
 ```
 
 Créer un main() dans ce fichier:
@@ -61,7 +60,7 @@ Dans le main de votre fichier source:
 ## Question 3
 Opération sur les variables avec différents types
 
-a) observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
+a) Observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
 ```cpp
 int b = 5;
 float k = 3.7;
@@ -77,7 +76,7 @@ c = b;
 - Que contient k à la fin?
 - Que se passe-t-il quand on affecte b à c?
 
-b) observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
+b) Observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
 ```cpp
 int n = 3;
 double z = 4.5;
@@ -91,7 +90,7 @@ lettre = lettre + n;
 - Que se passe-t-il avec lettre?
 
 
-c) observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
+c) Observer et décrire ce qui se produit pour chaque affectation de valeur à une variable.
 ```cpp
 float f = 3.14;
 int i = 1;
@@ -125,19 +124,21 @@ Calculons la somme des n premiers nombres entiers positifs. La formule mathémat
 
 ## Question 5
 
-On donne le diamètre de trois planètes : la Terre = 12 757 km, Mars = 6 800 km et Jupiter = 139 800 km. Calculer et afficher le nom de la planète, son diamètre, son rayon et son volume. Les nombres doivent être mis dans des variables et les calculs aussi. à titre de rappel mathématique,
+On donne le diamètre de trois planètes : la Terre = 12 757 km, Mars = 6 800 km et Jupiter = 139 800 km. Calculer et afficher le nom de la planète, son diamètre, son rayon et son volume. Les nombres doivent être mis dans des variables et les calculs aussi. À titre de rappel mathématique,
+
 $$ 
 rayon = diamètre/2
 $$
+
 $$
 volume = \frac{4 * 3.1416 * rayon^3}{3} 
 $$  
 
-Pensez à bien décortiquer les étapes dans votre tête avant d'écrire le code. Est-ce que certaines valeurs devraient être constantes?
+Pensez à bien décortiquer les étapes avant d'écrire le code. Est-ce que certaines valeurs devraient être constantes?
 
 ## Question 6
 
-Calculer le montant qu'on doit charger au client lors de l'achat d'un bien quand on rajoute les taxes. Le montant des taxes s'élève à 14,975% du montant qu'on ajoute à ce montant. Vous devez demander le montant à l'utilisateur avant d'utiliser son entrée pour calculer le total et lui afficher le total avec le symbole de $. Par exemple, si l'utilisateur entre 10, on lui affiche 11.5\$.
+Calculer le montant qu'on doit charger au client lors de l'achat d'un bien quand on rajoute les taxes. Le montant des taxes s'élève à 14,975% du montant qu'on ajoute à ce montant. Vous devez demander le montant à l'utilisateur avant d'utiliser son entrée pour calculer le total et lui afficher le total avec le symbole de \$. Par exemple, si l'utilisateur entre 10, on lui affiche 11.5\$.
 
 ## Question 7
 

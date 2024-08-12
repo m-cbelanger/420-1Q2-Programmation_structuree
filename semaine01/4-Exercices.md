@@ -4,14 +4,14 @@
 Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
 
 
-- Créer un nouveau projet nommé exercices dans Visual Studio
-- Créer un fichier source nommé mes_exercices.cpp
-- En tête de fichier, écrire les 2 includes suivants:
+- Créer un nouveau projet nommé exercices_intro dans Visual Studio
+- Créer un fichier source nommé exercices_intro.cpp
+- En tête de fichier, écrire les 2 includes et le using suivants:
 
 ```cpp
 #include <iostream>
 #include <locale.h>
-
+using namespace std;
 ```
 
 Créer un main() dans ce fichier:
