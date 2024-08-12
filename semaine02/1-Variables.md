@@ -56,7 +56,7 @@ int main() {
 ```
 
 
-### Exercice en classe
+### Exercices en classe
 
 Dans le main, 
 - déclarer une variable de type "entier" nommée monNombre et placez le chiffre 7 à l'intérieur.
@@ -65,11 +65,11 @@ Dans le main,
 - déclarer une variable de type double nommée somme et placez-y le résultat de l'addition des 2 variables précédente. Attention, on veut le faire de manière **dynamique**, ce qui signifie qui s'adapte si la **variable** varie!
 - afficher le résultat de votre calcul en-dessous des autres
 
-### Variable et exécution séquentielle
+### Variables et exécution séquentielle
 
 Si on déclare une variable, c'est parce qu'elle risque de varier (c'est logique!). Il est possible d'écraser le contenu d'une variable par un autre contenu. Le contenant reste le même (si on avait une variable de type int, on ne peut mettre que des entiers dedans).
 
-Ci-dessous, on **déclare** la variable maVariable dans laquelle on place 4. Puis, on écrase la valeur par 7. Remarquez qu'on ne redéclare pas la variable, on l'utilise! Les 
+Ci-dessous, on **déclare** la variable maVariable dans laquelle on place 4. Puis, on écrase la valeur par 7. Remarquez qu'on ne redéclare pas la variable, on l'utilise! 
 
 ```cpp
 #include <iostream>
@@ -87,7 +87,7 @@ int main() {
 }
 ```
 
-Que vaut maVariable et monCalcul si on fait ceci? Affichez-les!
+Que vallent maVariable et monCalcul si on fait ceci? Affichez-les!
 ```cpp
 #include <iostream>
 #include <locale.h>
@@ -124,7 +124,7 @@ int main() {
 
 ### Pourquoi déclarer des types particuliers?
 
-On décide judicieusement du contenant de notre variable pour éviter les erreurs. Si on essai de placer un contenu dans un contenant, il faut que ça entre!
+On décide judicieusement du **contenant** où placer votre donnée pour éviter les erreurs. Si on essaie de placer un contenu dans un contenant, il faut que ça entre!
 
 Exemples qui causent des erreurs ou des résultats incorrects:
 - Mettre un type complètement différent dans un contenant (erreur)

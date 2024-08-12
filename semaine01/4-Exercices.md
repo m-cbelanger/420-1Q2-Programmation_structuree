@@ -136,4 +136,8 @@ int main() {
 }
 ```
  
+## Question 4
+Pratique de clavier! Voici un code en image. Le but de l'exercice est de retranscrire ce code dans Visual Studio. Il n'est PAS demandé de le comprendre ni de l'expliquer. Assurez-vous de trouver vos touches de clavier!
+
+![À transcrire](img/code_copie.png)
 
