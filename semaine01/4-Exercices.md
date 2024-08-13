@@ -1,7 +1,7 @@
 # Exercices (intro)
 
 # Préambule
-Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
+Pour chaque nouvelle section d'exercices, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
 
 
 - Créer un nouveau projet nommé exercices_intro dans Visual Studio

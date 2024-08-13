@@ -8,7 +8,7 @@ Il faut que l'installation de Visual Studio 2022 soit complétée ou bien que vo
 
 2. **Créer un nouveau projet qu'on appellera Hello_World** 
     
-    - Fichier, nouveau: <br>
+    - Fichier, nouveau, projet: <br>
 ![nouveau projet](img/nouv_projet.png)<br>
     - Choisir un projet vide: <br>
 ![nouveau projet2](img/nouv_projet2.png)<br>
@@ -51,7 +51,7 @@ int main(){
 
 5. Vérifier si ça marche!
 
-    - Peser sur Débogueur Windows local OU sur les touches ctrl + F5 <br>
+    - Peser sur Débogueur Windows local OU sur les touches **ctrl + F5** <br>
 ![play](img/play.png)<br>
 
 
@@ -66,7 +66,7 @@ Pour que ce mini programme fonctionne,
 - On a utilisé un **éditeur de texte** pour saisir le code.
 - On a compilé le code: un **compilateur C++** a traduit votre code en langage machine et a vérifié s'il y avait des erreurs de syntaxe (il les signale s'il en trouve).
 - Le compilateur C++ a ensuite créé un **fichier exécutable**.
-- L'exécutable est lancé: il lit les instruction en ordre **de haut en bas** et exécute ce qu'il y a dans la **fonction main()**.
+- L'exécutable est lancé: il lit les instructions en ordre **de haut en bas** et exécute ce qu'il y a dans la **fonction main()**.
 
 # Commandes de base
 
@@ -139,7 +139,7 @@ int main(){
 ![cout2](img/cout2.png)<br>
 
 
-- Pour que les accents de la langue française apparaissent, on ajoute quelques ligne de code à des endroits précis:
+- Pour que les accents de la langue française apparaissent, on ajoute quelques lignes de code à des endroits précis:
 
  ```cpp
 #include <iostream>
@@ -160,13 +160,13 @@ int main() {
 
 ## Les commentaires
 
-Quand on souhaite qu'une ligne ou des bouts de lignes soient ignorés lors de l'exécution des commandes, on peut les mettre en commentaire. On peut mettre les 2 barres obliques devant n'importe quel ligne de texte, ça devient vert et ça ne sera pas lu à l'exécution. Les erreurs de syntaxes seront ignorées dans les commentaires.
+Quand on souhaite qu'une ligne ou des bouts de lignes soient ignorés lors de l'exécution des commandes, on peut les mettre en commentaire. On peut mettre les 2 barres obliques devant n'importe quelle ligne de texte, ça devient vert et ça ne sera pas lu à l'exécution. Les erreurs de syntaxe seront ignorées dans les commentaires.
 
 ```cpp
 // ceci est un commentaire
 /** ce bloc est en commentaire
 *
-* J'ai pensé laissé des notes ici pour me rappeler de mon raisonnement lors de la création du code.
+* J'ai pensé laisser des notes ici pour me rappeler de mon raisonnement lors de la création du code.
 * C'est une norme demandée très souvent en entreprise, ça facilite le travail d'équipe.
 *
 **/
@@ -219,7 +219,7 @@ int main(){
 
 ![play2](img/erreur2.png)<br>
 
-- Si on ignore le souligné et qu'on fait play (Débugueur Windows local), on aura un message tel que celui-ci:<br>
+- Si on ignore le souligné et qu'on fait play (Débugueur Windows local), on aura un message tel que celui-ci. Faites non toujours:<br>
 
 ![play3](img/erreur3.png)<br>
 
@@ -227,5 +227,5 @@ int main(){
 
 ![play4](img/erreur4.png)<br>
 
-- Il est indiqué qu'il faut un ; avant le return. On apprendra rapidement qu'il faut le mettre à la fin de la ligne précédent, donc à la fin de la ligne 4. 
-- Considérer cela comme un OUTIL d'aide et non comme une vérité absolue. Vos yeux et votre expérience vont souvent vous être plus utiles!
+- Il est indiqué qu'il faut un ; avant le return. On apprendra rapidement qu'il faut le mettre à la fin de la ligne précédente, donc à la fin de la ligne 4. 
+- Considérer cela comme un OUTIL d'aide et non comme une vérité absolue. Vos yeux et votre expérience (qu'il faut acquérir en pratiquant) vont souvent vous être plus utiles!

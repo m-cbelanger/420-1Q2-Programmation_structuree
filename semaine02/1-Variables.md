@@ -7,24 +7,24 @@ Si on écrit du code dans un éditeur de texte (éditeur de code), l'exécution 
 En termes simples, une variable est un espace mémoire qui est nommé et utilisé pour stocker des valeurs. Ces valeurs peuvent être de différents types : nombres, chaînes de caractères, booléens, etc. Les variables permettent aux programmes de gérer les données qui peuvent changer pendant l'exécution du programme.
 
 ### Pourquoi Utiliser des Variables ?
-- Stockage des données : Les variables permettent de conserver des données que vous souhaitez réutiliser dans différentes parties de votre programme. Si, par exemple, je stocke le nombre d'heures que vous avez travaillé à votre emploi, on pourra aller récupérer ce nombre et calculer votre salaire avec.
+- Stockage des données : Les variables permettent de conserver des données que vous souhaitez réutiliser dans différentes parties de votre programme. Si, par exemple, je stocke le nombre d'heures où vous avez travaillé à votre emploi, on pourra aller récupérer ce nombre et calculer votre salaire.
 
 - Réutilisabilité et clarté : les variables rendent votre code plus propre et plus facile à comprendre, car elles permettent de nommer des concepts de manière explicite.
 
 ### Ce qu'il faudra faire quand on code
 
-- Déclarer les variables: Avant d'utiliser une variable, il faut la **déclarer**. Cela signifie que vous devez indiquer le **nom** de la variable et le **type de données** qu'elle va contenir. Voici une référence pour tous les types de variables en c++ et leur nom: https://cplusplus.com/doc/tutorial/variables/ 
+- Déclarer les variables: Avant d'utiliser une variable, il faut la **déclarer**. Cela signifie que vous devez indiquer le **nom** de la variable et le **type de données** qu'elle va contenir. Voici une référence pour tous les types de variables en C++ et leur nom: https://cplusplus.com/doc/tutorial/variables/ 
 
 
-- Initialiser la variable: Une fois déclarée, une variable peut être **initialisée** avec une **valeur**. L'initialisation est le processus de donner une valeur initiale à une variable au moment de sa création. Si on ne met pas de valeur, une **valeur par défaut** sera attribuée. Il faut être prudent avec cela! (Par exemple, le int par défaut est -858993460).
+- Initialiser la variable: Une fois déclarée, une variable peut être **initialisée** avec une **valeur**. L'initialisation est le processus de donner une valeur initiale à une variable au moment de sa création. Si on ne met pas de valeur, une **valeur par défaut** sera attribuée. Il faut être prudent avec cela! (Par exemple, le int par défaut est -858993460 et on ne peut pas l'afficher dans cout).
 
 - Utiliser les variables:  Il sera possible d'effectuer diverses opérations sur les variables, telles que les additions, les soustractions, et les comparaisons. Les variables permettent aussi de manipuler des données plus complexes et de gérer des structures de données comme les tableaux et les objets.
 
-Le site W3school https://www.w3schools.com/cpp/default.asp peut être utile pour chercher rapidement des informations de base en c++ (et plusieurs autres!). Il vulgarise bien les concepts simples.
+Le site W3school https://www.w3schools.com/cpp/default.asp peut être utile pour chercher rapidement des informations de base en C++ (et plusieurs autres!). Il vulgarise bien les concepts simples.
 
 ### Exemples
 
-Ici, on crée une variable de type "int" (entier) qu'on nomme "age". On initialise la variable avec la valeur 30 (=30). On utilise ensuite la variable en l'affichant (cout) entre les chaînes de caractère fixes "Âge : " ... " ans".
+Ici, on crée une variable de type "int" (entier) qu'on nomme "age". On initialise la variable avec la valeur 30 (=30). On utilise ensuite la variable en l'affichant (cout) entre les chaînes de caractères fixes "Âge : " ... " ans".
 
 ```cpp
 #include <iostream>
@@ -60,10 +60,10 @@ int main() {
 
 Dans le main, 
 - déclarer une variable de type "entier" nommée monNombre et placez le chiffre 7 à l'intérieur.
--  déclarer une variable de type "double" nommée monNombre2 et placez le chiffre 5.3 à l'intérieur
-- afficher le contenu des 2 variables un en dessous de l'autre
-- déclarer une variable de type double nommée somme et placez-y le résultat de l'addition des 2 variables précédente. Attention, on veut le faire de manière **dynamique**, ce qui signifie qui s'adapte si la **variable** varie!
-- afficher le résultat de votre calcul en-dessous des autres
+-  déclarer une variable de type "double" nommée monNombre2 et placez le chiffre 5.3 à l'intérieur.
+- afficher le contenu des 2 variables un en dessous de l'autre.
+- déclarer une variable de type double nommée somme et placez-y le résultat de l'addition des 2 variables précédentes. Attention, on veut le faire de manière **dynamique**, ce qui signifie qui s'adapte si la **variable** varie!
+- afficher le résultat de votre calcul en-dessous des autres.
 
 ### Variables et exécution séquentielle
 
