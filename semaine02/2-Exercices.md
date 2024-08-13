@@ -41,15 +41,15 @@ int main(){
 ## Question 1
 
 Dans le main de votre fichier source:
-1. Déclarer une variable nommée heures de type float. Y mettre le nombre d'heure travaillées la semaine passée (inventez-en un si vous ne travaillez pas).
+1. Déclarer une variable nommée heures de type float. Y mettre le nombre d'heures travaillées la semaine passée (inventez-en un si vous ne travaillez pas).
 2. Déclarer une variable de type float nommée tauxHoraire. Placez-y le taux horaire ($/heure) qui vous ferait plaisir.
-3. Déclarer une variable salaire dans lequel on place le nombre d'heures multiplié par le tauxHoraire. De quel type déclarez-vous la variable salaire?
-4. Afficher une phrase complète qui dit quelque chose semblable à ceci: "Si on fait ... heures de travail à un taux de ... $/heure, on fera un salaire brut de ...
+3. Déclarer une variable salaire dans laquelle on place le nombre d'heures multiplié par le tauxHoraire. De quel type déclarez-vous la variable salaire?
+4. Afficher une phrase complète qui dit quelque chose semblable à ceci: "Si on fait ... heures de travail à un taux de ... $/heure, on fera un salaire brut de ..."
 
 ## Question 2
 
 Dans le main de votre fichier source:
-- Déclarer 2 variables entière: x = 8 et y = 5
+- Déclarer 2 variables entières: x = 8 et y = 5
 - Trouver une façon pour interchanger (permuter) le contenu des 2 variables de façon dynamique (c'est-à-dire qui s'adaptera et fonctionnera peu importe les valeurs initiales de x et y).
 - Afficher les résultats AVANT et APRÈS la permutation. Par exemple, en console, on devrait voir:<br>
 
@@ -114,7 +114,7 @@ resultat = nb1 / nb2;  // Que se passe-t-il ici ?
 
 ## Question 4
 
-Calculons la somme des n premiers nombres entiers positifs. La formule mathématique pour y arriver est somme = n(n+1)/2. Il faudra demander à la personne qui utilise le programme d'entrer un nombre. Si, par exemple, elle entre le nombre 100, on lui affichera la somme de 1+2+3+4+5+...+100 en faisant 100*99/2 = 4950. Pour y parvenir suivre les étapes suivantes:
+Calculons la somme des n premiers nombres entiers positifs. La formule mathématique pour y arriver est somme = n(n+1)/2. Il faudra demander à la personne qui utilise le programme d'entrer un nombre. Si, par exemple, elle entre le nombre 100, on lui affichera la somme de 1+2+3+4+5+...+100 en faisant 100*99/2 = 4950. Pour y parvenir, suivre les étapes suivantes:
 1. Déclarer une variable qui va pouvoir recevoir le nombre entier qu'on demandera à l'utilisateur
 2. Déclarer une variable qui prendra le calcul qu'on fera avec le chiffre obtenu.
 3. Demander à l'utilisateur d'entrer un nombre
@@ -143,10 +143,11 @@ Calculer le montant qu'on doit charger au client lors de l'achat d'un bien quand
 ## Question 7
 
 Faire une petite calculatrice dans laquelle on demande 2 nombres entiers à l'utilisateur (par exemple 26 et 10). Ensuite, afficher les informations suivantes:
-![q7](img/Q7.png);
+![q7](img/Q7.png)
 
 
-## Question 8
+## Question 8 
 
-Demander à un utilisateur d'entrer son nom complet, son âge, et sa taille en mètres. Convertir la taille en mètre pour l'afficher en centimètres. Affichez ensuite les 3 informations une en-dessous de l'autre.
+Demander à un utilisateur d'entrer un nombre de secondes (idéalement assez grand). Puis, convertissez ce nombre en années, mois, jours, heures, minutes, secondes. Il est possible d'y arriver seulement avec des calculs mathématiques comme le modulo et la division entière.
+Par exemple, si un usager entre 53 000 000 secondes, on lui affiche que ça donne 1 an, 248 jours, 10 heures, 13 minutes et 20 secondes. On suppose qu'il y a toujours 365 jours dans une année.
 
