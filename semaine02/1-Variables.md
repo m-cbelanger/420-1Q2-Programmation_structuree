@@ -354,7 +354,7 @@ Exemple d'énoncé pour lequel on veut écrire le code:
     - demande les informations à l'usager:
         - déclaration des variables nbHeures et tauxHoraire avec leur type respectif.
         - demander l'info avec un cout pour une variable à la fois.
-        - récupérer les réponses pour les mettre dans les variables. Récupérer une réponse avant de poser la 2e question.
+        - récupérer les réponses avec un cin pour les mettre dans les variables. Récupérer une réponse avant de poser la 2e question.
     
     - calculer le salaire brut
         - déclaration de la variable salaireBrut du type approprié.
@@ -369,7 +369,7 @@ Exemple d'énoncé pour lequel on veut écrire le code:
         - calcul des déductions du salaireBrut - mntChomage - impotsAPayer et affectation à la variable salaireNet.
     
     - afficher le résultat
-        - Faire un cout avec une phrase et le contenu de la variable salaireNet.
+        - faire un cout avec une phrase et le contenu de la variable salaireNet.
 
 Le code se lira comme suit:
 ```cpp
