@@ -119,6 +119,7 @@ int main(){
 }
 ```
 
+
 - On obtient ceci dans la console:<br>
 ![cout1](img/cout1.png)<br>
 
