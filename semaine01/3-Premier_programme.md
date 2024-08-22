@@ -73,7 +73,7 @@ Pour que ce mini programme fonctionne,
 ## Le "cout"
 
  - Cette commande se lit c-out (pour console output). 
- - Elle est suivie des symboles >> et d'une expression (texte ou mathématique).
+ - Elle est suivie des symboles << et d'une expression (texte ou mathématique).
  - Cet objet fait partie de la bibliothèque <iostream>, qu'on inclut au début de nos programmes avec l'indication #include. Cout fait partie d'un espace de noms de la bibliothèque standard de c++, std. Pour éviter d'avoir à écrire la spécification qu'on veut avoir la commande std::cout, on ajoute le nom du namespace qui sera sous-entendu devant chaque utilisation de cout.
  ```cpp
 #include <iostream>
