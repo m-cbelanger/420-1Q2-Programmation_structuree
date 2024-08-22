@@ -40,6 +40,7 @@ int main(){
 ## Question 1
 
 Dans le main de votre programme, faire **afficher** (cout) les éléments suivants un en dessous de l'autre. Rappel: si vous entrez une expression qui contient du texte, il faut mettre l'expression entre doubles guillemets (""). Il faut mettre un retour de ligne entre chaque sortie:
+
     - 34
     - "Je programme!"
     - 34 - 12
