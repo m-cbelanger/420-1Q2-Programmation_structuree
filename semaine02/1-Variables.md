@@ -238,7 +238,7 @@ a = x;
 f) faire la trace du contenu de la variable à chaque ligne
 ```cpp
 string maPhrase = "abc";
-maphrase = maPhrase + " efg"; // un + entre des chaîne de caractères va les concaténer
+maPhrase = maPhrase + " efg"; // un + entre des chaîne de caractères va les concaténer
 maPhrase = maPhrase + " hij";
 maPhrase = " klm";
 ```
