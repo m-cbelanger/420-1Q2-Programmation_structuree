@@ -317,22 +317,22 @@ Si on souhaite coder un problème, il faut s'assurer que l'ordre dans lequel on 
 Exemple d'énoncé pour lequel on veut écrire le code:<br>
     Faire l'algorithme qui permettra de calculer le salaire net (après déductions) d'un employé lorsque les seuls prélèvements à la source (déductions) sont un taux d'imposition de 20 % et un montant de 11.63 pour l'assurance chômage, en sachant que son salaire brut (sans déductions) est calculé en fonction du nombre d’heures travaillées et son salaire horaire.
 
-- Vous ne connaissez rien dans ce domaine? Ce n'est pas grave, en tant qu'informaticien, on doit se plonger dans toute sorte de domaines! On n'a qu'à décortiquer en étapes.
+- Vous ne connaissez rien dans ce domaine? Ce n'est pas grave, en tant qu'informaticien, on doit se plonger dans toutes sortes de domaines! On n'a qu'à décortiquer en étapes.
 
-- Étape 1
+- Étape 1<br>
     Se faire un exemple pour comprendre. On imagine un employé qui fait 36 heures de travail et qui travaille à 18.75$ de l'heure. Cet employé aura
     - 36 x 18.75 = 675 dollars de salaire brut
     - 675 x 0.20 = 135 dollars d'impôts à enlever
     - 675 - 135 - 11.63 = 528.37 dollars de salaire net
 
-- Étape 2
+- Étape 2 <br>
     Repérer et nommer les informations.
     - On a le nombre 20% qui ne change pas (constante tauxImpot)
     - On a le nombre 11.63 qui ne change pas (constante mntChomage)
     - On a besoin du nombre d'heures de l'usager (variable nbHeures)
     - On a besoin du salaire horaire de l'usager (variable tauxHoraire)
 
-- Étape 3
+- Étape 3<br>
     Identifier les traitements. Ici, on sait qu'il faut (PAS dans le bon ordre);
     - demander les informations à l'usager 
     - calculer le salaire net 
@@ -340,7 +340,7 @@ Exemple d'énoncé pour lequel on veut écrire le code:<br>
     - calculer les impôts à payer
     - afficher le résultat
 
-- Étape 4
+- Étape 4<br>
     Ordonner si ça n'est pas fait à l'étape précédente. On ne peut pas calculer le salaire brut avant de savoir combien il faut déduire. Il faut donc que le salaire à déduire soit calculer avant.
     - demander les informations à l'usager 
     - calculer le salaire brut 
@@ -348,7 +348,7 @@ Exemple d'énoncé pour lequel on veut écrire le code:<br>
     - calculer le salaire net
     - afficher le résultat
 
-- Étape 5
+- Étape 5<br>
     Préciser les instructions. On décortique chaque traitement
     - demande les informations à l'usager:
         - déclaration des variables nbHeures et tauxHoraire avec leur type respectif.
@@ -399,8 +399,8 @@ int main() {
 }
 ```
 
-- Étape 6
-    On teste! Pour le moment, on ne testera pas toutes les possibilités, on reste dans la simplicité. On peut, par exemple, essayer notre exemple de départ. <br>
+- Étape 6<br>
+    On teste! Pour le moment, on ne testera pas toutes les possibilités, on reste dans la simplicité. On peut, par exemple, essayer nos calculs de départ. <br>
     ![jeu de test](img/jeuTest.png)
 
 
