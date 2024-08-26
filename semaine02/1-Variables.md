@@ -316,7 +316,7 @@ Si on souhaite coder un problème, il faut s'assurer que l'ordre dans lequel on 
 
 Exemple d'énoncé pour lequel on veut écrire le code:
 
-        Faire l'algorithme qui permettra de calculer le salaire net (après déductions) d'un employé lorsque les seuls prélèvements à la source (déductions) sont un taux d'imposition de 20 % et un montant de 11.63 pour l'assurance chômage, en sachant que son salaire brut (sans déductions) est calculé en fonction du nombre d’heures travaillées et son salaire horaire.
+    - Faire l'algorithme qui permettra de calculer le salaire net (après déductions) d'un employé lorsque les seuls prélèvements à la source (déductions) sont un taux d'imposition de 20 % et un montant de 11.63 pour l'assurance chômage, en sachant que son salaire brut (sans déductions) est calculé en fonction du nombre d’heures travaillées et son salaire horaire.
 
 - Vous ne connaissez rien dans ce domaine? Ce n'est pas grave, en tant qu'informaticien, on doit se plonger dans toute sorte de domaines! On n'a qu'à décortiquer en étapes.
 
