@@ -67,7 +67,7 @@ int main() {
 	cout << "Entrer le nombre pour lequel vous voulez la somme." << endl;
 	cin >> nombre;
 
-	calcul = nombre * (nombre - 1) / 2;
+	calcul = nombre * (nombre + 1) / 2;
 
 	cout << "La somme des nombres de 1 à " << nombre << " est " << calcul << "."<< endl;
 
