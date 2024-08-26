@@ -114,7 +114,7 @@ resultat = nb1 / nb2;  // Que se passe-t-il ici ?
 
 ## Question 4
 
-Calculons la somme des n premiers nombres entiers positifs. La formule mathématique pour y arriver est somme = n(n+1)/2. Il faudra demander à la personne qui utilise le programme d'entrer un nombre. Si, par exemple, elle entre le nombre 100, on lui affichera la somme de 1+2+3+4+5+...+100 en faisant 100*99/2 = 4950. Pour y parvenir, suivre les étapes suivantes:
+Calculons la somme des n premiers nombres entiers positifs. La formule mathématique pour y arriver est somme = n(n+1)/2. Il faudra demander à la personne qui utilise le programme d'entrer un nombre. Si, par exemple, elle entre le nombre 100, on lui affichera la somme de 1+2+3+4+5+...+100 en faisant 100*101/2 = 5050. Pour y parvenir, suivre les étapes suivantes:
 1. Déclarer une variable qui va pouvoir recevoir le nombre entier qu'on demandera à l'utilisateur
 2. Déclarer une variable qui prendra le calcul qu'on fera avec le chiffre obtenu.
 3. Demander à l'utilisateur d'entrer un nombre
