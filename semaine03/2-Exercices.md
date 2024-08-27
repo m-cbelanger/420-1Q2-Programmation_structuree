@@ -18,6 +18,8 @@ Créer un main() dans ce fichier:
 ```cpp
 int main(){
     setlocale(LC_ALL, "");// pour que les accents soient affichés
+
+    
 }
 
 ```

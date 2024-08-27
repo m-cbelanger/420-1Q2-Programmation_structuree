@@ -169,6 +169,10 @@ if (vitesseVent > 100 || temperatureExterieure > 45 || temperatureExterieure <=-
 }
 ```
 
+Comment pourrait-on tester la condition pour être certain que ça fonctionne? 
+Testons-là!
+
+
 ### Opérateur logique ET (&&)
 L'opérateur ET (&&) est utilisé en programmation pour vérifier si **toutes** les conditions spécifiées sont vraies. Si **une seule** des conditions est fausse, l'ensemble de la condition est considéré comme fausse.
 
@@ -406,3 +410,7 @@ Exemple:
     return 0;
 ```
 Le switch sera utilisé pour la gestion des options d'un menu.
+
+## Combinaison de || et &&
+
+Il est important de savoir que 
