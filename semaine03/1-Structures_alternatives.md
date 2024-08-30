@@ -129,7 +129,7 @@ if (pieces < 12) { // contraire de "au moins 12", c'est "moins de 12"
 OU BIEN
 
 ```cpp
-if !(pieces >= 12) { // n'a pas (!) au moins 12 (>=12)
+if (!(pieces >= 12)) { // n'a pas (!) au moins 12 (>=12)
     pieces = pieces + 5;
 }
 ```
