@@ -413,4 +413,12 @@ Le switch sera utilisé pour la gestion des options d'un menu.
 
 ## Combinaison de || et &&
 
-Il est important de savoir que 
+Il est important de savoir que le && a priorité sur le | |. Donc si on fait ceci:
+
+```cpp
+if (nombre > 8 && nombre < 17 || nombre % 2 == 0){
+    ...
+}
+``` 
+
+le résultat de la relation entre les 2 conditions reliées avec un && sera prioritaire à la jonction des expressions avec un | |. Vous verrez les priorités des opérations et des opérateurs dans le cours de notions d'algorithme.
