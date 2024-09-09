@@ -210,7 +210,7 @@ Exemples:
     - faire avec les if  
     - faire avec le switch
 
-9. Calculer le montant d’une commande de livres, sachant que le prix unitaire du livre est de 35$ si on commande moins de 5 livres, 30$ si on commande de 5 à 29 livres, 25$ si on commande de 30 à 49 livres, 20$ si on commande 50 livres ou plus L’utilisateur fournit en entrée le nombre de livres commandés.
+9. Calculer le montant d’une commande de livres, sachant que le prix unitaire du livre est de 35$ si on commande moins de 5 livres, 30$ si on commande de 5 à 29 livres, 25$ si on commande de 30 à 49 livres, 20$ si on commande 50 livres ou plus. L’utilisateur fournit en entrée le nombre de livres commandés.
 
 
 ### Question 6

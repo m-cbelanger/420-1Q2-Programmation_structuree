@@ -172,7 +172,7 @@ b) <br>
         }
     }
 ```
-### 8)
+### 8-1)
 ```cpp
     float g, h;
     char operation;
@@ -197,7 +197,7 @@ b) <br>
     }
 ```
 
-### 9)
+### 8-2
 ```cpp
     switch (operation) {
     case '+':
@@ -215,4 +215,31 @@ b) <br>
     default:
         cout << "L'opération n'est pas valide." << endl;
     }
+```
+
+### 9
+```cpp
+    const float prix1 = 35; //un int fait aussi l'affaire, mais logiquement, un prix peut être décimal
+    const float prix2 = 30;
+    const float prix3 = 25;
+    const float prix4 = 20;
+    int nombreLivres = 0;
+    float totalAchat = 0;
+
+    cout << "entrez le nombre de livres achetés: " << endl;
+    cin >> nombreLivres;
+
+    if (nombreLivres < 5) {
+        totalAchat = prix1 * nombreLivres;
+    }
+    else if (nombreLivres <= 29) {
+        totalAchat = prix2 * nombreLivres;
+    }
+    else if (nombreLivres <= 49) {
+        totalAchat = prix3 * nombreLivres;
+    }
+    else {
+        totalAchat = prix4 * nombreLivres;
+    }
+    cout << "Le total des achats s'élève à " << totalAchat << "$ "<< endl;
 ```
