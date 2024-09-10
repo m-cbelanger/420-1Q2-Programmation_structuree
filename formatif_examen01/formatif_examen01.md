@@ -160,5 +160,5 @@ Vous devez faire votre code en affectant la couleur à une variable et le fait q
 
 Je répète: MAXIMUM 1 cout
 Quelles valeurs utiliseriez-vous pour tester le code?
-
+Quelle valeur pourrait affectée à une constante?
 
