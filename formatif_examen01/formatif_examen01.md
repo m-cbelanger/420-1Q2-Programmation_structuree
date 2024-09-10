@@ -158,7 +158,7 @@ Dans la rue où on met le panneau, la vitesse maximale est 40 km/h.
 
 Vous devez faire votre code en affectant la couleur à une variable et le fait que le signal clignote ou non dans une autre variable. SI DÉSIRÉ, faire un affichage (COUT) après la structure conditionnelle.
 
-Je répète: MAXIMUM 1 cout
+Je répète: MAXIMUM 1 cout.
 Quelles valeurs utiliseriez-vous pour tester le code?
 Quelle valeur pourrait affectée à une constante?
 
