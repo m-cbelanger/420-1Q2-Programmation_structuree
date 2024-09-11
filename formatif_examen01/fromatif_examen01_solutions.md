@@ -61,13 +61,13 @@ cout << "Est-ce que l'article est à prix régulier (0 pour non et 1 pour oui)" 
 cin >> estRegulier;
 
 if (estRegulier) {
-	prixFinal = prixInitial * rabais / 100 + prixInitial;
-	cout << "L'article nommé " << nomArticle << " est à prix régulier. Il coûte initialement " << prixInitial << " et est réduit de " << rabais << "%. Il coûte maintenant " << prixFinal << "$." << endl;
+prixFinal = prixInitial * rabais / 100 + prixInitial;
+cout << "L'article nommé " << nomArticle << " est à prix régulier. Il coûte initialement " << prixInitial << " et est réduit de " << rabais << "%. Il coûte maintenant " << prixFinal << "$." << endl;
 }
 else {
-	prixFinal = prixInitial * rabais / 2 / 100 + prixInitial;
+prixFinal = prixInitial * rabais / 2 / 100 + prixInitial;
 
-	cout << "L'article nommé " << nomArticle << " est à prix déjà réduit. Il coûte initialement " << prixInitial << " et est réduit de " << rabais / 2 << "%. Il coûte maintenant " << prixFinal << "$."<< endl;
+cout << "L'article nommé " << nomArticle << " est à prix déjà réduit. Il coûte initialement " << prixInitial << " et est réduit de " << rabais / 2 << "%. Il coûte maintenant " << prixFinal << "$."<< endl;
 }
 
 ```
