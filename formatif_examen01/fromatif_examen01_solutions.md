@@ -45,30 +45,30 @@ d) Parce que la valeur de la variable à la ligne 20 est hardcodée et sera touj
 ## Question 2
 
 ```cpp
-	bool estRegulier = true;
-	string nomArticle;
-	float prixInitial;
-	float rabais;
-	float prixFinal;
+bool estRegulier = true;
+string nomArticle;
+float prixInitial;
+float rabais;
+float prixFinal;
 
-	cout << "Entrez le nom de l'article: " << endl;
-	cin >> nomArticle;
-	cout << "Entrez le prix de l'article: " << endl;
-	cin >> prixInitial;
-	cout << "Entrez le rabais applicable: " << endl;
-	cin >> rabais;
-	cout << "Est-ce que l'article est à prix régulier (0 pour non et 1 pour oui)" << endl; 
-	cin >> estRegulier;
+cout << "Entrez le nom de l'article: " << endl;
+cin >> nomArticle;
+cout << "Entrez le prix de l'article: " << endl;
+cin >> prixInitial;
+cout << "Entrez le rabais applicable: " << endl;
+cin >> rabais;
+cout << "Est-ce que l'article est à prix régulier (0 pour non et 1 pour oui)" << endl; 
+cin >> estRegulier;
 
-	if (estRegulier) {
-		prixFinal = prixInitial * rabais / 100 + prixInitial;
-		cout << "L'article nommé " << nomArticle << " est à prix régulier. Il coûte initialement " << prixInitial << " et est réduit de " << rabais << "%. Il coûte maintenant " << prixFinal << "$." << endl;
-	}
-	else {
-		prixFinal = prixInitial * rabais / 2 / 100 + prixInitial;
+if (estRegulier) {
+	prixFinal = prixInitial * rabais / 100 + prixInitial;
+	cout << "L'article nommé " << nomArticle << " est à prix régulier. Il coûte initialement " << prixInitial << " et est réduit de " << rabais << "%. Il coûte maintenant " << prixFinal << "$." << endl;
+}
+else {
+	prixFinal = prixInitial * rabais / 2 / 100 + prixInitial;
 
-		cout << "L'article nommé " << nomArticle << " est à prix déjà réduit. Il coûte initialement " << prixInitial << " et est réduit de " << rabais / 2 << "%. Il coûte maintenant " << prixFinal << "$."<< endl;
-	}
+	cout << "L'article nommé " << nomArticle << " est à prix déjà réduit. Il coûte initialement " << prixInitial << " et est réduit de " << rabais / 2 << "%. Il coûte maintenant " << prixFinal << "$."<< endl;
+}
 
 ```
 
