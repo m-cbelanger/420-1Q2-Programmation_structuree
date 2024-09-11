@@ -79,17 +79,17 @@ cout << "L'étudiant " << nomEtudiant << " a eu la note de " << moyennePonderee 
 Voici le code:
 
 ```cpp
-	string motDePasse = "";
-	regex lePattern("^[A-Za-z0-9]{7,9}$");
+string motDePasse = "";
+regex lePattern("^[A-Za-z0-9]{7,9}$");
 
-	cout << "entrez votre mot de passe: " << endl;
-	cin >> motDePasse;
-	if (regex_match(motDePasse, lePattern)) {
-		cout << "Le mot de passe respecte les règles." << endl;
-	}
-	else {
-		cout << "Le mot de passe ne correspond pas aux règles." << endl;
-	}
+cout << "entrez votre mot de passe: " << endl;
+cin >> motDePasse;
+if (regex_match(motDePasse, lePattern)) {
+    cout << "Le mot de passe respecte les règles." << endl;
+}
+else {
+    cout << "Le mot de passe ne correspond pas aux règles." << endl;
+}
 ```
 
 Pour bien tester le code, valider avec les valeurs suivantes:
