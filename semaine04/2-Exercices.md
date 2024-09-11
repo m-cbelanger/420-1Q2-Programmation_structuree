@@ -60,9 +60,8 @@ Modèle réduit de calculateur de notes: Voici le code pour répondre aux sous-q
 
 
 1. Que fait ce programme? Vulgariser pour un non-programmeur.
-2. Comment optimiser la récupération des notes auprès de l'utilisateur? Pensez DRY.
-3. Comment optimiser l'affichage de la sortie à l'utilisateur? Pensez DRY.
-4. Enlever les conditions inutiles dans la structure conditionnelle. 
+2. Comment optimiser l'affichage de la sortie à l'utilisateur? Pensez DRY.
+3. Enlever les conditions inutiles dans la structure conditionnelle. 
 
 
 ## Question 4
