@@ -51,7 +51,7 @@ Si l'article est à prix régulier, on applique le rabais en entier. Sinon, on a
 
 Il faut afficher un message personnalisé qui dit le nom et le prix de l'article avant rabais et le prix de l'article après rabais ainsi que le pourcentage de rabais. Il peut aussi être indiqué si l'article est à prix réduit ou non.
 
-Rappel: le rabais sur un article se calcule en faisant le prix de l'article * rabais / 100 + prix de l'article.
+Rappel: le rabais sur un article se calcule en faisant le   prix de l'article - prix de l'article * rabais / 100.
 
 
 
