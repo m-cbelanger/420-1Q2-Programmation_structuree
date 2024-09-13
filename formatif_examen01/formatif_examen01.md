@@ -47,11 +47,13 @@ d) Pourquoi les lignes 20 et 21 ne sont pas `dynamiques`?
 ## Question 2 (pratique)
 Écrire le code du petit programme qui calcule des rabais dans une caisse. Le code doit prendre en entrée le prix de l'article et le pourcentage de rabais (par exemple 20 pour signifier 20%) qu'il faut appliquer. Il faut aussi entrer si l'article est à prix régulier ou à prix déjà réduit. 
 
-Si l'article est à prix régulier, on applique le rabais en entier. Sinon, on applique un plus petit rabais, c'est -à-dire la moitié du rabais pour article régulier.
+Si l'article est à prix régulier, on applique le rabais en entier. Sinon, on applique un plus petit rabais, c'est -à-dire la moitié du rabais pour article régulier. (Si on a un article à 100$ avec 20% de rabais et qu'on indique que c'est le prix régulier, on enlève 20% au prix. Si on indique que l'article est déjà à prix réduit, on lui enlève 10% (la moitié de 20%)).
 
 Il faut afficher un message personnalisé qui dit le nom et le prix de l'article avant rabais et le prix de l'article après rabais ainsi que le pourcentage de rabais. Il peut aussi être indiqué si l'article est à prix réduit ou non.
 
 Rappel: le rabais sur un article se calcule en faisant le   prix de l'article - prix de l'article * rabais / 100.
+
+
 
 
 
