@@ -122,4 +122,6 @@ Faire le code pour reproduire l'image suivante, peu importe le nombre entré. Le
 
 ## e)
 
+Faire le code qui reproduit l'image suivante peu importe le nombre entré.
+
 ![losange](img/losange.png)
