@@ -17,12 +17,11 @@ for (initialisation; condition; incrémentation) {
 ## Exemple:
 
 ```cpp
-int main() {
-    for (int i = 1; i <= 5; i++) {
-        cout << i << endl;
-    }
-    return 0;
+
+for (int i = 1; i <= 5; i++) {
+    cout << i << endl;
 }
+
 ```
 
 - `Initialisation` : int i = 1 initialise la variable i à 1.
@@ -33,12 +32,11 @@ int main() {
 `Note`: On utilise souvent le symbole strictement plus petit `<` au lieu de `<=` pour parcourir des tableau ou autres structures dont l'incrémentation commence à 0 et non à 1. Ainsi, si on veut faire 5 itérations en faisant commencer le `i` à 0, on peut aussi le faire ainsi:
 
 ```cpp
-int main() {
-    for (int i = 0; i < 5; i++) {
-        cout << i << endl;
-    }
-    return 0;
+
+for (int i = 0; i < 5; i++) {
+    cout << i << endl;
 }
+
 ```
 
 Tel qu'expliqué ici https://learn.microsoft.com/fr-fr/cpp/cpp/for-statement-cpp?view=msvc-170 , La variable qui sert de compteur peut être déclarée dans l'expression d'initialisation ou avant.
