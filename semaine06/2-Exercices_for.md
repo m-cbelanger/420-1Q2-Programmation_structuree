@@ -95,7 +95,7 @@ ligne.pop_back(); //nomDeVariable.pop_back()
 ```
 Faites-le aussi avec boucle imbriquée
 
-## b)
+## b) (difficile)
 
 Faire le code pour reproduire l'image suivante, peu importe le nombre entré. Le faire avec une seule boucle et avec une boucle imbriquée.
 
@@ -111,6 +111,11 @@ Faire le code pour reproduire l'image suivante, peu importe le nombre entré. Le
 //Pour transformer des nombres en chaine de caractères, on utilise to_string()
 
 to_string(i)
+//Celui-ci nécessite d'avoir #include <string> en préambule
+
+//On peut aussi utiliser ceci:
+//ligne = string(i, char(i + '0')); pour aller afficher le i eme élément de la 
+//table ASCII après '0'
 
 ```
 
@@ -120,7 +125,13 @@ Faire le code pour reproduire l'image suivante, peu importe le nombre entré. Le
 
 ![triangle5](img/triangle5.png)
 
-## e)
+```cpp
+ligne = string(i, char(i + '0')); 
+//pour aller afficher le i eme élément de la 
+//table ASCII après '0'
+```
+
+## e) (difficile)
 
 Faire le code qui reproduit l'image suivante peu importe le nombre entré.
 
