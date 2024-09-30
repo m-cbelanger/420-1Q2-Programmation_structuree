@@ -44,3 +44,52 @@ Les caractères sont comparés 1 par 1 à partir de la gauche.
 Donc "aaa" < "aba"
 
 
+## Question 5
+
+Laquelle ou lesquelles de ces boucles est **assurément** une boucle infinie? **Pourquoi**? 
+
+```cpp
+int compteur = 0;
+while (compteur >= 0) {
+	cout << "continuer";
+	compteur++;
+}
+
+compteur = 10;
+while (compteur >= 0) {
+	cout << "continuer";
+	compteur--;
+}
+
+int somme = 0;
+int chiffre = 10;
+while (chiffre == 11) {
+	cout << "bon matin!";
+	somme = somme + chiffre;
+}
+
+string nom = "Jane";
+compteur = 0;
+while (nom != "fin") {
+	for (int i = 1; i <= 6; i++) {
+		compteur++;
+	}
+}
+
+nom = "Marc";
+while (nom != "fin") {
+	for (int i = 1; i < 6; i--) {
+		compteur++;
+	}
+	cout << "Entrer un autre nom: ";
+	cin >> nom;
+}
+
+char choix; 
+cout << "Faire un choix: ";
+cin >> choix;
+while (choix != 'D') {
+	cout << "Mauvais choix, refaire un choix: ";
+	cin >> choix;
+}
+```
