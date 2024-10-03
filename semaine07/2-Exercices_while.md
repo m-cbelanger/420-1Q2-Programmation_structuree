@@ -1,5 +1,10 @@
 # Exercices while
 
+Pour les exercices ci-dessous, 
+- NE PAS utiliser de break. 
+- NE PAS faire de return 0 pour terminer un if else ou une boucle
+
+
 ## Question 1
 
 a) Faire le code suivant:
@@ -16,7 +21,8 @@ Faire un code qui, dans une boucle while, valide si un nombre entré par un util
 
 ## Question 3
 
-Faire un code qui demande a l'utilisateur d'entrer une lettre de A à Z. Si la lettre est une voyelle (A, E, I, O, U, Y), l'entrée est valide, dites-lui que c'est valide. S'il n'entre pas une lettre valide, redemandez-lui une lettre. 
+Faire un code qui demande a l'utilisateur d'entrer une lettre de A à Z. Si la lettre est une voyelle (A, E, I, O, U, Y), l'entrée est valide, dites-lui que c'est valide. S'il n'entre pas une lettre valide, redemandez-lui une lettre.
+ 
 > Pour gérer la possibilité que l'utilisateur entre une lettre minuscule, utilisez la fonction to upper:
 
 ```cpp
