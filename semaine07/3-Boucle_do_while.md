@@ -99,7 +99,7 @@ void option2() {
 
 int main() {
 	setlocale(LC_ALL, "");
-	int choix;
+	char choix;
 
 	do {
 		cout << "=== Menu ===" << endl;
@@ -111,13 +111,13 @@ int main() {
 		cout << endl;
 
 		switch (choix) {
-		case 1:
+		case '1':
 			option1();
 			break;
-		case 2:
+		case '2':
 			option2();
 			break;
-		case 3:
+		case '3':
 			cout << "Au revoir!" << endl;
 			break;
 		default:
@@ -149,11 +149,11 @@ Dans plusieurs exercices, il peut être amusant et intéressant de piger certain
 #include <time.h>
 ```
 
-La fonction rand() retourne un nombre aléatoire entre 0 et RAND_MAX (minimalement 32767, peut varier). Pour avoir un nombre aléatoire entre 0 et 5 par exemple, on fera ceci:
+La fonction rand( ) retourne un nombre aléatoire entre 0 et RAND_MAX (minimalement 32767, peut varier). Pour avoir un nombre aléatoire entre 0 et 5 inclusivement par exemple, on fera ceci:
 
 ```cpp
-srand(time(0)) //Pour utiliser le temps actuel pour générer le seed générateur
-int n = 5; //le nombre max dans le tirage au sort
+srand(time(0)); //Pour utiliser le temps actuel pour générer le seed générateur
+int n = 5; //le nombre max inclut dans le tirage au sort
 int nombreAleatoire = rand() % (n+1); 
 ```
 

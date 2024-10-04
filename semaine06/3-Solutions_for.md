@@ -1,4 +1,4 @@
-# Solutions (Validation de condition)
+# Solutions 
 
 ## Question 1
 
