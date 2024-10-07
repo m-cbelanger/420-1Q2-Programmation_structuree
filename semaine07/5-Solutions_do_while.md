@@ -85,5 +85,46 @@ cout << "Aurevoir!" << endl;
 ## Question 4
 
 ```cpp
+string mot;
+srand(time(0));
+do {
+	cout << "Roche, papier ou ciseau? Entrer le mot de votre choix: ";
+	cin >> mot;
+	transform(mot.begin(), mot.end(), mot.begin(), ::toupper);
 
+	int nombreAleatoire = rand() % 3;
+	string motOrdi;
+
+	switch (nombreAleatoire) {
+	case 0:
+		motOrdi = "ROCHE";
+		break;
+	case 1:
+		motOrdi = "PAPIER";
+		break;
+	case 2:
+		motOrdi = "CISEAU";
+		break;
+	default:
+		std:: cout << "erreur de nombre aléatoire" << endl;
+		break;
+	}
+
+
+	if (mot == motOrdi) {
+		cout << "Match null" << endl;
+	}
+	else if (mot == "ROCHE" && motOrdi == "PAPIER" || mot == "PAPIER" && motOrdi == "CISEAU" || mot == "CISEAU" && motOrdi == "ROCHE") {
+		cout << "Défaite" << endl;
+	}
+	else if (motOrdi == "ROCHE" && mot == "PAPIER" || motOrdi == "PAPIER" && mot == "CISEAU" || motOrdi == "CISEAU" && mot == "ROCHE") {
+		cout << "Victoire" << endl;
+	}
+
+
+	std::cout << "Voulez-vous rejouer?(o ou n)";
+	cin >> continuer;
+
+} while (continuer == 'o' || continuer == 'O');
+cout << "Aurevoir!";
 ```
