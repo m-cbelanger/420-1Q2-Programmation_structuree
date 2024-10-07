@@ -11,7 +11,7 @@ Pour les exercices ci-dessous,
 
 - déclarer les variables ci-dessous: 
 ```cpp
-int choix;
+char choix;
 double num1, num2, resultat;
 char continuer;
 ``` 

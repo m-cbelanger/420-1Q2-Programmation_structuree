@@ -31,7 +31,7 @@ do {
 Pour offrir plusieurs choix à un utilisateur, on peut lui offrir d'entrer son choix d'action selon une liste proposée dans un `menu`.
 
 ```cpp
-int choix;
+char choix;
 do {
 
     cout << "=== Menu ===" << endl;
@@ -43,13 +43,13 @@ do {
     cout << endl;
 
     switch (choix) {
-    case 1:
+    case '1':
         cout << "Vous avez choisi l'option 1" << endl;
         break;
-    case 2:
+    case '2':
         cout << "Vous avez choisi l'option 2" << endl;
         break;
-    case 3:
+    case '3':
         cout << "Au revoir!" << endl;
         break;
     default:
@@ -58,7 +58,7 @@ do {
     }
     cout << endl;
     system("cls"); //commande pour effacer la console à chaque boucle
-} while (choix != 3);
+} while (choix != '3');
 ```
 
 ## Exercice
@@ -126,7 +126,7 @@ int main() {
 		}
 		cout << endl;
 		//system("cls");
-	} while (choix != 3);
+	} while (choix != '3');
 
 }
 ```
