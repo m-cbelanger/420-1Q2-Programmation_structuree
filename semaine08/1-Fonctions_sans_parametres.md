@@ -2,11 +2,7 @@
 
 Une fonction est un nom que l’on donne à un groupe d’instructions. On peut alors placer ces instructions en dehors du main. Lorsqu’il faut exécuter ces instructions, on appelle la fonction par son nom et le programme va exécuter les instructions de la fonction et revient continuer son code à l'endroit où il était lors de l'appel de la fonction.
 
-## Comment ça marche?
-
-Pour fonctionner, il y a plusieurs éléments à connaître:
-
-1. Signature de la fonction
+## Signature de fonction
 
 La signature d'une fonction désigne l'ensemble des informations nécessaires pour identifier la fonction. Cela inclut :
 
