@@ -44,7 +44,7 @@ Lorsqu'on crée une application ou un programme, la fonction centrale est toujou
 
 ```cpp
 #include <iostream>
-#include <clocal>
+#include <clocale>
 using namespace std;
 
 //Définition de la fonction (avant le main())
@@ -55,7 +55,7 @@ void afficherMessage(){
 
 
 int main(){
-    setlocale("LC_ALL", "");
+    setlocale(LC_ALL, "");
 
     afficherMessage(); //appel de la fonction qui se distingue à cause des parenthèses
     
