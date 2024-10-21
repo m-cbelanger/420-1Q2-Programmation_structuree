@@ -8,7 +8,7 @@ La signature d'une fonction désigne l'ensemble des informations nécessaires po
 
 - Le nom de la fonction
     - Peut contenir des lettres, chiffres et le caractère de soulignement _. 
-    - Dans le cadre du cours, on continue avec le camelCase pour les noms de variables.
+    - Dans le cadre du cours, on continue avec le camelCase pour les noms de fonctions.
     - Ne peut pas commencer par un chiffre.
     - Sensible à la casse : fonctionA et fonctiona sont deux noms différents.
 - Le type des paramètres (s'il y en a)
@@ -16,14 +16,14 @@ La signature d'une fonction désigne l'ensemble des informations nécessaires po
 - Le type de retour 
     - Le type de retour est le type de la valeur que la fonction renvoie après son exécution. Si la fonction ne retourne rien, le type de retour est `void`. Les types sont les mêmes que pour les variables (`int`, `char`, `string`, une `struct`, etc.)
     - On ne peut pas retourner de tableau (on étudiera cette structure plus tard)
-    - un retour est une valeur ou une variable qui résulte du traitement dans la fonction.
+    - Un retour est une valeur ou un groupe de valeurs qui résulte du traitement dans la fonction.
 
 ## Définition de fonctions
 
 ```cpp
 int obtenirNombre(){  // le int devant le nom de la fonction indique qu'on retournera un entier
     int monNombre = rand();  // instructions quelconques
-    return monNombre; //mot clé return avec le contenu
+    return monNombre; //mot clé return avec le contenu à retourner
 }  
 
 
