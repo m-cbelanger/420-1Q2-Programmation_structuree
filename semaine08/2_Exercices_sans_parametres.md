@@ -45,6 +45,6 @@ getline(cin, nomVariable);
     
 
 
-> Pour aller plus loin: vérifier que le nom contient seulement des lettres, des espaces et des traits d'union. Mettre la première lettre d'un prénom ou d'un 2e prénom en majuscule et le reste en minuscule. Par exemple, Marie-christine deviendrait Marie-Christine, anna maria deviendrait Anna Maria.
+> Pour aller plus loin: vérifier que le nom ne contient pas de chiffres. Mettre la première lettre d'un prénom ou d'un 2e prénom en majuscule et le reste en minuscule. Par exemple, Marie-christine deviendrait Marie-Christine, anna maria deviendrait Anna Maria.
 
 Ensuite, la fonction formulaire() appelle ces 4 fonctions, stocke le résultat de chacune dans des variables et affiche une phrase complète avec les 4 informations.

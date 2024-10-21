@@ -107,7 +107,6 @@ int main() {
 	} while (continuer == 'o' || continuer == 'O');
 	cout << "Aurevoir!" << endl;
 
-
 }
 ```
 
