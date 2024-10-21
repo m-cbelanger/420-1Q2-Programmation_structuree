@@ -121,7 +121,7 @@ UNE SEULE valeur peut être retournée dans une fonction en C++. Si on veut en r
 
 ```cpp
 #include <iostream>
-#include <clocal>
+#include <clocale>
 using namespace std;
 
 //Définition de la fonction (avant le main())
@@ -132,7 +132,7 @@ int obtenirNombre(){
 
 
 int main(){
-    setlocale("LC_ALL", "");
+    setlocale(LC_ALL, "");
 
     int monNombre = obtenirNombre(); //appel de la fonction qui se distingue à cause des parenthèses
     
@@ -185,7 +185,7 @@ int main() {
 }
 ```
 
-2. On souhaite transférer le processus de demande de rejoute dans une fonction. On transformera le bout de code ci-dessous:
+2. On souhaite transférer le processus de demande de rejoute dans une fonction. On transformera le bout de code ci-dessous: <br>
 ![rejouer](img/rejouer.png)
 
 La fonction s'appellera demanderRejouer() et retournera la lettre entrée par l'utilisateur. Voici les 2 changements que cela apportera:
