@@ -1,9 +1,8 @@
 ## Exercices (variables globales et locales + fonctions)
 
 Le calcul sur les gaz rares a la formule générale suivante: 
-$$
+
 PV= nRT
-$$
 
 P= pression (exemple: 101,3 KPa), <br>
 V= volume (exemple: 1 m cube), <br>
