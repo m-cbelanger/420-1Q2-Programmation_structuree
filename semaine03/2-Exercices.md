@@ -139,45 +139,45 @@ d) Quelles devraient être les valeurs des 3 variables pour afficher "Désolé, 
 a) Que vaudront les variables a, b et c après ce code? Réfléchir à la réponse AVANT de le tester.
 
 ```cpp
-    int a;
-    int b;
-    int c;
+int a;
+int b;
+int c;
 
-    a = 10;
-    b = 3;
-    c = 20;
+a = 10;
+b = 3;
+c = 20;
 
-    if (a > b + 3)
+if (a > b + 3)
+{
+    a = a - 1;
+    c = 1;
+}
+else
+{
+    if (a > b + 4)
     {
         a = a - 1;
-        c = 1;
+        c = 2;
     }
-    else
-    {
-        if (a > b + 4)
-        {
-            a = a - 1;
-            c = 2;
-        }
-    }
+}
 
 ```
 
 b) Si on place celui-ci à la suite, qu'est-ce qui sera affiché?
 
 ```cpp
-    a = 10;
-    b = 3;
-    c = 20;
+a = 10;
+b = 3;
+c = 20;
 
-    if (a > b + 3){
-        a = a - 1;
-        c = 1;
-    }
-    if (a > b + 4){
-        a = a - 1;
-        c = 2;
-    }
+if (a > b + 3){
+    a = a - 1;
+    c = 1;
+}
+if (a > b + 4){
+    a = a - 1;
+    c = 2;
+}
 
 ```
 
