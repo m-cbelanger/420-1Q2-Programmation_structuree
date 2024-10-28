@@ -16,7 +16,7 @@ Dans le fichier, avant le main(),
 - déclarez 3 constantes: le diamètre de la terre, le diamètre de Jupiter et le diamètre de mars.
 - déclarez 3 constantes: le nom de la terre, le nom de Jupiter et le nom de mars.
 
-Faire les fonctions suivantes dans le main():
+Appeler les fonctions suivantes dans le main(). Il faut les définir d'abord.
 - obtenirRayon( ) en passant le nom en paramètre et en retournant le rayon associé
 - calculerVolume( ...) en utilisant la fonction calculée précédemment et en passant le nom en paramètre
 - calculerAire( ...) en utilisant le rayon calculé précédemment comme argument (paramètre)
