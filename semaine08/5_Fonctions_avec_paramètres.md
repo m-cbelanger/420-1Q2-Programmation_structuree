@@ -97,6 +97,33 @@ Pour valider un code postal, il faut que le format respecte l'alternance lettre-
 
 Truc: si on a une chaîne de caractères nommée `maChaine`, pour accéder au premier élément de cette chaîne, on fait `maChaine[0]` pour le premier élément, `maChaine[1]` pour le 2e, `maChaine[2]` pour le 3e, etc. Pour savoir si un caractère est un nombre, on mets isdigit(...), qui retourne vrai si c'est un nombre. Pour les lettre, on utilise isalpha(...). Pour la longueur de la chaine, on fait maChaine.length(). Il faut la librairie string d'inclus.
 
+## Solution à l'exercice
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool verifierCodePostal(string code) { // porter attention au paramètre, je ne demande pas de comprendre les crochets
+	bool reponse = false;
+	if (isalpha(code[0]) && isdigit(code[1]) && isalpha(code[2]) && code[3] == ' ' && isdigit(code[4]) && isalpha(code[5]) && isdigit(code[6])) {
+		reponse = true;
+	}
+	return reponse;
+}
+
+int main() {
+	
+	string codePostal;
+	cout << "Entrer un code postal: ";
+	getline(cin,codePostal); //getline pour prendre les espaces
+
+
+	bool codeValide = verifierCodePostal(codePostal); //appel à la fonction qui retournera vrai ou faux
+}
+
+```
+
 # À savoir...
 
 - Ce qu'on a fait ci-haut, c'est de passer des paramètres par *valeur*. Les paramètres sont donc des variables qui copient les arguments passés et dont la portée est la fonction seulement. 
