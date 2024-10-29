@@ -166,7 +166,7 @@ int main() {
 
 ## 1.Quel type de fonction utiliser?
 
-Dans le code ci-dessous, on souhaite encapsuler le traitement de l'attribution du message de réussit ou d'échec à une ou plusieurs fonction. Est-ce qu'on prend une fonction avec ou sans paramètre (passage par référence ou par valeur?)? Avec return? 
+Dans le code ci-dessous, on souhaite encapsuler le traitement de l'attribution du message de réussite ou d'échec à une ou plusieurs fonctions. Est-ce qu'on prend une fonction avec ou sans paramètres (passage par référence ou par valeur?)? Avec return ou pas? 
 
 ```cpp
 cout << "Veuillez entrer le nom de l'étudiant" << endl;
@@ -197,6 +197,71 @@ cout << "L'étudiant " << nomEtudiant << " a eu la note de " << moyennePonderee 
 
 ```
 
+## Solution (autres possibilités pour les paramètres):
+
+```cpp
+#include <iostream>
+#include <clocale>
+using namespace std;
+
+float calculerMoyennePonderee(float note1, float note2, float noteTP) {
+    float moy = note1 * 0.35 + note2 * 0.4 + noteTP * 0.25;
+    return moy;
+}
+
+void demanderNomEtudiant(string& nom) {
+    cout << "Veuillez entrer le nom de l'étudiant" << endl;
+    cin >> nom;
+}
+
+void demanderNoteExamen(float& note) {
+    cout << "Veuillez entrez la note de l'examen" << endl;
+    cin >> note;
+}
+
+string obtenirMessageReussite(float moyenne, float note1, float note2, float noteTP) {
+    string message;
+    if (moyenne > 0 && moyenne < 60) {
+        message = "un échec";
+    }
+    else if (note1 < 60 || note2 < 60 || noteTP < 60) {
+        message = "une réussite partielle";
+    }
+    else {
+        message = "une réussite totale";
+    }
+    return message;
+}
+
+void quelTypeUtiliser() {
+    float moyennePonderee;
+    float noteExamen1;
+    float noteExamen2;
+    float noteTP;
+    string nomEtudiant;
+    string message;
+
+    demanderNomEtudiant(nomEtudiant);
+    demanderNoteExamen(noteExamen1);
+    demanderNoteExamen(noteExamen2);//réutiliser la même fonction, mais changer une note différente
+
+    cout << "Veuillez entrez la note du TP" << endl;
+    cin >> noteTP;
+
+    moyennePonderee = calculerMoyennePonderee(noteExamen1, noteExamen2, noteTP);
+    message = obtenirMessageReussite(moyennePonderee, noteExamen1, noteExamen2, noteTP);
+
+    cout << "L'étudiant " << nomEtudiant << " a eu la note de " << moyennePonderee << ". Il a donc " << message << endl;
+
+}
+
+int main() {
+    setlocale(LC_ALL, "");
+    quelTypeUtiliser();
+    return 0;
+}
+```
+
 ## 2. Faire une fonction avec passage des valeurs en paramètres.
 
 Dans le main, on pose une question à répétition à un utilisateur pour qu'il entre un nombre. on a également une fonction qui prend ce nombre et le nombre maximal et qui modifie le plus grand nombre si l'utilisateur a entré un nombre plus grand. Voici du code qui serait dans une fonction quelconque, disons dans la fonction jeuDuMax();
@@ -209,8 +274,7 @@ int lePlusGrand=-1;
 do {
 	cout << "Entrer un nombre: ";
 	cin >> nombre;
-	
-	cout << "Le nombre le plus grand est: " << lePlusGrand<<endl;
+	cout << "Le nombre le plus grand est: " << lePlusGrand << endl;
 	cout << "voulez-vous continuer (o ou n)";
 	cin >> choix;
 } while (choix != 'n');

@@ -73,13 +73,14 @@ int main() {
 		case 'C':
 			calculerTemperature();
 			break;
+		case 'X':
+			cout << "au revoir!";
+			break;
 		default:
 			cout << "Mauvaise sélection"<<endl;
 			break;
 		}
 	} while (choix != 'X');
-
-	cout << "au revoir!";
 
 }
 
@@ -92,7 +93,7 @@ Identifiez toutes les variables et dites quelles sont leurs portées respectives
 
 ### Question 2
 
-La variable `n` est déclarée 3 fois dans le programme. Quelle sera la valeur de `n` quand on calculera le volume du méthane (fonction calculerVolume())?
+La variable `n` est déclarée 2 fois dans le programme. Quelle sera la valeur de `n` quand on calculera le volume du méthane (fonction calculerVolume())?
 
 ### Question 3
 

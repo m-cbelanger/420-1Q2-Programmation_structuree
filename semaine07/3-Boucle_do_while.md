@@ -152,8 +152,8 @@ Dans plusieurs exercices, il peut être amusant et intéressant de piger certain
 La fonction rand( ) retourne un nombre aléatoire entre 0 et RAND_MAX (minimalement 32767, peut varier). Pour avoir un nombre aléatoire entre 0 et 5 inclusivement par exemple, on fera ceci:
 
 ```cpp
-srand(time(0)); //Pour utiliser le temps actuel pour générer le seed générateur
-int n = 5; //le nombre max inclut dans le tirage au sort
+srand(time(0)); //Pour utiliser le temps actuel pour générer le seed 
+int n = 5; //le nombre max inclus dans le tirage au sort
 int nombreAleatoire = rand() % (n+1); 
 ```
 
