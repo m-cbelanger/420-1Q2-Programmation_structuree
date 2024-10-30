@@ -75,13 +75,13 @@ int main() {
     cout << endl;
 
     cout << "Entrer le groupe sanguin du patient: ";
-    cin >> agePatient;
+    cin >> groupeSanguinPatient;
     cout << endl;
 
 }
 ```
 
-c) ici quelle est l'erreur ici?
+c) ici quelle est l'erreur?
 
 ```cpp
 void afficherInformations(string nom, int age, char groupeSanguin) {
@@ -211,10 +211,10 @@ int main() {
 
 ```
 
-b) Dans le code-ci-haut, est-ce qu'on peut afficher/utiliser la variable groupeSanguin dans le main? <br>
-c) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser la variable groupeSanguinPatient dans le main?<br>
-d) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser la variable groupeSanguinPatient dans la fonction afficherInformation?<br>
-e) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser la variable groupeSanguin dans la fonction afficherInformation?<br>
+b) Dans le code-ci-haut, est-ce qu'on peut afficher/utiliser le nom de variable groupeSanguin dans le main? <br>
+c) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser le nom de variable groupeSanguinPatient dans le main?<br>
+d) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser le nom de variable groupeSanguinPatient dans la fonction afficherInformation?<br>
+e) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser le nom de variable groupeSanguin dans la fonction afficherInformation?<br>
 f) dans le code ci-haut, que se passe-t-il si on fait l'appel de la fonction dans le main de cette façon:
 
 ```cpp
