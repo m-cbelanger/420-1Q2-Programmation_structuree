@@ -111,18 +111,18 @@ d) Est-ce qu'une fonction peut retourner 2 valeurs distinctes (sans utiliser un 
 
 # Informations importantes:
 
-Voici les exercices à REFAIRE pour se pratiquer adéquatement:
-semaine06, 2-Exercices_for: Questions 1-3
-semaine06, 2-Exercices_for_classe: Questions 1-2
-semaine07, 2-Exercices_while: Questions 1-2-5
-semaine07, 4-Exercices_do_while: Question 3
-semaine08, 2_Exercices_sans_parametres: Question 1 (pas le défi)
-semaine08, 4_Exercices_locales_globales: Toutes les questions
-semaine08, 6_Exercices_param_par_valeur: Questions 1-2-3-5-6b)c)d)e)
+Voici les exercices à REFAIRE pour se pratiquer adéquatement:<br>
+semaine06, 2-Exercices_for: Questions 1-3<br>
+semaine06, 2-Exercices_for_classe: Questions 1-2<br>
+semaine07, 2-Exercices_while: Questions 1-2-5<br>
+semaine07, 4-Exercices_do_while: Question 3<br>
+semaine08, 2_Exercices_sans_parametres: Question 1 (pas le défi)<br>
+semaine08, 4_Exercices_locales_globales: Toutes les questions<br>
+semaine08, 6_Exercices_param_par_valeur: Questions 1-2-3-5-6b)c)d)e)<br>
 Comprendre votre TP2
 
 ## Ce qu'il n'y aura PAS à l'examen:
-- pas de boucles imbriquées (pas de dessins d'étoiles en pyramide)
-- pas de manipulation de positions de caractères comme dans l'exemple du code postal (code[0], code[1]...)
+- pas de boucles imbriquées (pas de dessins d'étoiles en pyramide)<br>
+- pas de manipulation de positions de caractères comme dans l'exemple du code postal (code[0], code[1]...)<br>
 - pas de sorte boucle forcée lors du code. Vous pouvez être obligé de prendre une boucle, mais vous choisissez le type. Vous devez par contre comprendre le fonctionnement des 3 types si un code est déjà écrit avec un type de boucle.
 
