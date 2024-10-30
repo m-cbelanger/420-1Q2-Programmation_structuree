@@ -274,6 +274,9 @@ int lePlusGrand=-1;
 do {
 	cout << "Entrer un nombre: ";
 	cin >> nombre;
+
+
+    
 	cout << "Le nombre le plus grand est: " << lePlusGrand << endl;
 	cout << "voulez-vous continuer (o ou n)";
 	cin >> choix;
