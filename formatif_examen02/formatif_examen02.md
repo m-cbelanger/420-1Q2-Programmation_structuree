@@ -111,7 +111,7 @@ d) Est-ce qu'une fonction peut retourner 2 valeurs distinctes (sans utiliser un 
 # Informations importantes:
 
 Voici les exercices à REFAIRE pour se pratiquer adéquatement:<br>
-semaine06, 2-Exercices_for: Questions 1-3<br>
+semaine06, 2-Exercices_for: Questions 1 et 3<br>
 semaine06, 2-Exercices_for_classe: Questions 1-2<br>
 semaine07, 2-Exercices_while: Questions 1-2-5<br>
 semaine07, 4-Exercices_do_while: Question 3<br>

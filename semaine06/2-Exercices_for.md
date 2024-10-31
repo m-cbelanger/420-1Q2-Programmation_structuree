@@ -17,13 +17,13 @@ for (int i = 0; i < 3; i++){
 Qu'affiche le code suivant?
 
 ```cpp
-	for (int i = 0; i < 3; i++){
-		cout << " i : " << i << "   ";
-		for (int j = 0; j < 6; j++)	{
-			cout << " j : " << j << " ";
-		}
-		cout << endl;
-	}
+for (int i = 0; i < 3; i++){
+    cout << " i : " << i << "   ";
+    for (int j = 0; j < 6; j++)	{
+        cout << " j : " << j << " ";
+    }
+    cout << endl;
+}
 ```
 
 # Questions de code
