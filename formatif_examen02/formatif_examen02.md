@@ -49,7 +49,7 @@ Appeler ensuite la fonction avec la température de 50 Fahrenheit dans le main()
 
 ## Question 4 (compréhension)
 
-a) Dans le code ci-dessous, Remplacer les ... dans le while pour que la boucle fasse son travail.
+Dans le code ci-dessous, Remplacer les ... dans le while pour que la boucle fasse son travail.
 
 ```cpp
 	float prix;
