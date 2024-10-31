@@ -78,7 +78,7 @@ main(){
 	float prix;
 	cout << "Veuillez entrer le prix d'un article: ";
 	cin >> prix;
-	while ( prix >=0 ) {
+	while ( prix < 0 ) {
 		cout << "Erreur, le prix doit être positif, veuillez recommencer:";
 		cin >> prix;
 		if (prix >= 0) {
