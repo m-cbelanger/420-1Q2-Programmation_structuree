@@ -1,26 +1,25 @@
 # Formatif (pratique pour examen 2)
 
 - Ce formatif montre les divers types de questions et le niveau des questions pouvant se trouver dans l'examen 2. 
-- Dans l'examen 2, certaines questions demanderont de faire du code, d'autres de répondre sur une feuille ou en texte. 
+- Dans l'examen 2, certaines questions demanderont de faire du code, d'autres de répondre sur une feuille ou en commentaire. 
 - Vous devez être capable de créer un projet, y ajouter une feuille .cpp et l'enregistrer à un endroit particulier.
 - Les exercices ci-dessous ne sont PAS SUFFISANTS pour être prêt à l'examen. Vous devez faire les exercices des semaines 6 à 9. La matière vue avant peut aussi se trouver à l'examen(structure de if, opérateurs booléens, déclaration de variable, nomenclature).
-- Porter attention aux endroits où le code est demandé (dans le main() versus dans les fonctions)
-- Les noms de fonctions doivent être significatifs.
+- Portez attention aux endroits où le code est demandé (dans le main() versus dans les fonctions)
+- Les noms de fonctions doivent être significatifs, en camelCase.
 
 ## Question 1  (code)
 
 Dans le main(), appeler une fonction qui n'a pas de retour, qui ne prend pas de paramètre et qui fait ceci:
 - Faire 5 fois le traitement suivant:
     - Demander un nombre entier à l'utilisateur. Si le nombre n'est pas entre 10 et 50, lui mettre un message d'erreur et lui redemander un nombre.
-    - Après avoir demandé les 5 nombre, conserver le nombre le plus grand et l'afficher.
+    - Après avoir demandé les 5 nombres, conserver le nombre le plus grand et l'afficher.
 
 Important: l'utilisation de boucles est obligatoire. Aucune restriction sur le type de boucle.
-Vous devez donner un nom significatif à votre fonction. 
 
 
 ## Question 2 (théorique)
 
-Est-ce le nombre de tour de boucles sera différent dans les 2 boucles suivantes? Pourquoi?
+Est-ce que le nombre de tours de boucles sera différent dans les 2 boucles suivantes? Pourquoi?
 
 ```cpp
 for (int i = 0; i < 8; i++){
@@ -42,10 +41,10 @@ $$
 
 Appeler la fonction avec la température 100 dans le main() et afficher la réponse obtenue.
 
-b) Faire une autre fonction qui elle, prend un nombre et un char en paramètre. Le char indique si la température entrée est en Fahrenheit ('F') ou en Celsius ('C'). Le retour est la conversion appropriée d'une température vers l'autre. Si le char entré est autre chose que 'C' ou 'F', afficher un message qui informe l'utilisateur et retourner 0.
+b) Faire une autre fonction qui elle, prend un nombre et un char en paramètres. Le char indique si la température entrée est en Fahrenheit ('F') ou en Celsius ('C'). Le retour est la conversion appropriée d'une température vers l'autre. Si le char entré est autre chose que 'C' ou 'F', afficher un message qui informe l'utilisateur puis retourner 0.
 
-Appeler la fonction avec la température en Celsius 100 dans le main() et afficher la réponse obtenue.
-Appeler ensuite la fonction avec la température en Fahrenheit 50 dans le main() et afficher la réponse obtenue.
+Appeler la fonction avec la température de 100 Celsius dans le main() et afficher la réponse obtenue.
+Appeler ensuite la fonction avec la température de 50 Fahrenheit dans le main() et afficher la réponse obtenue.
 
 
 ## Question 4 (compréhension)
