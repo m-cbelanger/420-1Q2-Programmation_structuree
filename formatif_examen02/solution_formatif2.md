@@ -12,7 +12,7 @@ using namespace std;
 
 void question1() {
 	int nombre;
-	int lePlusGrand = 0;
+	int lePlusGrand = INT_MIN;
 
 	for (int i= 1; i<=5;i++) {
 		cout << "Entrer le nombre #"<< i <<", entre 10 et 50: ";
