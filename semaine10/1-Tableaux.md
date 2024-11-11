@@ -111,7 +111,7 @@ void maxEtMin() {
 
 ### Exercice 1
 
-Mettre les valeurs suivantes dans un tableau et trouver le nombre de lettres 'A' qui s'y trouvent
+Mettre les valeurs suivantes dans un tableau et trouver le nombre de lettres 'A' ou 'a' qui s'y trouvent
 
 ```cpp
 { 'A', 'n', 'G', 'b', 'd', 'A', 'M', 'x', 'I', 'p', 'C', 'L', 'z', 'h', 'O', 'K', 'j', 'T', 'S', 'a','f', 'W', 'Y', 'l', 'r', 'U', 'C', 'v', 'Q', 'm', 'B', 'e', 'd', 'I', 'k', 'P', 'N', 'f', 'a', 'o' };
