@@ -88,7 +88,7 @@ Voici un exemple de résultat pour 100 000 lancers d'un dé de 6 faces.
 
 ### Question 7
 
-Faire la même chose qu'à la question 6 en permettant à l'utilisateur de choisir le nombre de faces à son dé. 
+Faire la même chose qu'à la question 6 en permettant de modifier le nombre de faces à son dé. Vous devez modifier la taille dans une constante ou bien utiliser un vecteur ici.
 
 
 # Exercices chaînes de caractères
