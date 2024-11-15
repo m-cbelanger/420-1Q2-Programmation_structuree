@@ -10,11 +10,11 @@ Affichez un message indiquant si le nombre a été trouvé ou non, et donnez l�
 ### Question 2
  
 Inverser un tableau
-Déclarez un tableau de 6 entiers et initialisez-le avec des valeurs au choix. Affichez le tableau original. Inversez l’ordre des éléments dans le tableau. Affichez le tableau inversé.
+Déclarez un tableau de 6 entiers et initialisez-le avec des valeurs au choix. Affichez le tableau original. Inversez l’ordre des éléments dans le tableau. Affichez le tableau inversé. Est-ce que le code fonctionne pour des tableaux d'autres dimensions?
 
 ### Question 3
 
-Déclarez un tableau de taille 100 et remplissez-le avec les 100 premiers nombres pairs. Affichez-le.
+Déclarez un tableau de taille 100 et remplissez-le avec les 100 premiers nombres pairs. Affichez-le. Comment pourrait-on exclure 0 des nombres?
 
 ### Question 4
 
@@ -29,27 +29,27 @@ Initialiser un tableaux pour entrer les 6 notes des évaluations du cours de pro
 
 Donc, si un étudiant obtient respectivement 68  90.5  89  78.5  81.25  80, on fera le calcul de la moyenne comme suit:
 
-$$
-moyenne = 68*5/100 + 90.5*7/100 + 89*8/100 + 78.5*15/100 + 81.25*25/100 + 80*40/100
-$$
 
-Afficher le résultat dans une phrase.
+moyenne = 68 x 5/100 + 90.5 x 7/100 + 89 x 8/100 + 78.5 x 15/100 + 81.25 x 25/100 + 80 x 40/100
+
+
+Afficher le résultat dans une phrase. 
 
 ### Question 5
 
 Rotation des éléments dans le tableau. <br>
-a) Déclarez un tableau de *n* entiers et initialisez-le avec des valeurs au choix.
-Déplacez chaque élément du tableau d’une position vers la droite, en faisant en sorte que le dernier élément devienne le premier.
+a) Déclarez un tableau d'entiers et initialisez-le avec des valeurs au choix. Choisissez le nombre de valeurs que vous mettez dedans.
+Avec un algorithme (boucle), déplacez chaque élément du tableau d’une position vers la droite, en faisant en sorte que le dernier élément devienne le premier.
 Affichez le tableau après rotation.
 
-Si n=5 et que le tableau contient 1 2 3 4 5, alors tous les éléments doivent avancer d'une place et le dernier élément devient le premier.
+Par exemple, si la taille est 5 et que le tableau contient 1 2 3 4 5, alors tous les éléments doivent avancer d'une place et le dernier élément devient le premier.
 
 ```cpp
 Le tableau original est : 1 2 3 4 5
 Le tableau après rotation est : 5 1 2 3 4
 ```
 
-b) Ajouter la possibilité de choisir le nombre de rotations à faire
+b) Ajouter la possibilité de choisir le nombre de rotations à faire (défi)
 
 
 ### Question 6
@@ -98,6 +98,10 @@ Faire la même chose qu'à la question 6 en permettant de modifier le nombre de 
 Demandez une chaîne de caractères à l'usager et comptez le nombre de voyelles et de consonnes présentes. Affichez le résultat à la fin.
 
 ### Question 9
+
+Demandez une chaîne de caractère à l'usager (une phrase) et compter le nombre de mots qu'elle contient (on simplifie en considérant que les mots sont séparés par des espaces seulement et donc que "j'aime" est un seul mot).
+
+### Question 10 (vecteur seulement, facultatif)
 
 Demandez une chaîne de caractères à l'usager (une phrase) et mettez chaque mot dans une nouvelle case de tableau. Par exemple: "J'aime la programmation" serait placé dans un tableau nommé motsSepares qui contiendrait 3 cases (on simplifie en considérant que les mots sont séparés par des espaces seulement et donc que "j'aime" est un seul mot).
 

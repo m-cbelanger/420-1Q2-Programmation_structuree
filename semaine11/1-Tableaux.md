@@ -116,6 +116,23 @@ Mettre les valeurs suivantes dans un tableau et trouver le nombre de lettres 'A'
 ```cpp
 { 'A', 'n', 'G', 'b', 'd', 'A', 'M', 'x', 'I', 'p', 'C', 'L', 'z', 'h', 'O', 'K', 'j', 'T', 'S', 'a','f', 'W', 'Y', 'l', 'r', 'U', 'C', 'v', 'Q', 'm', 'B', 'e', 'd', 'I', 'k', 'P', 'N', 'f', 'a', 'o' };
 ```
+### Solution
+
+```cpp
+void trouverLettreA() {
+	//on n'est pas obligé de mettre la taille du tableau si on initialiser le tableau avec les éléments
+	char monTableau[] = { 'A', 'n', 'G', 'b', 'd', 'A', 'M', 'x', 'I', 'p', 'C', 'L', 'z', 'h', 'O', 'K', 'j', 'T', 'S', 'a','f', 'W', 'Y', 'l', 'r', 'U', 'C', 'v', 'Q', 'm', 'B', 'e', 'd', 'I', 'k', 'P', 'N', 'f', 'a', 'o' };
+	int compteurDeA = 0;
+	int taille = size(monTableau);
+	for (int i = 0; i < taille; i++) {
+		if (monTableau[i] == 'a' || monTableau[i] == 'A') {
+			compteurDeA = compteurDeA + 1;
+		}
+	}
+	cout << "Dans ce tableau, il y a " << compteurDeA << " fois la lettre A ou a" << endl;
+
+}
+```
 
 ### Exemple 2
 
