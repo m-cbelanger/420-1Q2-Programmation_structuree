@@ -16,7 +16,7 @@ void afficher(int x, int y);    // Signature : afficher(int, int)
 
 ## Question 2
 
-Faire une fonction *minTableau* qui prend un tableau de doubles et en retourne le minimum. Pensez aux paramètres à passer, sont-ils par référence, par référence constante, par valeur? Appelez la fonction à partir de la fonction question2(). Vous devez trouver une solution sans vecteur, sans pointeur, utilisez votre ingéniosité!
+Faire une fonction *minTableau* qui prend un tableau de doubles et en retourne le minimum. Pensez aux paramètres à passer, sont-ils par référence, par référence constante, par valeur? Appelez la fonction à partir de la fonction question2(). 
 
 ## Question 3
 
