@@ -210,10 +210,10 @@ void question8() {
         c = tolower(c);
         if (c >= 'a' && c <= 'z') { // Vérifie si c'est une lettre
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y') {
-                ++voyelles;
+                voyelles++;
             }
             else {
-                ++consonnes;
+                consonnes++;
             }
         }
     }
