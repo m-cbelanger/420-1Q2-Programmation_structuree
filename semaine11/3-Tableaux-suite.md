@@ -28,12 +28,35 @@ void exemple1(){
 On souhaite passer un tableau à une fonction sans que ce tableau d'entiers soit modifié. On veut que cette fonction retourne la somme des entiers du tableau.
 
 ```cpp
-//à faire en groupe
+int sommeTableau(const int tableau[], int taille) {
+	int somme = 0;
+	for (int i = 0; i < taille; i++) {
+		somme += tableau[i];
+	}
+	return somme;
+}
+...
+int exemple2(){
+	int tableauQuelconque[]={4,7,2,4,5};
+	int taille = size(tableauQuelconque);
+	int laSomme = sommeTableau(tableauQuelconque, taille);
+	//le contenu de la variable maSomme contiendra 22 après l'affectation du retour de la fonction.
+}
 ```
 
 ## Exercice 2
 
 Dans cet exercice, on veux parcourir un tableau de prix d'articles de magasin et augmenter tous les prix de x %. On déclarera le tableau dans la fonction exercice2() et on appellera la fonction modifierPrix pour effectuer le travail. La fonction doit être fonctionnelle pour les augmentations et les réductions de prix.
+
+Solution:
+
+```cpp
+void modifierPrix(float tableau[], int taille, int pourcentage) {
+	for (int i = 0; i < taille; i++) {
+		tableau[i] = tableau[i] * (1 + pourcentage / 100.0);
+	}
+}
+```
 
 ----------------------------
 
