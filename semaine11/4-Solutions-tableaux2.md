@@ -159,3 +159,61 @@ void question4() {
 }
 ```
 
+## Question 5
+
+Alternative à la boucle for, avec une possibilité de ne pas la parcourir au complet et d'en sortir dès qu'on a trouvé:
+
+```cpp
+bool rechercheElement(string tab[], int taille, string mot) {
+    int i = 0;
+    bool motTrouve = false;
+
+    while (i < taille && !motTrouve) {
+        if (tab[i] == mot) {
+            motTrouve = true;
+        }
+        i++;
+    }
+    return motTrouve;
+}
+
+void question5() {
+    string tableauMots[] = {
+        "chat", "chien", "oiseau", "voiture", "maison",
+        "chat", "livre", "soleil", "ordinateur", "école",
+        "plante", "fleur", "mer", "montagne", "forêt",
+        "chat", "enfant", "chien", "table", "chaise",
+        "livre", "arbre", "ville", "village", "rue",
+        "vélo", "musique", "chanson", "cinéma", "théâtre",
+        "film", "hiver", "été", "printemps", "automne",
+        "chocolat", "café", "thé", "eau", "boisson",
+        "fleur", "forêt", "montagne", "plage", "rêve",
+        "soleil", "lune", "étoile", "univers", "galaxie",
+        "neige", "pluie", "vent", "orage", "tempête",
+        "cheval", "vache", "mouton", "poule", "lapin",
+        "chat", "chien", "oiseau", "poisson", "serpent",
+        "école", "professeur", "élève", "classe", "bureau",
+        "maison", "appartement", "immeuble", "jardin", "piscine",
+        "tableau", "stylo", "cahier", "livre", "feuille",
+        "chaise", "canapé", "lit", "drap", "oreiller",
+        "plante", "fleur", "arbre", "gazon", "jardin",
+        "musique", "chanson", "guitare", "piano", "violon",
+        "cinéma", "film", "acteur", "scène", "salle",
+        "lundi", "mardi", "mercredi", "jeudi", "vendredi",
+        "samedi", "dimanche", "jour", "nuit", "semaine",
+        "mois", "année", "heure", "minute", "seconde",
+        "hiver", "printemps", "été", "automne", "saison",
+        "chocolat", "café", "sucre", "pain", "beurre",
+        "fromage", "pomme", "orange", "banane", "fraise",
+        "légume", "carotte", "tomate", "poivron", "courgette",
+        "sport", "foot", "tennis", "basket", "natation",
+        "jardin", "parc", "forêt", "lac", "rivière",
+        "ordinateur", "écran", "clavier", "souris", "tablette",
+        "smartphone", "internet", "email", "message", "appel",
+        "soleil", "lune", "étoile", "univers", "galaxie"
+    };
+
+    int taille = size(tableauMots);
+    cout << rechercheElement(tableauMots, taille, "univers");
+}
+```
