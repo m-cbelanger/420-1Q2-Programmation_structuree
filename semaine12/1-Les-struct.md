@@ -46,11 +46,48 @@ void utilisationStruct(){
 
 ## Exercice 1
 
-a) déclarer un étudiant qui dans lequel vous mettez votre nom, votre age et la moyenne des évaluations. <br>
+a) déclarer un étudiant dans lequel vous mettez votre nom, votre age et la moyenne des évaluations. <br>
 b) déclarer un autre étudiant pour lequel on remplit les 3 champs en posant 3 questions à l'utilisateur. <br>
 c) afficher les 2 moyennes dans une phrase. <br>
 d) faire le code qui décide laquelle des 2 personnes est la plus vieille.<br>
 e) faire le code qui calcule la moyenne entre les 2 étudiants et qui l'affiche. <br>
+
+
+## Solution:
+
+```cpp
+void exercice1() {
+
+	//a)
+	T_Etudiant etu1 = { "Marie", 37, 87.5 };
+	
+	//b)
+	T_Etudiant etu2;
+	cout << "Quel est votre nom? ";
+	cin >> etu2.nom;
+	cout << "Quel est votre âge? ";
+	cin >> etu2.age;
+	cout << "Quel est votre moyenne? ";
+	cin >> etu2.moyenne;
+
+	//c)
+	cout << "La moyenne de " << etu1.nom << " est " << etu1.moyenne << " tandis que la moyenne de " << etu2.nom << " est " << etu2.moyenne << endl;
+
+	//d)
+	if (etu1.age > etu2.age) {
+		cout << "La personne la plus vieille est " << etu1.nom << endl;
+	}
+	else {
+		cout << "La personne la plus vieille est " << etu2.nom << endl;
+	}
+
+	//e)
+
+	float moyenne = (etu1.moyenne + etu2.moyenne) / 2.0;
+	cout << "La moyenne des 2 est: " << moyenne;
+
+}
+```
 
 ## Tableau dans une struct
 
@@ -68,6 +105,42 @@ d) changer la note de resultatsEtu1 de 56.5 à 60
 
 e) calculer et afficher la moyenne de ce cours, en supposant que la pondération de toutes les évaluation est la même. 
 
+## Solution:
+
+```cpp
+//a)
+struct T_Cours {
+	string nomCours;
+	float notes[6];
+};
+void exercice2() {
+	//b)
+	T_Cours resultatsEtu1;
+	
+	resultatsEtu1.nomCours = "Programmation structurée";
+	resultatsEtu1.notes[0] = 56.5;
+	resultatsEtu1.notes[1] = 89;
+	resultatsEtu1.notes[2] = 66;
+	resultatsEtu1.notes[3] = 100;
+	resultatsEtu1.notes[4] = 99;
+	resultatsEtu1.notes[5] = 77;
+	//c)
+	cout << "La 3e note est: " << resultatsEtu1.notes[2] << endl;
+	//d)
+	resultatsEtu1.notes[0] = 60;
+
+	//e)
+	float moyenne = 0;
+	for (int i = 0; i < size(resultatsEtu1.notes); i++) {
+		moyenne = moyenne + resultatsEtu1.notes[i];
+	}
+	moyenne = moyenne / size(resultatsEtu1.notes);
+
+	cout << "La moyenne de ce cours est " << moyenne;
+}
+```
+
+
 ## Struct dans une fonction
 
 Une struct peut être passée en paramètre à une fonction et peut aussi être retournée. 
@@ -76,9 +149,32 @@ Une struct peut être passée en paramètre à une fonction et peut aussi être 
 
 Faire la fonction `calculerMoyenne` qui prend un T_Cours en paramètre et retourne le résultat de la moyenne des notes.
 
+```cpp
+float calculerMoyenne(T_Cours cours) {
+	float moyenne = 0;
+	for (int i = 0; i < size(cours.notes); i++) {
+		moyenne += cours.notes[i];
+	}
+	moyenne = moyenne / size(cours.notes);
+	return moyenne;
+}
+```
+
+
 ## Exemple 2
 
 Faire la fonction `creerEtudiant` qui prend en paramètre un nom, un age et une moyenne et qui retourne une struct T_Etudiant. 
+
+```cpp
+T_Etudiant creerEtudiant(string nom, int age, float moyenne) {
+	T_Etudiant etu;
+	etu.nom = nom;
+	etu.age = age;
+	etu.moyenne = moyenne;
+	return etu;
+}
+```
+
 
 ## Struct dans un tableau
 
@@ -131,7 +227,11 @@ Un étudiant peut avoir des cours!
 Créer un 2e type d'étudiant, T_Etudiant2, qui aura un nom, un age et un T_Cours 
 
 ```cpp
-//à faire ensemble
+struct T_Etudiant2 {
+	string nom;
+	int age;
+	T_Cours cours;
+};
 ```
 
 
