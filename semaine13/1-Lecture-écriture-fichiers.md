@@ -92,7 +92,7 @@ bool lireFichierParMot() {
 }
 ```
 
-Lecture de différents types de données
+## Lecture de différents types de données
 
 Si on a un fichier structuré et qu'on a divers types de valeurs à l'intérieur, on peut récupérer les éléments dans des variables différentes. Prenons le fichier qui contient les données ci-dessous dans un fichier nommé fichierDivers.txt:
 
@@ -125,6 +125,7 @@ bool lireFichierDiverTypes(){
 	// Si on a une erreur (par exemple des données du mauvais type), on affiche un message
 	if (fichier.fail() && !fichier.eof()) {
 		cout << "Erreur de lecture dans le fichier."<< endl;
+		return false;
 	}
 
 	fichier.close();
