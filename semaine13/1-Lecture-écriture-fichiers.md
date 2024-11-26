@@ -209,3 +209,93 @@ Faire une fonction *lireFichier* qui lit le fichier et qui arrête le programme 
 Ensuite, faire une fonction *generaliser* qui prend le même tableau de string et qui modifie son contenu comme suit: Si le mot est de longueur 7 et que le premier caractère est un 1, on remplace la chaine par "Dans les 100K" et sinon, on remplace par "En dessous de 100K". On va confier le traitement de la vérification de la chaîne de caractère à une autre fonction nommée *verifierTrancheSalaire*
 
 Ensuite, écrire le contenu du tableau dans un fichier nommé test2.txt
+
+## Solution (sans *verifierTrancheSalaire*)
+
+```cpp
+void lireFichier(string tableau[],int taille) {
+	fstream fichier;
+	fichier.open("test.txt", ios::in);
+
+	if (!fichier) {
+		cout << "Erreur : Impossible d'ouvrir le fichier." << endl;
+		exit(1);
+	}
+	string ligne;
+	int i = 0;
+	while (getline(fichier, ligne) && i < taille) { 
+		tableau[i] = ligne;
+		i++;
+	}
+	fichier.close();
+}
+
+void generaliser(string tableau[],int taille) {
+	for (int i = 0; i < taille; i++) {
+		if (tableau[i].length() == 7 && tableau[i][0] == '1') {
+			tableau[i] = "dans les 100K";
+		}
+		else {
+			tableau[i] = "en dessous de 100K";
+		}
+
+		//string chaine = tableau[i];
+		//if (chaine.length() == 7 && chaine[0] == '1') {
+		//	tableau[i] = "dans les 100K";
+		//}
+		//else {
+		//	tableau[i] = "en dessous de 100K";
+		//}
+	}
+}
+
+void ecrireFichier(string tableau[], int taille) {
+	fstream fichier;
+	fichier.open("test.txt", ios::app); // Ouvre le fichier en écriture en mode out
+	if (!fichier) {
+		cout << "Erreur lors de l'ouverture du fichier." << endl;
+		exit(1);
+	}
+
+	for (int i = 0; i < taille; i++) {
+		fichier << tableau[i];
+	}
+
+	fichier.close();
+}
+
+int main() {
+
+	string salaires[6];
+	int taille = size(salaires);
+	lireFichier(salaires, taille);
+	generaliser(salaires, taille);
+	ecrireFichier(salaires, taille);
+
+	return 0;
+}
+```
+
+## Solution (avec *verifierTrancheSalaire*)
+
+Tout reste identique, sauf la fonction généraliser et l'ajout de la fonction vérifierTrancheSalaire:
+
+```cpp
+bool verifierTrancheSalaire(string chaine) {
+	if (chaine.length() == 7 && chaine[0] == '1') {
+		return true;
+	}
+	return false;
+}
+
+void generaliser(string tableau[], int taille) {
+	for (int i = 0; i<taille; i++){
+		if (verifierTrancheSalaire(tableau[i])) {
+			tableau[i] = "dans les 100K";
+		}
+		else {
+			tableau[i] = "en dessous de 100K";
+		}
+	}
+}
+```
