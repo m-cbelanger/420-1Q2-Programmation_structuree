@@ -107,6 +107,11 @@ void maxEtMin() {
 	cout << "Le minimum est: " << minimum << endl;
 	cout << "Le maximum est: " << maximum << endl;
 }
+
+int main(){
+	maxEtMin();
+	return 0;
+}
 ```
 
 ### Exercice 1
