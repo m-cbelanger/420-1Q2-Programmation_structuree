@@ -194,6 +194,7 @@ Préambule: Pour éviter d'avoir à effacer ou commenter des parties de codes en
 
 ```cpp
 #include <iostream>
+#include <locale.h>
 
 using namespace std;
 
@@ -215,6 +216,7 @@ void question2(){
 // Le main est toujours en bas des fonctions appelées
 int main()
 {
+    setlocale(LC_ALL, "");// pour que les accents soient affichés
     question1();  //activer la question 1
     
     // la question 2 est en commentaire, elle ne s'exécutera pas
