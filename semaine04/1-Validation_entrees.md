@@ -1,6 +1,6 @@
 # Logique booléenne pour valider les entrées
 
-Lorsque l'utilisateur saisit des entrées, il ne faut pas se fier que les entrées seront valides. Même si on explique à l'utilisateur comment utiliser son application, on n'est pas à l'abri d'une erreur.
+Lorsque l'utilisateur saisit des entrées, il ne faut pas prendre pour acquis que les entrées seront valides. Même si on explique à l'utilisateur comment utiliser son application, on n'est pas à l'abri d'une erreur.
 
 ## Valider une entrée numérique
 

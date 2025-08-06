@@ -1,43 +1,6 @@
 # Exercices
 
-# Préambule
-Pour chaque nouvelle section d'exercices, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
 
-
-- Créer un nouveau projet nommé exercices_intro dans Visual Studio
-- Créer un fichier source nommé exercices_intro.cpp
-- En tête de fichier, écrire les 2 includes et le using suivants:
-
-```cpp
-#include <iostream>
-#include <locale.h>
-using namespace std;
-```
-
-Créer un main() dans ce fichier:
-```cpp
-int main(){
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
-
-    
-}
-
-```
- En tout temps n'hésitez pas à expérimenter des commandes et à vous poser des questions!
-
- **Pour chaque question, mettre un commentaire qui donne le numéro de la question avant de l'écrire. Voir l'exemple ci-dessous**.
-
-```cpp
-int main(){
-    //question 1
-
-    //question 2
-
-    //question 3
-
-    ...
-}
-```
 
 ### Question 1
 
@@ -183,7 +146,7 @@ if (a > b + 4){
 
 ### Question 5
 
-Faire la structure alternative appropriée pour faire les tâche suivantes:
+Faire la structure alternative appropriée pour faire les tâches suivantes:
 
 1. Demander 2 nombres à l'utilisateur et afficher le plus grand des 2. 
 

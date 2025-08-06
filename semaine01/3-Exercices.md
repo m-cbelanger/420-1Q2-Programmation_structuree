@@ -71,7 +71,7 @@ int main() {
 
 Trouver l'erreur! 
 
-Dans les codes fournis ci-dessous, trouver l'erreur de syntaxe qui s'est glissée dans le code. Vous aurez souvent besoin d'inspecter à l'oeil, les erreurs ne sont pas toujours clairement indiquées par le compilateur. N'HÉSITEZ PAS à écrire le tout dans Visual studio et à expérimenter!
+Dans les codes fournis ci-dessous, trouver l'erreur de syntaxe qui s'est glissée dans le code. Vous aurez souvent besoin d'inspecter à l'oeil, les erreurs ne sont pas toujours clairement indiquées par le compilateur. N'HÉSITEZ PAS à écrire le tout dans Code Blocks et à expérimenter!
 
 ```cpp
 //code 1
@@ -138,7 +138,7 @@ int main() {
 ```
  
 ## Question 4
-Pratique de clavier! Voici un code en image. Le but de l'exercice est de retranscrire ce code dans Visual Studio. Il n'est PAS demandé de le comprendre ni de l'expliquer. Assurez-vous de trouver vos touches de clavier!
+Pratique de clavier! Voici un code en image. Le but de l'exercice est de retranscrire ce code dans Code Blocks. Il n'est PAS demandé de le comprendre ni de l'expliquer. Assurez-vous de trouver vos touches de clavier!
 
 ![À transcrire](img/code_copie.png)
 

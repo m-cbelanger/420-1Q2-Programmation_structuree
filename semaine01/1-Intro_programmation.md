@@ -20,7 +20,7 @@ Quel type de tâche?
 - du stockage et de l'organisation de données
 - des dessins et graphiques
 - des mouvements d'objets à l'écran (jeux)
-- des connections avec des périphériques
+- des connections avec des périphériques (imprimantes, écran, etc.)
 - de l'échange de données
 - de la manipulation d'appareils
 - etc.
@@ -29,13 +29,13 @@ Les instructions sont exécutées systématiquement, exactement comme on écrit 
 - il faudra prévoir toutes les éventualités
 - ne prendre aucune déduction pour acquis
 - tenir compte de toutes les étapes 
-   - par exemple: pour faire la tâche "mettre de l'essence dans la voiture", il faut penser à enlever le bouchon, prendre le pistolet, peser sur le bouton, mettre le pistolet dans le réservoir, etc. Il ne faut pas oublier de vérifier toutes les étapes, de tout décortiquer et indiquer dans le bon ordre.
+   - par exemples, si on entre un montant au clavier d'un guichet automatique pour un retrait... est-ce que le montant est disponible dans le compte? Est-ce que le montant est disponible dans le guichet? Décortiquer et découper chaque tâche à faire faire à la machine. 
    
 <br>
 
 # Langage de programmation
 
-Pour lui donner des instructions, il faudra parler en **langage machine**. Depuis des dizaines d'années, les divers langages pour parler à la machine évoluent constamment pour faciliter la communication humain-machine.
+Pour donner des instructions à une machine, il faudra parler en **langage machine**. Depuis des dizaines d'années, les divers langages pour parler à la machine évoluent constamment pour faciliter la communication humain-machine.
 
 - Des centaines de langages existent. Certains sont plus connus que d'autres (C, C++, C#, javascript, Python, etc.). Il existe plusieurs palmarès comme celui-ci: https://www.codeur.com/blog/top-langages-de-programmation/
 
@@ -52,14 +52,14 @@ Pour lui donner des instructions, il faudra parler en **langage machine**. Depui
 - Dans le cadre de ce cours, on apprendra les bases de la programmation dont les instructions sont lues de manière séquentielle. 
     - Le programmeur écrit une séquence d'instructions dans un langage de programmation donné. 
     - L'ordinateur exécute les instructions qu'on lui donne en ordre, du haut vers le bas du fichier, sans réfléchir.
-    - Le programmeur s'assure de trouver et corriger les erreurs de syntaxe (l'éditeur de code va beaucoup aider dans ce domaine) et les erreur de logique (plus difficiles à détecter parfois).
+    - Le programmeur s'assure de trouver et corriger les erreurs de syntaxe (l'éditeur de code va beaucoup aider dans ce domaine) et les erreurs de logique (plus difficiles à détecter parfois).
 
 # Planifier avant d'écrire
 Il est souvent tentant, quand on commence à programmer, de se mettre à écrire du code le plus rapidement possible. Or, il est très payant et facilitant de RÉFLÉCHIR avant d'écrire. Peu importe dans quel domaine on souhaite produire un résultat informatique, on aura grosso modo 6 étapes à respecter:
 
 1. Bien lire est comprendre le problème
 
-    L’énoncé du problème est la première information qui nous est donnée pour établir une solution. C’est notre point de départ. Il est utile ici de réécrire le problème en nos mots ou même de faire un exemple de solution manuelle.
+    L’énoncé du problème est la première information qui nous est donnée pour établir une solution. C’est notre point de départ. Il est utile ici de réécrire le problème en nos mots ou même de faire un exemple de solution manuelle. Il est à noter que les outils d'intelligence artificielles ne seront pas utiles sans que cette étape ne soit bien faite.
 
 2. Repérer et nommer les informations
    
@@ -89,6 +89,6 @@ Il est souvent tentant, quand on commence à programmer, de se mettre à écrire
    
 6. La trace et les jeux de test
 
-   Et finalement, afin de s’assurer de l’exactitude et la robustesse de notre algorithme il est nécessaire d’en effectuer la trace. Faire la trace d’un algorithme signifie effectuer toutes les opérations une à la fois en se comparant à des valeurs de test. À chaque exécution d’une instruction, on en note le résultat et on réfléchit pour être sûr que c'est ce qui était attendu.
+   Et finalement, afin de s’assurer de l’exactitude et la robustesse de notre algorithme il est nécessaire d’en effectuer la trace. Faire la trace d’un algorithme signifie effectuer toutes les opérations une à la fois en se comparant à des valeurs de test. À chaque exécution d’une instruction, on en note le résultat et on réfléchit pour être sûr que c'est ce qui était attendu. Dans un monde où l'IA fait de plus en plus de tâches, cette étape est CRUCIALE dans le travail d'un programmeur.
 
 Dès l'étape 5, on peut commencer à écrire et constater des manques, des ajouts, des modifications aux étapes précédentes. On verra un exemple dans le module sur les variables. Ce processus semble un peut long pour de petits problèmes simples, mais les problèmes ne resterons pas simples! Il faut aussi penser que même si on a un résultat, il est primordial de vérifier que c'est le bon!

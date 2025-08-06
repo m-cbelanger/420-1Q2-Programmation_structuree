@@ -76,7 +76,7 @@ cout << "L'étudiant " << nomEtudiant << " a eu la note de " << moyennePonderee 
 
 ## Question 4
 
-Voici le code:
+Voici un exemple de code:
 
 ```cpp
 string motDePasse = "";

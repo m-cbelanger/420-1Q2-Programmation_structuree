@@ -2,7 +2,7 @@
 
 En programmation, une structure alternative est un bloc de code qui permet de choisir entre plusieurs chemins d'exécution en fonction de conditions spécifiques. En C++, les structures alternatives permettent de contrôler le flux d'un programme en prenant des décisions basées sur des conditions logiques.
 
-Jusqu'à présent, les instructions à effectuées étaient toutes faites, sans exception. Cependant il est très rare qu’un problème se résolve par un seul traitement linéaire. À certains moments le problème demandera de faire un choix i.e. qu'il y aura certaines opérations qui seront exécutées selon une **condition**.
+Jusqu'à présent, les instructions à effectuées étaient toutes exécutées, sans exception. Cependant il est très rare qu’un problème se résolve par un seul traitement linéaire. À certains moments le problème demandera de faire un choix i.e. qu'il y aura certaines opérations qui seront exécutées selon une **condition**.
 
 On peut donc faire différents traitements selon une condition. Le chemin à suivre dépend de la condition imposée.<br>
 
@@ -32,7 +32,7 @@ NE PAS CONFONDRE `=` avec `==`. L'égalité simple sert à AFFECTER une valeur �
 
 ### Exercice en classe 
 > Question 1<br>
-Parmi les affirmations suivantes, lesquelles pourraient être une **condition** valide pour une prise de décision?
+Parmi les affirmations suivantes, lesquelles pourraient être une **condition** valide pour une prise de décision? On prend pour acquis que les variables sont déclarées et contiennent une valeur chaque
 - x > 4
 - x + 5 == 10
 - x - 9 = 15
@@ -70,7 +70,7 @@ float k = 12.3;
 
 ```
 
-c) 2 types différents (bizarre!)
+c) 2 types différents (bizarre, ça arrive par erreur habituellement!)
 ```cpp
 int a = 1;
 char b = 'W';
@@ -200,7 +200,7 @@ if (orageSupercellulaire == true && instabiliteAtmospherique == true && pointDeR
 
 ### Exercice en classe 
 > Question 3<br>
-Voici une expression qui contient un `if`. Allez ensuite aux questions en dessous et dites ce qui affichera selon les valeurs de variables. Ne pas négliger l'ordre d'apparition des couleurs.
+Voici une expression qui contient un `if`. Allez ensuite aux questions en dessous et dites ce qui affichera en console selon les valeurs de variables fournies. Ne pas négliger l'ordre d'apparition des couleurs.
 
 ```cpp
 if ((a < 3) && (b != "allo") && (8 - a > c)){
@@ -329,7 +329,7 @@ Il ne faut pas que la division soit calculée du tout si le 2e chiffre est 0... 
 
 ## Imbrication de structures conditionnelles
 
-Dans les accolades d'un bloc `if`, `else if` ou `else`, il est possible de faire des instructions séquentielles ou bien de remettre une autre structure alternative.
+Dans les accolades d'un bloc `if`, `else if` ou `else`, il est possible de faire des instructions séquentielles ou bien de remettre une autre structure alternative. 
 
 Exemple: Imaginons un scénario où vous vérifiez d'abord si un utilisateur a un accès administrateur, puis si son compte est actif. Vous n'êtes autorisé à effectuer certaines actions que si les deux conditions sont remplies. On peut faire ceci:
 
@@ -381,7 +381,7 @@ Syntaxe de base:
 ```
 - La variable `expression` est généralement de type int ou char en C++.
 - Chaque `case` représente une valeur possible que peut prendre `expression`
-- L'instruction `break` empêche l'exécution des autres cas. Il faut toujours le mettre à la fin d'un case.
+- L'instruction `break` empêche l'exécution des autres cas qui suivent. Il faut toujours le mettre à la fin d'un case.
 - L'instruction `default` est optionnelle. Il est toutefois fortement recommandé de le mettre, au cas où la valeur d'`expression` ne correspond à aucune valeur. C'est comme un "else" pour le switch.
 
 Exemple:

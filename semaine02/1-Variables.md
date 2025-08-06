@@ -2,12 +2,12 @@
 
 ## Introduction
 
-Si on écrit du code dans un éditeur de texte (éditeur de code), l'exécution se fera ligne par ligne jusqu'à la fin des instructions et puis le programme s'arrêtera... Mais si on a besoin de conserver les données pour un traitement, comment on va faire? On utilise les **variables**!
+Si on écrit du code dans un éditeur de texte (éditeur de code), l'exécution se fera ligne par ligne jusqu'à la fin des instructions et puis le programme s'arrêtera... Mais si on a besoin de conserver temporairement les données pour un traitement, comment on va faire? On utilise les **variables**!
 
 En termes simples, une variable est un espace mémoire qui est nommé et utilisé pour stocker des valeurs. Ces valeurs peuvent être de différents types : nombres, chaînes de caractères, booléens, etc. Les variables permettent aux programmes de gérer les données qui peuvent changer pendant l'exécution du programme.
 
-### Pourquoi Utiliser des Variables ?
-- Stockage des données : Les variables permettent de conserver des données que vous souhaitez réutiliser dans différentes parties de votre programme. Si, par exemple, je stocke le nombre d'heures où vous avez travaillé à votre emploi, on pourra aller récupérer ce nombre et calculer votre salaire.
+### Pourquoi Utiliser des variables ?
+- Stockage des données : Les variables permettent de conserver des données que vous souhaitez réutiliser dans différentes parties de votre programme, pendant la durée d'exécution du programme seulement. Si, par exemple, je stocke le nombre d'heures où vous avez travaillé à votre emploi dans une variable, on pourra aller récupérer ce nombre et calculer votre salaire dans une autre partie du code.
 
 - Réutilisabilité et clarté : les variables rendent votre code plus propre et plus facile à comprendre, car elles permettent de nommer des concepts de manière explicite.
 
@@ -59,10 +59,10 @@ int main() {
 ### Exercices en classe
 
 Dans le main, 
-- déclarer une variable de type "entier" nommée monNombre et placez le chiffre 7 à l'intérieur.
--  déclarer une variable de type "double" nommée monNombre2 et placez le chiffre 5.3 à l'intérieur.
+- déclarer une variable de type "entier" nommée `monNombre` et placez le chiffre 7 à l'intérieur.
+- déclarer une variable de type "double" nommée `monNombre2` et placez le chiffre 5.3 à l'intérieur.
 - afficher le contenu des 2 variables un en dessous de l'autre.
-- déclarer une variable de type double nommée somme et placez-y le résultat de l'addition des 2 variables précédentes. Attention, on veut le faire de manière **dynamique**, ce qui signifie qui s'adapte si la **variable** varie!
+- déclarer une variable de type double nommée `somme` et placez-y le résultat de l'addition des 2 variables précédentes. Attention, on veut le faire de manière **dynamique**, ce qui signifie qui s'adapte si la **variable** varie!
 - afficher le résultat de votre calcul en-dessous des autres.
 
 ### Variables et exécution séquentielle
@@ -105,7 +105,7 @@ int main() {
     return 0;
 }
 ```
-On peut aussi réutiliser une variable dans une équation. Dans ce cas, ce qui se trouve à DROITE du symbole d'égalité est utilisé et ce qui est à GAUCHE du symbole sera écrasé. Exemple:
+On peut aussi réutiliser une variable dans une équation. Dans ce cas, ce qui se trouve à DROITE du symbole d'égalité est exécuté et ce qui est à GAUCHE du symbole sera écrasé. Exemple:
 
 ```cpp
 #include <iostream>
@@ -170,7 +170,7 @@ Types de base:
 
 Quel type est le plus approprié?
 - Pour entrer l'âge d'une personne
-- Pour entrer le nombre d'heures de travail faits par une personne
+- Pour entrer le nombre d'heures de travail faites par une personne
 - Pour prendre le total des achats dans une caisse enregistreuse
 - Pour prendre le nom d'une personne
 - Pour donner une cote à un cours (A,B,C,D,E).
@@ -181,14 +181,49 @@ Quel type est le plus approprié?
 
 Règles à suivre pour les choix de noms de variables:
 - seulement des chiffres, des lettres et le caractère _
-- ne doit pas commencer par un chiffre
-- ne doit pas contenir de blanc
+- ne doit PAS commencer par un chiffre
+- ne doit PAS contenir d'espace.
 - une majuscule et une minuscule sont différents (n et N sont différents)
-- on utilise le Camel case pour les variables à plusieurs mots
+- on utilise le camelCase pour les variables à plusieurs mots
 - on choisit des noms significatifs pour se comprendre dans le futur (vous et cos collègues).
 - on ne peut pas déclarer 2x une variable avec le même nom dans la même fonction.
 
 ### Exercices en classe
+
+Préambule: Pour éviter d'avoir à effacer ou commenter des parties de codes en exercice, voici une manière simple et efficace d'activer et désactiver l'exécution de code. Le détail de l'utilisation des fonctions sera vu dans quelques semaines.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+
+void question1(){
+    
+    //Mettre le contenu de la question 1 ici. 
+               
+}
+
+
+void question2(){
+    
+    //Mettre le contenu de la question 2 ici.
+     
+}
+
+
+// Le main est toujours en bas des fonctions appelées
+int main()
+{
+    question1();  //activer la question 1
+    
+    // la question 2 est en commentaire, elle ne s'exécutera pas
+    //question2();  
+
+    return 0;
+}
+```
+
 
 APRÈS l'exécution complète des instructions suivantes, que valent les variables a, b et c (quand elles sont présentes)? Ne pas oublier que le traitement est SÉQUENTIEL. Pour ne pas perdre le fil, on fera la TRACE de la valeur de chaque variable à chaque ligne, de haut en bas.
 
@@ -333,7 +368,7 @@ Exemple d'énoncé pour lequel on veut écrire le code:<br>
     - On a besoin du salaire horaire de l'usager (variable tauxHoraire)
 
 - Étape 3<br>
-    Identifier les traitements. Ici, on sait qu'il faut (PAS dans le bon ordre);
+    Identifier les traitements. Ici, on sait qu'il faut (PAS nécessairement dans le bon ordre);
     - demander les informations à l'usager 
     - calculer le salaire net 
     - calculer le salaire brut 
@@ -400,8 +435,9 @@ int main() {
 ```
 
 - Étape 6<br>
-    On teste! Pour le moment, on ne testera pas toutes les possibilités, on reste dans la simplicité. On peut, par exemple, essayer nos calculs de départ. <br>
+    On teste! On peut, par exemple, essayer nos calculs de départ. <br>
     ![jeu de test](img/jeuTest.png)
 
+    Pensez à d'autres chiffres à tester pour vérifier que le programme fait ce qu'il faut. 
 
 

@@ -1,39 +1,44 @@
 # Exercices (variables)
 
 # Préambule
-Pour chaque nouvelle section d'exercice, il est conseillé de se pratiquer à créer un projet nouveau et un fichier source dans lequel on expérimentera les questions qui vont suivre.
+Il est conseillé d'avoir une fonction par question pour faire les exercices. 
 
+Conseil organisation: un fichier .cpp par série d'exercices, nommés par un nom court et significatif, par exemple:
+- sem1_variable.cpp
+- sem2_if_else.cpp
+...
 
-- Créer un nouveau projet nommé exercices_variables dans Visual Studio
-- Créer un fichier source nommé exercices_variables.cpp
-- En tête de fichier, écrire les 2 includes et le using suivants:
+Chaque fichier doit contenir une fonction main. Chaque projet peut avoir plusieurs fichiers, mais ne doit contenir qu'un seul main dans tous les fichiers confondus..
 
 ```cpp
 #include <iostream>
-#include <locale.h>
-using namespace std;
-```
 
-Créer un main() dans ce fichier:
-```cpp
-int main(){
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
+using namespace std;
+
+
+void question1(){
+    
+    //Mettre le contenu de la question 1 ici. 
+               
 }
 
-```
- En tout temps n'hésitez pas à expérimenter des commandes et à vous poser des questions!
 
- **Pour chaque question, mettre un commentaire qui donne le numéro de la question avant de l'écrire. Voir l'exemple ci-dessous**.
+void question2(){
+    
+    //Mettre le contenu de la question 2 ici.
+     
+}
 
-```cpp
-int main(){
-    //question 1
 
-    //question 2
+// Le main est toujours en bas des fonctions appelées
+int main()
+{
+    question1();  //activer la question 1
+    
+    // la question 2 est en commentaire, elle ne s'exécutera pas
+    //question2();  
 
-    //question 3
-
-    ...
+    return 0;
 }
 ```
 
