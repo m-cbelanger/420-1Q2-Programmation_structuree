@@ -146,7 +146,11 @@ Les expression mathématiques sont les mêmes que vous avez déjà vues!
 | `/`     | Division                        |
 | `%`     | Modulo                          |
 
-Pour faire un exposant, il faut faire ceci:
+Pour faire un exposant, il faut inclure une librairie de mathématique d'abord:
+
+```cpp
+#include <cmath>
+```
 
 ```cpp
 // pour faire 8 exposant 2:
