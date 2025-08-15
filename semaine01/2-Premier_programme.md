@@ -100,7 +100,7 @@ int main(){
 ![cout2](img/cout2.png)<br>
 
 
-- Pour que les accents de la langue française apparaissent, on ajoute quelques lignes de code à des endroits précis:
+> Pour que les accents de la langue française apparaissent sous Windows, on ajoute quelques lignes de code à des endroits précis:
 
  ```cpp
 #include <iostream>
@@ -116,7 +116,7 @@ int main() {
 }
 ```
 
-![cout3](img/cout3.png)<br>
+
 
 
 ## Les commentaires
@@ -173,22 +173,14 @@ int main(){
     return 0;
 }
 ```
-- On a déjà un avertissement qui apparaît avant de faire play: <br>
+- On un carré rouge qui apparaît à la ligne où se trouve l'erreur: <br>
 ![play](img/erreur1.png)<br>
 
-- Le mot return est souligné en rouge. Si on place notre curseur sur le mot en rouge, on a souvent de bons indices:<br>
+- L'explication du carré rouge est dans l'onglet build message'<br>
 
 ![play2](img/erreur2.png)<br>
 
-- Si on ignore le souligné et qu'on fait play (Débugueur Windows local), on aura un message tel que celui-ci. Faites non toujours:<br>
 
-![play3](img/erreur3.png)<br>
-
-- en faisant NON, on aura une liste d'erreurs qui se présentera dans la section en bas:<br>
-
-![play4](img/erreur4.png)<br>
-
-- Il est indiqué qu'il faut un ; avant le return. On apprendra rapidement qu'il faut le mettre à la fin de la ligne précédente, donc à la fin de la ligne 4. 
 - Considérer cela comme un OUTIL d'aide et non comme une vérité absolue. Vos yeux et votre expérience (qu'il faut acquérir en pratiquant) vont souvent vous être plus utiles!
 
 
