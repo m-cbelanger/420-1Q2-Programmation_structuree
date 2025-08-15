@@ -28,10 +28,10 @@ Ici, on crée une variable de type "int" (entier) qu'on nomme "age". On initiali
 
 ```cpp
 #include <iostream>
-#include <locale.h>
+#include <locale.h> // nécessaire sous windows
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
+    setlocale(LC_ALL, "");// nécessaire sous windows
 
     int age = 30;
     cout << "Âge : " << age << " ans" << endl;
@@ -43,10 +43,9 @@ Si on veut mettre un chiffre à virgule (décimal), on devra choisir un autre ty
 
 ```cpp
 #include <iostream>
-#include <locale.h>
+
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
 
     float taille = 1.75;
     cout << "La taille est: " << taille << " mètres" << endl;
@@ -73,10 +72,9 @@ Ci-dessous, on **déclare** la variable maVariable dans laquelle on place 4. Pui
 
 ```cpp
 #include <iostream>
-#include <locale.h>
+
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
 
     int maVariable = 4;
     cout <<"maVariable AVANT"<< maVariable <<endl;
@@ -90,10 +88,9 @@ int main() {
 Que vallent maVariable et monCalcul si on fait ceci? Affichez-les!
 ```cpp
 #include <iostream>
-#include <locale.h>
+
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
 
     int maVariable = 4;
     maVariable = 7;
@@ -109,11 +106,10 @@ On peut aussi réutiliser une variable dans une équation. Dans ce cas, ce qui s
 
 ```cpp
 #include <iostream>
-#include <locale.h>
+
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
-
+    
     int maVariable = 4;
     maVariable = maVariable + 7; // on fait 4 + 7 et on écrase l'ancien 4 par 11. Si on affiche maVariable on aura 11 maintenant. 
 
@@ -180,13 +176,13 @@ Quel type est le plus approprié?
 ### Nomenclature
 
 Règles à suivre pour les choix de noms de variables:
-- seulement des chiffres, des lettres et le caractère _
-- ne doit PAS commencer par un chiffre
-- ne doit PAS contenir d'espace.
-- une majuscule et une minuscule sont différents (n et N sont différents)
-- on utilise le camelCase pour les variables à plusieurs mots
-- on choisit des noms significatifs pour se comprendre dans le futur (vous et cos collègues).
-- on ne peut pas déclarer 2x une variable avec le même nom dans la même fonction.
+- Seulement des chiffres, des lettres et le caractère _
+- Ne doit PAS commencer par un chiffre
+- Ne doit PAS contenir d'espace.
+- Une majuscule et une minuscule sont différents (nom et Nom sont différents)
+- On utilise le camelCase pour les variables à plusieurs mots
+- On choisit des noms significatifs pour se comprendre dans le futur (vous et cos collègues).
+- On ne peut pas déclarer 2x une variable avec le même nom si elles ont la même portée (scope).
 
 ### Exercices en classe
 
@@ -287,7 +283,7 @@ En C++, `cin` est un objet de la bibliothèque standard qui signifie "console in
 ### Comment l'utiliser
 - il faut d'abord avoir un réceptacle (une variable) pour y déposer l'entrée de l'utilisateur. 
 - il faut utiliser l'opérateur >> pour capturer les entrées et les stocker dans la variable.
-- il est fortement recommandé de mettre un cout avant pour indiquer à l'utilisateur ce que vous souhaitez recevoir.
+- il est fortement recommandé (exigé dans plusieurs évaluations) de mettre un "cout" avant pour indiquer à l'utilisateur ce que vous souhaitez recevoir.
 - l'utilisateur devra taper un nombre entier au clavier et faire "entrer".
 
 Exemple:
@@ -312,10 +308,9 @@ int main() {
 On peut en faire plusieurs à la fois:
 ```cpp
 #include <iostream>
-#include <locale.h>
+
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "");// pour que les accents soient affichés
 
     int annee, mois, jour; 
     cout << "Quel est votre date de naissance? (année/mois/jour)" << endl;  
