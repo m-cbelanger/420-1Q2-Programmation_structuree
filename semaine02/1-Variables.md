@@ -342,6 +342,7 @@ int main(){
 Pourquoi faire une variable non modifiable? 
 
 
+
 ## Dans quel ordre faire les choses?
 
 Si on souhaite coder un problème, il faut s'assurer que l'ordre dans lequel on fait les choses va fonctionner. On peut aussi revoir les 7 étapes du cours d'introduction.
@@ -405,14 +406,13 @@ Exemple d'énoncé pour lequel on veut écrire le code:<br>
 Le code se lira comme suit:
 ```cpp
 #include <iostream>
-#include <locale.h>
+
 using namespace std;
 
 const float mntChomage = 11.63;
 const float tauxImpot = 0.20;
 
 int main() {
-	setlocale(LC_ALL, "");
 
 	int nbHeures;
 	float tauxHoraire;
