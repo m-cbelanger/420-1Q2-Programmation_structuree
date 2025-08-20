@@ -6,7 +6,7 @@ Si on écrit du code dans un éditeur de texte (éditeur de code), l'exécution 
 
 En termes simples, une variable est un espace mémoire qui est nommé et utilisé pour stocker des valeurs. Ces valeurs peuvent être de différents types : nombres, chaînes de caractères, booléens, etc. Les variables permettent aux programmes de gérer les données qui peuvent changer pendant l'exécution du programme.
 
-### Pourquoi Utiliser des variables ?
+### Pourquoi utiliser des variables ?
 - Stockage des données : Les variables permettent de conserver des données que vous souhaitez réutiliser dans différentes parties de votre programme, pendant la durée d'exécution du programme seulement. Si, par exemple, je stocke le nombre d'heures où vous avez travaillé à votre emploi dans une variable, on pourra aller récupérer ce nombre et calculer votre salaire dans une autre partie du code.
 
 - Réutilisabilité et clarté : les variables rendent votre code plus propre et plus facile à comprendre, car elles permettent de nommer des concepts de manière explicite.
