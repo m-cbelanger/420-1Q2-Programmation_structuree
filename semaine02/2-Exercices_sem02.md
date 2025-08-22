@@ -54,7 +54,7 @@ Dans le main de votre fichier source:
 ## Question 2
 
 Dans le main de votre fichier source:
-- Déclarer 2 variables entières: x = 8 et y = 5
+- Déclarer 2 variables entières: x = 5 et y = 8
 - Trouver une façon pour interchanger (permuter) le contenu des 2 variables de façon dynamique (c'est-à-dire qui s'adaptera et fonctionnera peu importe les valeurs initiales de x et y).
 - Afficher les résultats AVANT et APRÈS la permutation. Par exemple, en console, on devrait voir:<br>
 
