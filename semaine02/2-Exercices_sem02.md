@@ -153,6 +153,6 @@ Faire une petite calculatrice dans laquelle on demande 2 nombres entiers à l'ut
 
 ## Question 8 
 
-Demander à un utilisateur d'entrer un nombre de secondes (idéalement assez grand). Puis, convertissez ce nombre en années, mois, jours, heures, minutes, secondes. Il est possible d'y arriver seulement avec des calculs mathématiques comme le modulo et la division entière.
+Demander à un utilisateur d'entrer un nombre de secondes (idéalement assez grand). Puis, convertissez ce nombre en années, jours, heures, minutes, secondes. Il est possible d'y arriver seulement avec des calculs mathématiques comme le modulo et la division entière.
 Par exemple, si un usager entre 53 000 000 secondes, on lui affiche que ça donne 1 an, 248 jours, 10 heures, 13 minutes et 20 secondes. On suppose qu'il y a toujours 365 jours dans une année.
 
