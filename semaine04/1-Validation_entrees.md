@@ -120,13 +120,14 @@ Métacaractères : Caractères ayant une signification spéciale dans une expres
 `.` : Correspond à n'importe quel caractère sauf une nouvelle ligne.<br>
 `^` : Correspond au début d'une chaîne.<br>
 `$` : Correspond à la fin d'une chaîne.<br>
-`*` : Correspond à zéro ou plusieurs occurrences du caractère précédent.<br>
-`+` : Correspond à une ou plusieurs occurrences du caractère précédent.<br>
-`?` : Correspond à zéro ou une occurrence du caractère précédent.<br>
+`*` : Correspond à zéro ou plusieurs occurrences du caractère qui précède.<br>
+`+` : Correspond à une ou plusieurs occurrences du caractère qui précède.<br>
+`?` : Correspond à zéro ou une occurrence du caractère qui précède.<br>
 `[]` : Définit une classe de caractères. Par exemple, [a-z] correspond à une lettre minuscule.<br>
 `|` : Correspond à une alternative. Par exemple, cat|dog correspond à "cat" ou "dog".<br>
 `()` : Regroupe des motifs. Par exemple, (ab)+ correspond à "ab", "abab", "ababab", etc.<br>
-`{}`: Quantificateur. {n} correspond à exactement n occurrence du caractère ou groupe qui le précède. Par exemple a{3} correspond à "aaa", mais pas à "aaaa" ou "aa". On peut avoir un quantificateur {n,}, qui signifie qu'il doit y avoir au moins n occurrence du caractère du groupe qui le précède. Par exemple, a{3,} correspond à "aaa", "aaaa", "aaaaa"... etc. On peut aussi mettre une borne maximale: a{3,5} inclut "aaa", "aaaa" et "aaaaa" seulement.
+`{}`: Quantificateur. {n} correspond à exactement n occurrence du caractère ou groupe qui le précède. Par exemple a{3} correspond à "aaa", mais pas à "aaaa" ni "aa". On peut avoir un quantificateur {n,}, qui signifie qu'il doit y avoir au moins n occurrence du caractère du groupe qui le précède. Par exemple, a{3,} correspond à "aaa", "aaaa", "aaaaa"... etc. On peut aussi mettre une borne maximale: a{3,5} inclut "aaa", "aaaa" et "aaaaa" seulement.
+`\.` : Correspond au caractère point (.), car le point seul signifie n'importe quel caractère.
 
 ### Utilisation 
 
@@ -142,10 +143,10 @@ Métacaractères : Caractères ayant une signification spéciale dans une expres
 regex monPattern("^[A-Za-z123]{2}"); // Regex pour exactement 2 lettres ou chiffres 1, 2 ou 3. 
 ```
 
-3. Vérifier une correspondance
+3. Vérifier une correspondance exacte avec regex_match
 
 ```cpp
-string input = "AB";
+string input = "AB"; //remarquez qu'il s'agit d'un string
 if (regex_match(input, monPattern)) {
     cout << "Correspondance trouvée." << endl;
 } else {
@@ -153,12 +154,58 @@ if (regex_match(input, monPattern)) {
 }
 ```
 
-Pour utiliser les regex pour les recherches et le remplacement de caractères, suivez https://cplusplus.com/reference/regex/ 
+### Conversion de types
+
+Pour réussir à valider l'entrée d'un utilisateur, une stratégie qui peut être adoptée est de mettre l'input dans une variable de type string et de faire la conversion vers un nombre si le pattern est respecté.
+
+- `stoi`: String TO Int
+- `stod`: String TO Double
+- `stof`: ... vous devinez?
+
+
+Écrire le code qui demande à l'utilisateur d'entrer un entier négatif.
+
+réponse:
+```cpp
+void entierNegatif(){
+    string saisie; // en string ici
+    regex pattern("-[0-9]+");
+
+    cout << "Entrez une valeur: ";
+    cin >> saisie;
+
+    if (regex_match(saisie, pattern)) {
+        cout << "Valide!" << endl;
+        int saisieNombre = stoi(saisie); //conversion en nombre seulement SI le pattern correspond
+        cout << "nombre: "<< saisieNombre;
+
+    } else {
+        cout << "Invalide!" << endl;
+    }
+
+}
+```
+- Pourquoi ne pas mettre la conversion après la structure if?
+- quelles entrées tester pour valider que le code fait bien ce qu'il a à faire?
 
 
 
+### Exercices en classe
 
-### Pour aller plus loin (facultatif)
+Écrire le code qui demande à l'utilisateur d'entrer les patterns suivants. Pensez aux valeurs à passer en test pour valider que le code fait bien ce qu'il devrait faire.
 
-Pour valider que l'entrée est bel et bien du type demandé, voici une référence intéressante pour valider un entier, un entier entre 2 bornes, les string et la validation personnalisée (par exemple pour des email ou des code alpha numériques). Pour comprendre cette section, il faut avoir vu les boucles (Dès la semaine 6).
-https://www.geeksforgeeks.org/how-to-validate-user-input-in-cpp/ 
+- un mot de 5 lettres
+- un mot entre 2 et 6 lettres
+- un code postal
+- un mot qui n'a pas de chiffre
+- une chaine qui contient au moins un tiret (-)
+- un nombre décimal plus petit ou égal à 100 avec 0 à 2 décimales
+- une date (chiffres disposés entre tirets: JJ-MM-AAAA)
+- inventez un pattern à respecter et codez-le
+
+
+### Autre source
+
+- Pour utiliser les regex pour les recherches et le remplacement de caractères, suivez https://cplusplus.com/reference/regex/ 
+
+- https://www.geeksforgeeks.org/how-to-validate-user-input-in-cpp/  

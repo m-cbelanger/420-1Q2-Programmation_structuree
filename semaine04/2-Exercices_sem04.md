@@ -60,12 +60,25 @@ Modèle réduit de calculateur de notes: Voici le code pour répondre aux sous-q
 
 
 1. Que fait ce programme? Vulgariser pour un non-programmeur.
-2. Comment optimiser l'affichage de la sortie à l'utilisateur? Pensez DRY.
+2. Comment optimiser le code qui affiche la sortie à l'utilisateur? Pensez DRY.
 3. Enlever les conditions inutiles dans la structure conditionnelle. 
+4. Comment vérifier que la note à l'examen 1, l'examen 2 et le TP sont tous des nombres entiers ou décimaux, non négatif et non alphabétique?
 
 
 ## Question 4
 
-Le mot de passe!
+a) Le mot de passe!
 
-Écrire un petit programme qui demande à l'usager d'entrer un mot de passe entre 7 et 9 caractères. Celui-ci doit contenir seulement des lettres majuscules, minuscules ou des chiffres. Aucune restriction sur l'occurrence de chaque catégorie. Une fois entré, afficher si le mot de passe respecte les règles ou non. Pensez REGEX!
+	Écrire un petit programme qui demande à l'usager d'entrer un mot de passe entre 7 et 9 caractères. Celui-ci doit contenir seulement des lettres majuscules, minuscules ou des chiffres. Aucune restriction sur l'occurrence de chaque catégorie. Une fois entré, afficher si le mot de passe respecte les règles ou non. Pensez REGEX!
+
+b) Le nombre!
+
+	Écrire le code qui demande à l'usager d'entrer n'importe quel nombre et qui valide que ce nombre est un entier ou un nombre décimal, positif ou négatif.
+
+# Question 5
+
+Décrire les entrées qui correspondent aux Regex suivants. Donner un exemple valide et un exemple invalide
+
+1. regex pattern("^[A-Za-z]+ +[A-Za-z]+$");
+2. regex pattern("^[123]-[A-Z]*\.[A-Za-z0-9]{4});
+3. regex pattern(")
