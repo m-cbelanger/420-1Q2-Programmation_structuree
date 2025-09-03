@@ -1,6 +1,6 @@
 # Exercices ensemble
 
-1. Faire la structure conditionnelle qui permet de déterminer si une personne à droit à un rabais à la coop de son village. Les rabais sont octroyés aux personnes âgées de 65 ans et plus les lundis et mardis. Utiliser un booléen pour y arriver, en mettant ce booléen à `true` si le rabais est octroyé et à `false` sinon. Afficher le message approprié en console, selon la valeur du booléen.
+1. Faire la structure conditionnelle qui permet de déterminer si une personne a droit à un rabais à la coop de son village. Les rabais sont octroyés aux personnes âgées de 65 ans et plus les lundis et mardis. Utiliser un booléen pour y arriver, en mettant ce booléen à `true` si le rabais est octroyé et à `false` sinon. Afficher le message approprié en console, selon la valeur du booléen.
 <br>
 <br>
 
