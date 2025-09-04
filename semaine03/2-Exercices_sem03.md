@@ -42,11 +42,12 @@ int main() {
 }
 
 ```
-Copier ce code dans Visual Studio et essayez les valeurs suivantes. Qu'est-ce que ça affichera? 
+Copier ce code dans votre éditeur et essayez les valeurs suivantes. Qu'est-ce que ça affichera? 
  - a) age = 19, revenuAnnuel = 40000, experience = 0
  - b) age = 25, revenuAnnuel = 52000, experience = 5
  - c) age = 20, revenuAnnuel = 150000, experience = 7
  - d) essayez plein de combinaisons.
+
 
 
 ### Question 2
