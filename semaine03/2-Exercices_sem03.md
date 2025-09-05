@@ -127,7 +127,7 @@ else
 
 ```
 
-b) Si on place celui-ci à la suite, qu'est-ce qui sera affiché?
+b) Si on place celui-ci à la suite, que vaudront les variables a,b,c?
 
 ```cpp
 a = 10;
