@@ -3,7 +3,7 @@
 - Ce formatif montre les divers types de questions et le niveau des questions pouvant se trouver dans un examen. 
 - Dans l'examen, certaines questions demanderont de faire du code, d'autres de répondre sur une feuille ou en texte. 
 - Vous devez être capable de créer un projet, y ajouter une feuille .cpp et l'enregistrer à un endroit particulier.
-- Les exercices ci-dessous ne sont PAS SUFFISANTS pour être prêt à l'examen. Vous devez faire les exercices des semaines 1 à 4. La matière sur le principe DRY et les REGEX ne sera pas à l'examen 1.
+- Les exercices ci-dessous ne sont PAS SUFFISANTS pour être prêt à l'examen. Vous devez faire les exercices des semaines 1 à 4.
 
 ## Question 1 (théorique)
 
