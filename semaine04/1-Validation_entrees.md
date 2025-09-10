@@ -239,11 +239,11 @@ getline(cin, texte, ';'); // lit jusqu’au point-virgule
 - un mot de 5 lettres
 - un mot entre 2 et 6 lettres
 - un code postal
-- un mot qui n'a pas de chiffre
-- une chaine qui contient au moins un tiret (-)
+- un mot qui contient un et un seul chiffre, mais pas en première position
+- une chaine qui contient au moins un tiret (-) et exactement un espace (pas au début)
 - un nombre décimal plus petit ou égal à 100 avec 0 à 2 décimales
 - une date (chiffres disposés entre tirets: JJ-MM-AAAA)
-- inventez un pattern à respecter et codez-le
+- inventez un pattern à respecter et codez-le!
 
 
 ### Autre source
