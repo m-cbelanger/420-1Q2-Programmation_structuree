@@ -188,7 +188,49 @@ void entierNegatif(){
 - Pourquoi ne pas mettre la conversion après la structure if?
 - quelles entrées tester pour valider que le code fait bien ce qu'il a à faire?
 
+### Attention si la saisie contient des espaces
 
+Si vous prévoyez entrer une phrase ou un code qui contient un espace, l'outil `cin` ne sera plus suffisant. Il faudra modifier un peut pour mettre la commande `getline(cin,saisie)`:
+
+```cpp
+    string ligne;
+    cout << "Entrez une phrase : ";
+    getline(cin, ligne); // lit la ligne entière jusqu’à Enter
+    cout << "Vous avez écrit : " << ligne << endl;
+```
+
+Si on souhaite alterner entre des cin et des getline dans une même portée (scope ), il faut être prudent. Le saut de ligne laissé par cin reste dans le tampon (buffer) et getline lit une ligne vide:
+
+```cpp
+int age;
+string nom;
+
+cout << "Entrez votre âge : ";
+cin >> age; // l’utilisateur tape 25 + ENTER
+
+cout << "Entrez votre nom : ";
+getline(cin, nom); // -> lit juste ENTER, résultat = chaîne vide
+```
+
+Pour palier à ce problème, il faut effacer le contenu du tampon après avoir utilisé cin:
+```cpp
+int age;
+string nom;
+
+cout << "Entrez votre âge : ";
+cin >> age; // l’utilisateur tape 25 + ENTER
+cin.ignore(numeric_limits<streamsize>::max(), '\n'); //cin.ignore ici
+
+cout << "Entrez votre nom : ";
+getline(cin, nom); // -> lit juste ENTER, résultat = chaîne vide
+```
+
+Avec getline, on peut personnaliser le symbole de fin d'entrée (par défaut c'est ENTER). 
+
+```cpp
+string texte;
+getline(cin, texte, ';'); // lit jusqu’au point-virgule
+```
 
 ### Exercices en classe
 
