@@ -82,6 +82,51 @@ Décortiquons le problème pour faire la tâche suivante: Demander les 3 informa
 *défi*: fouillez comment obtenir l'année en cours au lieu d'hard coder l'année la plus lointaine (1900 dans mon exemple) et l'année courante (pour ne pas changer le code chaque année).
 
 
+### Suggestion de solution:
+
+```cpp
+    int annee;
+    cout << "Entrez votre année de naissance: ";
+    cin >> annee;
+
+    string validation = "";
+
+    if (annee < 1900 || annee > 2025){
+        validation = "Invalide";
+    }else{
+        int mois;
+        cout << "Entrez le mois de naissance (1-12): ";
+        cin >> mois;
+
+        if (mois < 1 || mois >12){
+            validation = "Invalide";
+        }else{
+            int jour;
+            cout << "Entre le jour de naissance: ";
+            cin>> jour;
+            if ((mois == 1 || mois == 3 || mois == 5 || mois == 7 || mois == 8 || mois == 10 || mois == 12) && (jour >=1 && jour <=31)){
+                validation = "Valide";
+            }else if ((mois != 2) && (jour >=1 && jour <=30)){
+                validation = "Valide";
+            }else if (jour >=1 && jour <=29){
+                if (annee % 4 == 0){ // à peaufiner pour les années multiples de 100
+                    validation = "Valide";
+                }else if (annee % 4 != 0 && jour <=28){
+                    validation = "Valide";
+                }else{
+                    validation = "Invalide";
+                }
+            }else{
+                validation = "Invalide";
+            }
+
+        }
+
+    }
+
+    cout << "La valeur entrée est " << validation;
+```
+
 ## Principe DRY (don't repeat yourself)
 
 Pour essayer de minimiser les erreurs, la clarté, la lisibilité, et la maintenance, on tente de ne pas répéter des bouts de codes inutilement.
