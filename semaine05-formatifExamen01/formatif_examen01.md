@@ -164,3 +164,25 @@ Je répète: MAXIMUM 1 cout.
 Quelles valeurs utiliseriez-vous pour tester le code?
 Quelle valeur pourrait affectée à une constante?
 
+
+## Question 6
+
+Vous devez valider un code postal entré par un utilisateur d'un service de livraison. L'utilisateur entre 2 informations:
+- le code postal de la livraison
+- le poids de son colis
+lors de la validation, doit avoir l'indication si oui ou non, le code postal fourni est québécois. Les codes postaux alphanumériques au Canada sont de format A1A 1A1 et ceux du Québec commencent par G, H ou J. 
+
+Il y a un frais de livraison de 15$ si le poids de l'article dépasse 30 kg.
+
+Un message doit être donné à l'utilisateur lui indiquant:
+- si oui ou non, il est éligible à la livraison (au Québec = éligible)
+- si son colis aura un frais de 15$
+- si l'une des entrées précédentes est invalide (pas le bon format, pas le bon type de variable)
+
+Exemple:
+![a](img/ex1.png)
+
+![b](img/ex2.png)
+
+
+Quels autres tests faudra-t-il faire pour explorer toutes les possibilités?
