@@ -172,7 +172,7 @@ Métacaractères : Caractères ayant une signification spéciale dans une expres
 `|` : Correspond à une alternative. Par exemple, cat|dog correspond à "cat" ou "dog".<br>
 `()` : Regroupe des motifs. Par exemple, (ab)+ correspond à "ab", "abab", "ababab", etc.<br>
 `{}`: Quantificateur. {n} correspond à exactement n occurrence du caractère ou groupe qui le précède. Par exemple a{3} correspond à "aaa", mais pas à "aaaa" ni "aa". On peut avoir un quantificateur {n,}, qui signifie qu'il doit y avoir au moins n occurrence du caractère du groupe qui le précède. Par exemple, a{3,} correspond à "aaa", "aaaa", "aaaaa"... etc. On peut aussi mettre une borne maximale: a{3,5} inclut "aaa", "aaaa" et "aaaaa" seulement.<br>
-`\.` : Correspond au caractère point (.), car le point seul signifie n'importe quel caractère.
+`\\.` : Correspond au caractère point (.), car le point seul signifie n'importe quel caractère.
 
 ### Utilisation 
 
