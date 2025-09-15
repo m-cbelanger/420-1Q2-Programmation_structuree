@@ -173,7 +173,7 @@ Vous devez valider un code postal entré par un utilisateur d'un service de livr
   
 lors de la validation, doit avoir l'indication si oui ou non, le code postal fourni est québécois. Les codes postaux alphanumériques au Canada sont de format A1A 1A1 et ceux du Québec commencent par G, H ou J. 
 
-Il y a un frais de livraison de 15$ si le poids de l'article dépasse 30 kg.
+Il y a un frais de livraison de 15$ si le poids de l'article dépasse 15 kg.
 
 Un message doit être donné à l'utilisateur lui indiquant:
 - si oui ou non, il est éligible à la livraison (au Québec = éligible)
