@@ -130,6 +130,9 @@ int main() {
 
 }
 ```
+> Note: en Linux, on doit utiliser system("clear") pour effacer l'écran et <br> 
+> system("read -p 'Appuyez sur Entrée pour continuer...' var");
+
 
 
 
