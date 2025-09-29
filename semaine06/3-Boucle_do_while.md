@@ -153,3 +153,37 @@ int n = 5; //le nombre max inclus dans le tirage au sort
 int nombreAleatoire = rand() % (n+1); 
 ```
 
+### Complément : nombre aléatoires en informatique
+
+
+####  Le principe de base : nombres pseudo-aléatoires
+
+	En informatique, rien n’est vraiment aléatoire. Même quand on utilise rand(), l’ordinateur suit un algorithme précis pour générer les nombres.
+
+	Ces nombres ont l’air aléatoires, mais si tu commences l’algorithme au même point, tu obtiens toujours la même suite.
+
+	C’est pourquoi on parle de nombres pseudo-aléatoires : "pseudo" = pas complètement aléatoires, mais suffisamment pour beaucoup d’applications.
+
+#### Le rôle de srand()
+
+	rand() seul suit un algorithme déterministe.
+
+	Il faut un point de départ, appelé graine (seed).
+
+	srand(seed) sert à définir ce point de départ.
+
+	Exemple :
+
+	Si on met srand(1) → rand() va produire exactement la même suite chaque fois.
+
+	Si on met srand(5) → une autre suite, mais toujours la même suite pour 5.
+
+	Donc srand() ne fait pas vraiment un tirage aléatoire, il fixe juste le départ de l’algorithme. Si on le refixe à chaque passage dans une boucle, on risque de se retrouver toujours avec le même nombre
+
+#### Pourquoi on utilise time(0) ?
+
+	time(0) retourne le nombre de secondes écoulées depuis le 1er janvier 1970.
+
+	Comme ce nombre change tout le temps, tu obtiens une graine différente à chaque exécution.
+
+	L’algorithme de rand() part alors de ce nouveau point de départ → la suite de nombres est différente à chaque exécution.
