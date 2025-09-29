@@ -41,7 +41,7 @@ for (int i = 0; i < 5; i++) {
 
 Tel qu'expliqué ici https://learn.microsoft.com/fr-fr/cpp/cpp/for-statement-cpp?view=msvc-170 , La variable qui sert de compteur peut être déclarée dans l'expression d'initialisation ou avant.
 
-Cette variable s'appelle souvent `i` par convention, mais peut prendre n'importe quel autre nom, comme un variable.
+Cette variable s'appelle souvent `i` par convention, mais peut prendre n'importe quel autre nom, comme une variable.
 
 On peut aussi décrémenter le compteur plutôt que de l'incrémenter:
 
@@ -78,7 +78,7 @@ Les boucles `for` sont très utilisées pour :
 2. Ensuite, modifiez le programme pour afficher seulement les nombres impairs.
 
 ## Boucle for imbriquées
-Il est possible de faire une boucle à l'intérieur d'une autre boucle. LA syntaxe de base est:
+Il est possible de faire une boucle à l'intérieur d'une autre boucle. La syntaxe de base est:
 
 ```cpp
 for (initialisation_externe; condition_externe; incrémentation_externe) {
