@@ -187,3 +187,5 @@ int nombreAleatoire = rand() % (n+1);
 	Comme ce nombre change tout le temps, tu obtiens une graine différente à chaque exécution.
 
 	L’algorithme de rand() part alors de ce nouveau point de départ → la suite de nombres est différente à chaque exécution.
+
+
