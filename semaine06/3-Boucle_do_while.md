@@ -133,7 +133,14 @@ int main() {
 > Note: en Linux, on doit utiliser system("clear") pour effacer l'écran et <br> 
 > system("read -p 'Appuyez sur Entrée pour continuer...' var");
 
+### cin (précision)
 
+Pour remettre le flux d’entrée (cin) dans un état propre et pour vider les caractères restants, les commandes suivantes peuvent être utilisées tout de suite en-dessous du cin:
+
+```cpp
+cin.clear(); // enlever l'état d'erreur, utile si on entre du texte dans un int
+cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+```
 
 
 # La fonction `aléatoire` (rand)
