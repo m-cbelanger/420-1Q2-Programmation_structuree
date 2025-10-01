@@ -79,8 +79,7 @@ Note 1: la variables de contrôle dans les `switch` n'est fonctionnelle qu'avec 
 Note 2: en Linux, on doit utiliser system("clear") pour effacer l'écran et <br> 
 system("read -p 'Appuyez sur Entrée pour continuer...' var");
 
-Note 3: Quand on convertit un string en double dans un environnement où on a modifié le setlocale, on aura une troncature du nombre
-
+Note 3: Quand on convertit un string en double dans un environnement où on a modifié le setlocale, on aura une troncature du nombre. [Documentation officielle](https://en.cppreference.com/w/cpp/locale/setlocale.html)
 
 ```cpp
 setlocale(LC_ALL,"");
