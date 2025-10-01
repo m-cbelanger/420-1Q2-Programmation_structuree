@@ -71,71 +71,46 @@ Faire un petit programme qui demande à l'utilisateur 2 nombres et qui lui offre
 
 Spécification: en plus d'afficher le résultat choisi, il faut que le résultat de la somme ou du produit soit mis dans une variable.
 
-Note importante: la variables de contrôle dans les `switch` n'est fonctionnelle qu'avec les `int` et les `char` (et les `enum`, non traitées dans ce cours).
 
-## Rendre le code plus lisible
+### Détails importants
 
-Lorsqu'on fera des menu avec des traitements possibles, on peut être surchargés par la quantité de code et d'indentation. C'est pourquoi on va introduire `l'appel de fonctions` pour clarifier le code. On va donc déplacer le code dans des fonctions placées `avant le main()`.
+Note 1: la variables de contrôle dans les `switch` n'est fonctionnelle qu'avec les `int` et les `char` (et les `enum`, non traitées dans ce cours).
 
-## Exemple:
+Note 2: en Linux, on doit utiliser system("clear") pour effacer l'écran et <br> 
+system("read -p 'Appuyez sur Entrée pour continuer...' var");
+
+Note 3: Quand on convertit un string en double dans un environnement où on a modifié le setlocale, on aura une troncature du nombre
+
 
 ```cpp
-#include <iostream>
-#include <locale.h>
+setlocale(LC_ALL,"");
+string nombreChaine;
+double nombre;
 
-using namespace std;
+cout << "Entrez un nombre: ";
+cin >> nombreChaine; // si on entre 12.34
 
-void option1() {
-	cout << "Vous avez atteint le code de l'option 1 ici"<<endl;
-	//system("pause");
-}
+nombre = stod(nombreChaine); //on aura 12 ici
 
-
-void option2() {
-	cout << "Vous avez atteint le code de l'option 2 ici"<<endl;
-	//system("pause");
-}
-
-
-int main() {
-	setlocale(LC_ALL, "");
-	char choix;
-
-	do {
-		cout << "=== Menu ===" << endl;
-		cout << "1. Option 1" << endl;
-		cout << "2. Option 2" << endl;
-		cout << "3. Quitter" << endl;
-		cout << "Entrez votre choix (1-3) : ";
-		cin >> choix;
-		cout << endl;
-
-		switch (choix) {
-		case '1':
-			option1();
-			break;
-		case '2':
-			option2();
-			break;
-		case '3':
-			cout << "Au revoir!" << endl;
-			break;
-		default:
-			cout << "Choix invalide..." << endl;
-			break;
-		}
-		cout << endl;
-		//system("cls");
-	} while (choix != '3');
-
-}
+cout << nombre;
 ```
-> Note: en Linux, on doit utiliser system("clear") pour effacer l'écran et <br> 
-> system("read -p 'Appuyez sur Entrée pour continuer...' var");
 
-### cin (précision)
+CORRECTION AVEC CECI:
+```cpp
+setlocale(LC_ALL,""); 
+setlocale(LC_NUMERIC, "C"); //ici on conserve le comportement numérique original en précisant "C" 
+string nombreChaine;
+double nombre;
 
-Pour remettre le flux d’entrée (cin) dans un état propre et pour vider les caractères restants, les commandes suivantes peuvent être utilisées tout de suite en-dessous du cin:
+cout << "Entrez un nombre: ";
+cin >> nombreChaine; 
+
+nombre = stod(nombreChaine); 
+
+cout << nombre;
+```
+
+Note 4: Pour remettre le flux d’entrée (cin) dans un état propre et pour vider les caractères restants, les commandes suivantes peuvent être utilisées tout de suite en-dessous du cin:
 
 ```cpp
 cin.clear(); // enlever l'état d'erreur, utile si on entre du texte dans un int
