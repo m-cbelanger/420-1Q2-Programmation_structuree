@@ -57,3 +57,24 @@ Exemple d'exécution
 ![q3](img/Q3.png)
 
 N'hésitez pas à le bonifier, à ajouter un "tableau du nombre de victoires" ou à afficher le choix aléatoire de l'ordinateur aussi!
+
+## Question 5 (ajout le 1er octobre)
+Devine le nombre!
+
+Le programme doit piger un nombre secret aléatoire entre 1 et 100. Ensuite, le joueur à maximum 7 chances de deviner ce nombre. À chaque essai, le programme indique au joueur si son nombre est au-dessus, en-dessous ou s'il a deviné le nombre secret. Lorsque les chances sont écoulées, on indique au joueur qu'il a échoué. S'il a trouvé, on le félicite! 
+On offre ensuite au joueur de rejouer (nouveau nombre secret avec 7 chances)
+
+## Question 6 (ajout le 1er octobre)
+
+Read my mind!
+
+Cette fois-ci, c'est le programme qui doit essayer de deviner un nombre qu'on choisit dans notre tête. On choisi un nombre entre 1 et 100 et le programme me propose un nombre. Je dois ensuite lui indiquer s'il est au-dessus, en-dessous ou pile sur le nombre. Le programme pige ensuite un chiffre logique, comme le ferait un humain intelligent. 
+
+Par exemple, 
+- on a secrètement choisi dans notre tête le nombre 40. 
+- Le programme propose 65. 
+- on répond que c'est trop grand (répondre comme vous voulez)
+- il va essayer un nombre entre 1 et 64. Il prend 12.
+- on répond que c'est trop petit
+- il va choisir un nombre entre 13 et 64
+- ainsi de suite.
