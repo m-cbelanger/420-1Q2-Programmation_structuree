@@ -72,7 +72,7 @@ Faire un petit programme qui demande à l'utilisateur 2 nombres et qui lui offre
 Spécification: en plus d'afficher le résultat choisi, il faut que le résultat de la somme ou du produit soit mis dans une variable.
 
 
-### Détails importants
+## Détails importants
 
 Note 1: la variables de contrôle dans les `switch` n'est fonctionnelle qu'avec les `int` et les `char` (et les `enum`, non traitées dans ce cours).
 
