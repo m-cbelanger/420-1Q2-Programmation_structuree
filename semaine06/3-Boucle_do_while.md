@@ -16,7 +16,7 @@ do {
 - Si la condition est vraie (true), le bloc d'instructions est exécuté à nouveau.
 - Si la condition est fausse (false), la boucle ne se répète pas.
 
-## Exemple:
+## Exemple
 
 ```cpp
 int compteur = 1;
@@ -117,7 +117,7 @@ cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 ```
 
 
-# La fonction `aléatoire` (rand)
+## La fonction `aléatoire` (rand)
 
 Dans plusieurs exercices, il peut être amusant et intéressant de piger certains items au hasard. Il faut d'abord importer les librairies suivantes:
 
