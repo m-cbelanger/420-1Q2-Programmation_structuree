@@ -65,7 +65,7 @@ Le programme doit piger un nombre secret aléatoire entre 1 et 100. Ensuite, le 
  
 On offre ensuite au joueur de rejouer (nouveau nombre secret avec 7 chances)
 
-## Question 6 (ajout le 1er octobre)
+## Question 6 (ajout le 1er octobre, plus difficile (mais fun!))
 
 Read my mind!
 
