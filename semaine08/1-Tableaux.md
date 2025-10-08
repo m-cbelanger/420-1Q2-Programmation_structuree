@@ -24,7 +24,7 @@ for (int i = 0; i < 6; i++) {
     cout << monTableau[i] << " ";
 }
 ```
-**Attention!** Il ne faut pas aller à l'extérieur du tableau définit si on ne veut pas de mauvaise surprise:
+**Attention!** Il ne faut pas aller à l'extérieur du tableau définit si on ne veut pas de mauvaises surprises:
 
 ```cpp
 //Ne pas faire
