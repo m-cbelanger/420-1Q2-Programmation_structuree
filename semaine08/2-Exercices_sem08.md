@@ -9,7 +9,7 @@ Affichez un message indiquant si le nombre a été trouvé ou non, et donnez l�
 
 ### Question 2
  
-Inverser un tableau
+Inverser un tableau.
 Déclarez un tableau de 6 entiers et initialisez-le avec des valeurs au choix. Affichez le tableau original. Inversez l’ordre des éléments dans le tableau. Affichez le tableau inversé. Est-ce que le code fonctionne pour des tableaux d'autres dimensions?
 
 ### Question 3
@@ -54,7 +54,7 @@ b) Ajouter la possibilité de choisir le nombre de rotations à faire (défi)
 
 ### Question 6
 
-Lancer de dés
+Lancer de dés.
 
 On souhait simuler le lancé de dés à 6 faces et compter le nombre de fois que le dé à tombé sur une face. On veut donc piger au sort un chiffre et compter le nombre de fois qu'on a obtenu la face 1,2,3,4,5 ou 6. On veut ensuite afficher le résultat. L'utilisateur a le choix du nombre de lancers de dés qu'il souhaite faire. Cet exercice doit être fait avec des tableaux!
 
