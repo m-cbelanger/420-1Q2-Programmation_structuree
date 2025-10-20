@@ -125,7 +125,7 @@ Mettre les valeurs suivantes dans un tableau et trouver le nombre de lettres 'A'
 
 ```cpp
 void trouverLettreA() {
-	//on n'est pas obligé de mettre la taille du tableau si on initialiser le tableau avec les éléments
+	//on n'est pas obligé de mettre la taille du tableau si on initialise le tableau avec les éléments
 	char monTableau[] = { 'A', 'n', 'G', 'b', 'd', 'A', 'M', 'x', 'I', 'p', 'C', 'L', 'z', 'h', 'O', 'K', 'j', 'T', 'S', 'a','f', 'W', 'Y', 'l', 'r', 'U', 'C', 'v', 'Q', 'm', 'B', 'e', 'd', 'I', 'k', 'P', 'N', 'f', 'a', 'o' };
 	int compteurDeA = 0;
 	int taille = size(monTableau);
@@ -145,16 +145,16 @@ Les chaînes de caractères (string) se traitent aussi comme des tableaux. On pe
 
 ```cpp
 void exemple2(){
-    string texte, inversé = "";
+    string texte, inverse = "";
 
     cout << "Entrez une chaîne de caractères : ";
     getline(std::cin, texte); //comme un cin, mais qui gère les espaces
 
     for (int i = texte.size() - 1; i >= 0; i--) {
-        inversé += texte[i];
+        inverse += texte[i];
     }
 
-    cout << "Chaîne inversée : " << inversé << "\n";
+    cout << "Chaîne inversée : " << inverse << "\n";
 }
 
 ```
