@@ -39,12 +39,12 @@ Mais un problème se pose : en comparant côte à côte les deux listes (votre e
 
 Par exemple :
 
-3   4
-4   3
-2   5
-1   3
-3   9
-3   3
+3   4 </br>
+4   3 </br>
+2   5 </br>
+1   3 </br>
+3   9 </br>
+3   3 </br>
 
 
 Peut-être que les listes ne diffèrent que légèrement ! Pour le vérifier, il suffit d’associer les nombres et de mesurer leur écart.
