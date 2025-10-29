@@ -91,12 +91,12 @@ Calcule ensuite un score de similarité total en additionnant chaque nombre de l
 
 Voici les mêmes listes d’exemple :
 
-3   4
-4   3
-2   5
-1   3
-3   9
-3   3
+3   4 </br>
+4   3 </br>
+2   5 </br>
+1   3 </br>
+3   9 </br>
+3   3 </br>
 
 
 Voici le processus pour calculer le score de similarité :
