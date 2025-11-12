@@ -1,7 +1,7 @@
 # Exercice paramètre par référence
 
 ## Question 1
-Écrire une fonction `swap` ayant en paramètres 2 entiers a et b et qui échange les contenus de a et de b. Tester cette fonction.
+Écrire une fonction `echange` ayant en paramètres 2 entiers a et b et qui échange les contenus de a et de b. Tester cette fonction.
 
 
 ## Question 2 
