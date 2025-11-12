@@ -10,7 +10,7 @@ Le jeu du hasard contre l'ordi!
 On souhaite créer un jeu qui vous fait piger au hasard un nombre entre 1 et n (je suggère de ne pas dépasser 5) et de comparer avec l'ordi. Si vous avez la même réponse, vous gagner 1 point. Sinon vous perdez 1 point. Si vous tombez en bas de 0, vous perdez la partie. Si vous atteignez le nombre de points choisi au début (par exemple 10 points pour la victoire), vous gagnez.
 
 Pour y arriver, voici un guide: 
-- dans la fonction jeu, c'est le départ du jeu. les variables nomJoueur, pointsJoueur, n (pour la limite du nombre tiré), numeroJoueur (pour le numéro pigé au hasard par le joueur) et pointsPourGagner s'y trouvent. (Les variables doivent obligatoirement être dans le main())
+- dans la fonction jeu, c'est le départ du jeu. les variables nomJoueur, pointsJoueur, n (pour la limite du nombre tiré), numeroJoueur (pour le numéro pigé au hasard par le joueur) et pointsPourGagner s'y trouvent. (Les variables doivent obligatoirement être dans le jeu())
 
 Voici le découpage des fonctions et des traitements. Pour chacune d'entre elles, utiliser le passage par référence ou par valeur, comprenez la différence entre les 2.
 - Dans une fonction, demandez le nom du joueur qui sera modifié selon la réponse de l'utilisateur. 
