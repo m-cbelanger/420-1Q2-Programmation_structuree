@@ -71,13 +71,15 @@ Pour vos tests, essayez un tableau comme celui-ci et essayez des mots différent
 
 b) Faire une fonction qui compte le nombre de fois qu'on trouve la lettre 'e' dans un tableau de string, comme celui de la question a). Modulez la fonction pour que la lettre choisie puisse être décidée par l'appelant de la fonction.
 
+c) Faire ou réutiliser la fonction "mettreEnMajuscule" pour que le tableau soit modifié et que chaque première lettre des mots soit mise en majuscule.
+
 indice: utiliser une boucle imbriquée. Cet exercice sera expliqué en classe.
 
 ## Question 5
 
 Faire une fonction *rechercheElement* qui retourne si oui ou non, un mot est présent dans un tableau de string. Vous pouvez prendre le tableau de la question 4 pour faire des tests.
 
-## Question défi
+## Question 6
 
 Faire une fonction nommée *trierCroissant* qui place les string d'un tableau en ordre croissant. 
 
