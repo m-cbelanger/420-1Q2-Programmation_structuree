@@ -10,7 +10,6 @@ Pour faciliter les questions à venir, créer-vous 4 fonctions d'affichage pour 
 
 ```cpp
 void afficher(int x);           // Signature : afficher(int)
-void afficher(double x);        // Signature : afficher(double)
 void afficher(int x, int y);    // Signature : afficher(int, int)
 ```
 
