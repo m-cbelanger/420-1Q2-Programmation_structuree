@@ -18,7 +18,7 @@ void afficherTableauDecimal(float tableau[], int taille) {
 
 void exemple1(){
     int monTableau[6] = {12.1, 56.3, 22.9, 18.0, 69.2, 83.4};
-    int taille = sizeof(tableau) / sizeof(tableau[0]);
+    int taille = sizeof(monTableau) / sizeof(monTableau[0]);
     afficherTableauDecimal(monTableau, taille);
 }
 ```
@@ -35,8 +35,8 @@ int sommeTableau(const int tableau[], int taille) {
 	}
 	return somme;
 }
-...
-int exemple2(){
+
+void exemple2(){
 	int tableauQuelconque[]={4,7,2,4,5};
 	int taille = size(tableauQuelconque);
 	int laSomme = sommeTableau(tableauQuelconque, taille);

@@ -115,7 +115,7 @@ int main() {
     cout << endl;
 
     cout << "Entrer le groupe sanguin du patient: ";
-    cin >> agePatient;
+    cin >> groupeSanguinPatient;
     cout << endl;
 
     afficherInformations(agePatient, nomPatient, groupeSanguinPatient);
@@ -157,7 +157,7 @@ int main() {
     cout << endl;
 
     cout << "Entrer le groupe sanguin du patient: ";
-    cin >> agePatient;
+    cin >> groupeSanguinPatient;
     cout << endl;
 
     afficherInformations(agePatient, groupeSanguinPatient);
@@ -202,7 +202,7 @@ int main() {
     cout << endl;
 
     cout << "Entrer le groupe sanguin du patient: ";
-    cin >> agePatient;
+    cin >> groupeSanguinPatient;
     cout << endl;
 
     afficherInformations();
