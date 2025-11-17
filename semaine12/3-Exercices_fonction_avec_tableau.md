@@ -4,7 +4,7 @@ Pour chaque question ci-dessous, faire une fonction void qui ne prend aucun para
 
 ## Question 1
 
-Pour faciliter les questions à venir, créer-vous 4 fonctions d'affichage pour les tableaux de types int, double, char et string. 
+Pour faciliter les questions à venir, créer-vous des fonctions d'affichage pour les tableaux de types int, double, char et string. 
 
 > note facultative: il est possible de donner le même nom aux fonctions si leur signature est différente (nombre de paramètres, types de paramètres). Il serait donc possible d'avoir ceci dans le même programme:
 
