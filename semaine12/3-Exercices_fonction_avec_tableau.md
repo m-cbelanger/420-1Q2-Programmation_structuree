@@ -32,7 +32,7 @@ a) Faire une fonction *compterOccurrence* qui prend un tableau et une string, qu
 
 Pour vos tests, essayez un tableau comme celui-ci et essayez des mots différents pour que la fonction compte leur occurrence:
 ```cpp
-    std::string mots[150] = {
+    std::string mots[] = {
         "chat", "chien", "oiseau", "voiture", "maison",
         "chat", "livre", "soleil", "ordinateur", "école",
         "plante", "fleur", "mer", "montagne", "forêt",
@@ -84,7 +84,7 @@ Faire une fonction nommée *trierCroissant* qui place les string d'un tableau en
 
 Pour faire les tests, essayez de passer les tableaux suivants à la fonction:
 ```cpp
-{"Émilie", "Jacques", "Caroline", "Victor", "Alice", "Benoît", "Sophie", "Charles", "Lucie", "Antoine", "Marc", "Zoé", "Éric","Florence", "Hugo"};
+{"Emilie", "Jacques", "Caroline", "Victor", "Alice", "Benoît", "Sophie", "Charles", "Lucie", "Antoine", "Marc", "Zoé", "Eric","Florence", "Hugo"};
 ```
 Le tableau devrait être modifié et ressortir en ordre alphabétique de A à Z.
 
