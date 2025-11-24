@@ -183,7 +183,7 @@ void ajouterEnTete(fstream& monFichier) {
 	monFichier << "En-tête ajoutée par une fonction!" << endl;
 }
 
-bool ecrireFichier() {
+bool ecrireFichier2() {
 	fstream fichier("fichierEcriture.txt", ios::out); 
 	if (!fichier) {
 		cout << "Erreur lors de l'ouverture du fichier." << endl;
