@@ -21,10 +21,8 @@ Voici le découpage des fonctions et des traitements. Pour chacune d'entre elles
 - Faire une fonction qui fait choisir le numéro que le joueur veut comparer avec l'ordi. Combien de paramètres sont nécessaires?
 - Faire une fonction qui pige le numéro de l'ordi de 1 à n.
 - Faire une fonction qui déterminer si oui ou non le joueur est gagnant pour cette joute
-- Faire une fonction qui ajoute un point au joueur si celui-ci à gagné. La fonction doit s'assurer de ne pas dépasser le nombre de point pour gagner.
-- Faire une fonction qui enlève un point au joueur s'il a perdu. Si ce retranchement de points le fait passer à un nombre de points négatif, le joueur perd.
+- Faire une fonction qui ajoute un point au joueur si celui-ci à gagné et qui enlève un point au joueur s'il a perdu. La fonction doit s'assurer de ne pas dépasser le nombre de point pour gagner et de ne pas tomber sous 0.
 
-Assurez-vous de pouvoir jouer plusieurs parties jusqu'à ce que le joueur gagne ou perde ou entre une valeur pour arrêter le jeu prématurément.
 
 Vous êtes libres des affichages, variables supplémentaires et découpage supplémentaires en fonctions. Vous pouvez modifier le jeu pour mettre des points à l'ordi si désiré. 
 
