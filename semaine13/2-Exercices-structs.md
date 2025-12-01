@@ -38,6 +38,6 @@ i) Faire une fonction *moyenne* qui prend un tableau de Voiture et qui retourne 
 
 j) Faire une fonction *inflation* qui prend un tableau de Voiture et qui applique le pourcentage d'inflation fourni à la fonction à tous les prix des voitures. Par exemple, si l'inflation est de 4%, on augmente chaque prix de 4% (faire *1.04)
 
-k) Faire une fonction *afficherSelonAnnee* qui prend un tableau de struct et qui affiche seulement le constructeur et le modèle des voitures qui ont un prix en-dessous de la moyenne.
+k) Faire une fonction *afficherSelonPrix* qui prend un tableau de struct et qui affiche seulement le constructeur et le modèle des voitures qui ont un prix en-dessous de la moyenne.
 
 ![voitures2](img/voitures2.png)
