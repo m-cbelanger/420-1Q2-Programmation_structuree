@@ -30,7 +30,7 @@ void afficherArticle(T_Article tableau[], int taille) {
 T_Article creerArticle() {
 	T_Article monArticle;
 
-	cout << "Quel est le numéro de l'article?" << endl;
+	cout << "Quel est le numï¿½ro de l'article?" << endl;
 	cin >> monArticle.id;
 
 	string leNom;
@@ -50,7 +50,7 @@ T_Article creerArticle() {
 
 	float laQuantite;
 	do {
-		cout << "Quel est la quantité en inventaire? " << endl;
+		cout << "Quel est la quantitï¿½ en inventaire? " << endl;
 		cin >> laQuantite;
 	} while (laQuantite < 0);
 
@@ -106,10 +106,8 @@ bool vendreArticle(T_Article tab[], int taille,string nom, int quantite) {
 			tab[i].quantite = tab[i].quantite - quantite;
 			return true;
 		}
-		else {
-			return false;
-		}
 	}
+	return false;
 }
 
 void creerRapport(T_Article tab[], int taille) {
@@ -186,8 +184,8 @@ int main() {
 	ajouterArticle(inventaire, taille, art3);
 	afficherArticle(inventaire, taille);
 	cout << "Calculer valeur stock: "<< calculerValeurStock(inventaire, taille) <<endl;
-	cout << "vendre 3 télé: " << vendreArticle(inventaire, taille, "television", 3) << endl;
-	cout << "vendre 3 télé: " << vendreArticle(inventaire, taille, "television", 3) << endl;
+	cout << "vendre 3 tï¿½lï¿½: " << vendreArticle(inventaire, taille, "television", 3) << endl;
+	cout << "vendre 3 tï¿½lï¿½: " << vendreArticle(inventaire, taille, "television", 3) << endl;
 	afficherArticle(inventaire, taille);
 
 	creerRapport(inventaire, taille);
