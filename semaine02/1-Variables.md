@@ -162,7 +162,7 @@ Exemples qui causent des erreurs ou des résultats incorrects:
 ```
 ```cpp
     int maVariable = 4;
-    maVariable = maVariable / 3 ; // donne 1 au lieu de 0.75
+    maVariable = maVariable / 3 ; // donne 1 au lieu de 1.33333
 ```
 ```cpp
     string phrase = "Ceci est une chaîne de caractères";
