@@ -111,7 +111,7 @@ b <= a + 6  devient  !(b <= a + 6 )  ou bien  b > a + 6
 a % 2 == 0  devient  !(a % 2 == 0 )  ou bien  a % 2 != 0
 a != 5  devient  !(a != 5)  ou bien  a == 5 
 c == a / b  devient  !(c == a / b)  ou bien  c != a / b
-a + b >= c   devient  !(a + b >= c)  ou bien  a + b > c
+a + b >= c   devient  !(a + b >= c)  ou bien  a + b < c
 ```
 
 ## Question 5
