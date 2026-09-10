@@ -348,7 +348,7 @@ On n'invoque srand() qu'une fois dans le programme!
 
 	Donc srand() ne fait pas vraiment un tirage aléatoire, il fixe juste le départ de l’algorithme. Si on le refixe à chaque passage dans une boucle, on risque de se retrouver toujours avec le même nombre.
 
-    Par exemple, si vous faites ce code-ci, vous aurez toujours comme réponse 38, 7719, 21238...
+Par exemple, si vous faites ce code-ci, vous aurez toujours comme réponse 38, 7719, 21238...
 ```cpp
 srand(0);
 int nombre = rand();
