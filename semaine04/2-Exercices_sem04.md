@@ -80,5 +80,4 @@ b) Le nombre!
 Décrire les entrées qui correspondent aux Regex suivants. Donner un exemple valide et un exemple invalide
 
 1. regex pattern("^[A-Za-z]+ +[A-Za-z]+$");
-2. regex pattern("^[123]-[A-Z]*\.[A-Za-z0-9]{4});
-3. regex pattern(")
+2. regex pattern("^[123]-[A-Z]*\.[A-Za-z0-9]{4}");
