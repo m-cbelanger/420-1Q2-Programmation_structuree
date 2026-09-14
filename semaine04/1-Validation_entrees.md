@@ -267,7 +267,7 @@ cin >> age; // l’utilisateur tape 25 + ENTER
 cin.ignore(numeric_limits<streamsize>::max(), '\n'); //cin.ignore ici
 
 cout << "Entrez votre nom : ";
-getline(cin, nom); // -> lit juste ENTER, résultat = chaîne vide
+getline(cin, nom); // -> ne lit plus le retour de ligne
 ```
 
 Avec getline, on peut personnaliser le symbole de fin d'entrée (par défaut c'est ENTER). 
