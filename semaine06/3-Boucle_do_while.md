@@ -139,7 +139,7 @@ int nombreAleatoire = rand() % (n+1);
 Pour avoir un nombre aléatoire entre 2 bornes a et b, on doit faire un décallage:
 ```cpp
 srand(time(0)); 
-int n = 5; //le nombre max inclus dans le tirage au sort
+int n = 5; //La plage entre le début et la fin de l'intervalle.
 int nombreAleatoire = rand() % (n+1) + a ; //ajouter la borne inférieure 
 ```
 
