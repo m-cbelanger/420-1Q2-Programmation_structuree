@@ -136,12 +136,19 @@ srand(time(0)); //Pour utiliser le temps actuel pour générer le seed
 int n = 5; //le nombre max inclus dans le tirage au sort
 int nombreAleatoire = rand() % (n+1); 
 ```
+srand(time(0)); //Pour utiliser le temps actuel pour générer le seed 
+int n = 5; //le nombre max inclus dans le tirage au sort
+int nombreAleatoire = rand() % (n+1); 
+```
 Pour avoir un nombre aléatoire entre 2 bornes a et b, on doit faire un décallage:
 ```cpp
 srand(time(0)); 
-int n = 5; //La plage entre le début et la fin de l'intervalle.
-int nombreAleatoire = rand() % (n+1) + a ; //ajouter la borne inférieure 
+int a = 5;
+int b = 15;
+int nombreAleatoire = rand() % (b-a+1) + a ; //ajouter la borne inférieure a
 ```
+
+On n'invoque srand(time(0)) qu'une seule fois dans le programme!
 
 ### Complément : nombre aléatoires en informatique
 
