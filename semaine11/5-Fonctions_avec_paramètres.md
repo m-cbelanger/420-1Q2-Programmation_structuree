@@ -176,3 +176,4 @@ cout << "L'étudiant " << nomEtudiant << " a eu la note de " << moyennePonderee 
 - Faire une fonction qui s'occupe de calculer la moyenne pondérée des évaluations. Par valeur ou par référence?
 - Faire une fonction qui s'occupe de déterminer le message de réussite ou d'échec. Par valeur ou par référence?
 
+Suivre ce [lien](https://www.google.com/search?q=id%C3%A9e+illustration+fonction+passage+par+valeur+vs+par+r%C3%A9f%C3%A9rence&oq=id%C3%A9e+illustration+fonction+passage+par+valeur+vs+par+r%C3%A9f%C3%A9rence&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzI3NzU2MWowajE1qAIIsAIB8QXDbWF1C69WO_EFw21hdQuvVjs&sourceid=chrome&source=chrome.rb&ie=UTF-8#fpstate=ive&vld=cid:7e321a9e,vid:EL1Z4yuD_xQ,st:0) pour une courte vidéo de moins de 5 min pour illustrer la différence entre le passage par valeur et le passage par référence.
