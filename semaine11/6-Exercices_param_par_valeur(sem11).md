@@ -218,12 +218,12 @@ e) Dans le code ci-haut, est-ce qu'on peut afficher/utiliser le nom de variable 
 f) dans le code ci-haut, que se passe-t-il si on fait l'appel de la fonction dans le main de cette façon:
 
 ```cpp
-afficherInformation("Jordan", 22);
+afficherInformations("Jordan", 22);
 ```
 
 g) dans le code ci-haut, que se passe-t-il si on fait l'appel de la fonction dans le main de cette façon:
 
 ```cpp
-afficherInformation("Jordan", 'A');
+afficherInformations("Jordan", 'A');
 ```
 
